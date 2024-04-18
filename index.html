@@ -15,10 +15,15 @@
     <link href="css/flexslider.css" rel="stylesheet">
     <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <style>
+    @keyframes flash {
+	0%, 100% { opacity: 1; }   /* Fully visible at the start and end */
+	50% { opacity: 0; }       /* Completely invisible in the middle */
+    }
+    .flashing-text {
+	animation: flash 2s linear infinite;  /* 2s duration, infinite loop */
+    }
+    </style>
 </head>
 
 <body>
@@ -134,9 +139,8 @@
                     </div>
                 </div>
                 <div class="aligncenter">
-                    <h2>Open positions available!</h2>
-		    <p><i class="fa fa-check fa-lg pr-10"></i> <a href="https://github.com/enzotarta/enzotarta.github.io/blob/gh-pages/assets/pdf/Postdoc_proposal_23.pdf">PostDoc in #deeplearning for frugal artificial intelligence</a></p>
-                    <p><i class="fa fa-check fa-lg pr-10"></i> <a href="https://github.com/enzotarta/enzotarta.github.io/blob/gh-pages/assets/pdf/Engineer_proposal.pdf">Research Engineer position opening - Engineer in #deeplearning for training-efficient algorithms</a></p>
+                    <h2><p class="flashing-text">Open positions available!</p></h2>
+		    <p><i class="fa fa-check fa-lg pr-10"></i> <a href="https://github.com/enzotarta/enzotarta.github.io/blob/gh-pages/assets/pdf/Postdoc_proposal_1.pdf">PostDoc in #deeplearning for efficient/frugal artificial intelligence</a></p>
                     <p><i class="fa fa-check fa-lg pr-10"></i> <a href="5_openpositions.html">Call for stagiaires on various topics</a></p><br/>
                 </div>
                 <div class="row">
