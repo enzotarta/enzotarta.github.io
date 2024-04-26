@@ -88,14 +88,6 @@ font-weight:300; color: #fff }
     top: 0; bottom: 0; left: 0; right: 0;  /* Helps in centering the image */
 }
 
-.flexslider .slides li {
-    position: relative;  /* Sets position context for the image */
-    display: flex;  /* Enables flexbox to center content */
-    justify-content: center;  /* Centers content horizontally */
-    align-items: center;  /* Centers content vertically */
-    height: 600px;  /* Set a fixed height or adjust as needed */
-}
-
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
