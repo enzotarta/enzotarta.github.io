@@ -79,6 +79,23 @@ font-weight:300; color: #fff }
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
+.flexslider .slides img {
+    width: auto;  /* Ensures the width is automatically adjusted */
+    max-height: 100%;  /* Limits the height to the slider's height */
+    margin: auto;  /* Centers the image horizontally */
+    display: block;  /* Handles image as block to apply margin auto */
+    position: absolute;  /* Absolute position to allow centering */
+    top: 0; bottom: 0; left: 0; right: 0;  /* Helps in centering the image */
+}
+
+.flexslider .slides li {
+    position: relative;  /* Sets position context for the image */
+    display: flex;  /* Enables flexbox to center content */
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    height: 600px;  /* Set a fixed height or adjust as needed */
+}
+
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
