@@ -1603,13 +1603,13 @@ article .align-right {
     background-color: #B63536;
 }
 .news-container {
-    width: 300px;
-    max-height: 200px; /* Adjust the height as needed */
+    width: 100vw;
+    height: 100vh;
     overflow-y: auto;
     border: 1px solid #ddd;
     background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .news-item {
@@ -1618,7 +1618,7 @@ article .align-right {
 
 .news-item p {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.5em; /* Increase font size for better readability */
     color: #333;
 }
 
