@@ -1603,12 +1603,16 @@ article .align-right {
     background-color: #B63536;
 }
 .news-slider {
-    width: 80%;
+    width: 60%;
+    max-width: 800px;
     overflow: hidden;
     border: 1px solid #ddd;
     background-color: #fff;
     position: relative;
-    height: 60px; /* Adjust the height as needed */
+    height: 80px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .news-slide {
@@ -1661,6 +1665,17 @@ article .align-right {
 
 .news-slide p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #333;
+    text-align: center;
+}
+
+.news-slide a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the parent element */
+    transition: color 0.3s ease;
+}
+
+.news-slide a:hover {
+    color: #007BFF; /* Change the color on hover */
 }
