@@ -105,6 +105,17 @@
                         <div class="aligncenter">
                             <h2 class="aligncenter">Latest news</h2>
 				<div class="news-container">
+				  {% comment %} Render the most recent 7 items from the "news" collection. Create one markdown file per news item in the _news/ folder. {% endcomment %}
+				  {% assign items = site.news | sort: 'date' | reverse %}
+				  {% assign limit = 7 %}
+				  {% for item in items limit: limit %}
+				    <div class="news-slide">
+				      <time class="news-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %y" }}</time>
+				      {{ item.content | markdownify }}
+				    </div>
+				  {% endfor %}
+				</div>
+<!--
                     <div class="news-slide">
                         [Dec 25] I have given a <a href="https://partage.imt.fr/index.php/s/xsPMyJbAE7ywmWb">keynote on 3D Gaussian Splatting</a> at the <a href="https://2025.picturecodingsymposium.org/">Picture Coding Symposium 2025</a> <br/>
                     </div>
