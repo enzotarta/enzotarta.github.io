@@ -13,13 +13,13 @@ nav: news
 		</div>
 	</div>
 </section>
-<section id="inner-headline">
-<div class="row">
-	{% assign items = site.news | sort: "date" | reverse %}
-	{% for item in items %}
-	<div class="col-md-12">
-		{{ item.content | markdownify }}
-	</div>
-	{% endfor %}
+<section id="content">
+	<div class="row">
+		{% assign items = site.news | sort: "date" | reverse %}
+		{% for item in items %}
+		<div class="col-md-12">
+			{{ item.content | markdownify }}
+		</div>
+		{% endfor %}
 </div>
 </section>
