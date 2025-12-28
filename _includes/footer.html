@@ -5,13 +5,13 @@
         <div class="widget">
           <h5 class="widgetheading">Contact</h5>
           <address>
-            <strong>Enzo Tartaglione</strong><br>
-            19 place Marguerite Perey<br>
-            suite 5D30<br>
-            91120 Palaiseau
+            <strong>{{ site.address.name }}</strong><br>
+			{{ site.address.street }}<br>
+			{{ site.address.office }}<br>
+			{{ site.address.city }}
           </address>
           <i class="fa fa-envelope"></i>
-          enzo.tartaglione@telecom-paris.fr
+          {{ site.email }}
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
             <ul class="social-network">
               <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/enzo-tartaglione-490950a2" title="Linkedin"></a></li>
               <li><a class="fa fa-skype" href="https://join.skype.com/invite/gyX6hyaaiahL" title="Skype"></a></li>
-              <li><a class="fa fa-github" href="https://github.com/enzotarta" title="GitHub"></a></li>
+              <li><a class="fa fa-github" href="{{ site.social.github }}" title="GitHub"></a></li>
               <li><a class="fa fa-twitter" href="https://twitter.com/TartaglioneEnzo" title="Twitter"></a></li>
               <li>
                 <a href="https://scholar.google.it/citations?user=uKuvN64AAAAJ&hl=it&oi=ao" title="Google Scholar">
@@ -41,4 +41,7 @@
       </div>
     </div>
   </div>
+  <p class="muted">
+    &copy; {{ "now" | date: "%Y" }} {{ site.address.name }}
+  </p>
 </footer>

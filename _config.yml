@@ -1,4 +1,19 @@
 collections:
   news:
     output: false
+email: enzo.tartaglione@telecom-paris.fr
+
+address:
+  name: Enzo Tartaglione
+  street: 19 place Marguerite Perey
+  office: suite 5D30
+  city: 91120 Palaiseau
+
+social:
+  linkedin: https://www.linkedin.com/in/enzo-tartaglione-490950a2
+  skype: https://join.skype.com/invite/gyX6hyaaiahL
+  github: https://github.com/enzotarta
+  twitter: https://twitter.com/TartaglioneEnzo
+  scholar: https://scholar.google.it/citations?user=uKuvN64AAAAJ&hl=it&oi=ao
+  orcid: https://orcid.org/0000-0003-4274-8298
 

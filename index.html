@@ -21,71 +21,70 @@ nav: home
 
 <body>
     
+<div class="home-page" id="wrapper">
+    <section id="banner">
+        <!-- Slider -->
 
-    <div class="home-page" id="wrapper">
-        <section id="banner">
-            <!-- Slider -->
+        <div class="flexslider" id="main-slider">
+            <ul class="slides">
+                <li>
+                    <img height="600" alt="" src="img/slides/pruning.jpeg">
 
-            <div class="flexslider" id="main-slider">
-                <ul class="slides">
-                    <li>
-                        <img height="600" alt="" src="img/slides/pruning.jpeg">
+                    <div class="flex-caption wow fadeInLeft animated" data-wow-animation-name="none">
+                        <h3>Deploy efficient deep learning</h3>
 
-                        <div class="flex-caption wow fadeInLeft animated" data-wow-animation-name="none">
-                            <h3>Deploy efficient deep learning</h3>
+                        <p>We prune deep models via structured sparsity, cutting away what is unnecessary.</p>
+                    </div>
+                </li>
 
-                            <p>We prune deep models via structured sparsity, cutting away what is unnecessary.</p>
-                        </div>
-                    </li>
+                <li>
+                    <img height="600" alt="" src="img/slides/bias.jpg">
 
-                    <li>
-                        <img height="600" alt="" src="img/slides/bias.jpg">
+                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
+                        <h3>Data debiasing</h3>
 
-                        <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                            <h3>Data debiasing</h3>
+                        <p>Reduce the impact of biases with proper regularization.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <img height="600" alt="" src="img/slides/privacy.jpg">
 
-                            <p>Reduce the impact of biases with proper regularization.</p>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <img height="600" alt="" src="img/slides/privacy.jpg">
+                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
+                        <h3>Privacy preservation</h3>
 
-                        <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                            <h3>Privacy preservation</h3>
+                        <p>Worried about information leakage in deep learning models? We do as well!</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <img height="600" alt="" src="img/slides/compression.jpg">
 
-                            <p>Worried about information leakage in deep learning models? We do as well!</p>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <img height="600" alt="" src="img/slides/compression.jpg">
+                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
+                        <h3>Compression for deep learning</h3>
 
-                        <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                            <h3>Compression for deep learning</h3>
+                        <p>Reduce the final size of the deployed model at training time!</p>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- end slider -->
+    </section>        
 
-                            <p>Reduce the final size of the deployed model at training time!</p>
-                        </div>
-                    </li>
-                </ul>
-            </div><!-- end slider -->
-        </section>        
-
-       <section id="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="aligncenter">
-                            <h2 class="aligncenter">Latest news</h2>
-                <div class="news-container">
-                    {% assign items = site.news | sort: "date" | reverse %}
-                    {% for item in items limit:7 %}
-                        <div class="news-slide">
-                        {{ item.content | markdownify }}
-                        <br/>
-                        </div>
-                    {% endfor %}
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aligncenter">
+                        <h2 class="aligncenter">Latest news</h2>
+            <div class="news-container">
+                {% assign items = site.news | sort: "date" | reverse %}
+                {% for item in items limit:7 %}
+                <div class="news-slide">
+                    {{ item.content | markdownify }}
+                    <br/>
                 </div>
+                {% endfor %}
+            </div>
                     <!--Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - Shannon Strikes Again! Entropy-based Pruning in Deep Neural Networks for Transfer Learning under Extreme Memory and Computation Budgets<br/>
                     Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - Can Unstructured Pruning Reduce the Depth in Deep Neural Networks?<br/>
                     Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - SCoTTi: Save Computation at Training Time with an adaptive framework<br/>-->
