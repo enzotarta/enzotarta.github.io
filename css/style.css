@@ -1649,13 +1649,24 @@ article .align-right {
 .news-item a:hover {
     color: #007BFF; /* Change the color on hover */
 }
-.news-year {
+.news-year-old {
   margin-top: 30px;
   margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
 }
 
-.news-item {
+.news-item-old {
   margin-bottom: 8px;
+}
+.news-item-old p {
+    margin: 0;
+    font-size: inherit; /* Increase font size for better readability */
+    color: inherit;
+}
+
+.news-item-old a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the parent element */
+    transition: color 0.3s ease;
 }
