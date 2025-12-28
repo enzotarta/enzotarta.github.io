@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="/css/jcarousel.css" rel="stylesheet" />
+  <link href="/css/flexslider.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+
+  {% if page.extra_css %}
+    {{ page.extra_css }}
+  {% endif %}
+</head>
+
+<body>
+<div id="wrapper">
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logonew.png" alt="logo" height="50"/>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li {% if page.nav == "home" %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+            <li {% if page.nav == "about" %}class="active"{% endif %}><a href="/1_publications.html">About me</a></li>
+            <li {% if page.nav == "talks" %}class="active"{% endif %}><a href="/3_talks.html">Talks & Slides</a></li>
+            <li {% if page.nav == "review" %}class="active"{% endif %}><a href="/6_review.html">Reviewing tips</a></li>
+            <li {% if page.nav == "open" %}class="active"{% endif %}><a href="/5_openpositions.html">Call for stagiaires</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  {{ content }}
+
+</div>
+
+<!-- JS -->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/custom.js"></script>
+
+</body>
+</html>
