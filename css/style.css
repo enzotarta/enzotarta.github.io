@@ -1670,3 +1670,16 @@ article .align-right {
     color: inherit; /* Inherit the color of the parent element */
     transition: color 0.3s ease;
 }
+.cv-section {
+  margin-bottom: 30px;
+}
+
+.cv-section h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.cv-item {
+  margin-bottom: 10px;
+}
+
