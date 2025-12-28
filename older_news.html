@@ -1,48 +1,8 @@
 ---
-layout: none
+layout: default
+title: Enzo Tartaglione – News Archive
+nav: news
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Enzo Tartaglione - Talks & Slides</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/jcarousel.css" rel="stylesheet" />
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-<style>
-  /* Keep original look; small helpers for cards */
-  .talk-card { margin-bottom: 30px; padding: 18px; border: 1px solid #eee; border-radius: 6px; }
-  .talk-actions .btn { margin-right:8px; }
-  #searchBar { margin: 20px 0; }
-  .muted { color: #777; }
-</style>
-</head>
-<body>
-<div id="wrapper">
-
-  <!-- start header -->
-  <header>
-      <div class="navbar navbar-default navbar-static-top">
-          <div class="container">
-              <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html"><img src="img/logonew.png" alt="logo" height="50"/></a>
-              </div>
-              <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="1_publications.html">About me</a></li>
-			<li class="active"><a href="3_talks.html"> Talks & Slides </a></li>
-            <li><a href="6_review.html"> Reviewing tips</a></li>
-            <li><a href="5_openpositions.html"> Call for stagiaires </a></li>
-          </ul>
-        </div>
-          </div>
-      </div>
-  </header><!-- end header -->
-
 	<section id="inner-headline">
 	<div class="news-container">
 		{% assign items = site.news | sort: "date" | reverse %}
