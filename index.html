@@ -17,11 +17,13 @@ home: true
     .flashing-text {
 	animation: flash 2s linear infinite;  /* 2s duration, infinite loop */
     }
+    body {
+    padding-top: 0;
+    }
     </style>
 </head>
 
-<body>
-    
+<body class="{% if page.home %}home{% endif %}">
 <div class="home-page" id="wrapper">
     <section id="banner">
         <!-- Slider -->
@@ -82,7 +84,6 @@ home: true
                 {% for item in items limit:7 %}
                 <div class="news-slide">
                     {{ item.content | markdownify }}
-                    <br/>
                 </div>
                 {% endfor %}
             </div>
