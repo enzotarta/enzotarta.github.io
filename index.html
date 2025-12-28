@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -98,22 +102,21 @@
             </div><!-- end slider -->
         </section>        
 
-        <section id="content">
+       <section id="content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="aligncenter">
-                           <h2 class="aligncenter">Latest News</h2>
-                            <ul class="news-list">
-                            {% assign news = site.news | sort: "date" | reverse %}
-                            {% for item in news limit:7 %}
-                            <li>
-                                <strong>{{ item.date | date: "%b %Y" }}</strong> — {{ item.content | markdownify }}
-                            </li>
-                            {% endfor %}
-
-
-                            </ul>
+                            <h2 class="aligncenter">Latest news</h2>
+                <div class="news-container">
+                    {% assign items = site.news | sort: "date" | reverse %}
+                    {% for item in items limit:7 %}
+                        <div class="news-slide">
+                        {{ item.content | markdownify }}
+                        <br/>
+                        </div>
+                    {% endfor %}
+                </div>
                     <!--Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - Shannon Strikes Again! Entropy-based Pruning in Deep Neural Networks for Transfer Learning under Extreme Memory and Computation Budgets<br/>
                     Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - Can Unstructured Pruning Reduce the Depth in Deep Neural Networks?<br/>
                     Paper accepted for publication at the Workshop on Resource Efficient Deep Learning for Computer Vision (ICCVW) - SCoTTi: Save Computation at Training Time with an adaptive framework<br/>-->
