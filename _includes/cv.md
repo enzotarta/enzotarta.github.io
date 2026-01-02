@@ -1,8 +1,5 @@
-BIO
-Enzo Tartaglione is Full Professor at Télécom Paris (Institut Polytechnique de Paris), where he is also responsible for the group Multimedia, Hi!Paris associate member, member of the ELLIS society, Senior member of IEEE, Associate Editor of IEEE Transactions on Neural Networks and Learning Systems, of Transactions on Machine Learning Research, and of the EURASIP journal on image and video processing. He received the MS in Electronic Engineering at Politecnico di Torino and Politecnico di Milano in 2015, cum laude. The same year, he also received a magna cum laude MS in electrical and computer engineering at the University of Illinois at Chicago. In 2019 he obtained a Ph.D. in Physics at Politecnico di Torino, cum laude, with the thesis “From Statistical Physics to Algorithms in Deep Neural Systems”.
-He is an Area Chair in top AI venues and has been nominated outstanding reviewer three times in these. Besides, he will be keynote speaker at PCS 2025 and is finalist for the 2025 Multimedia Rising Star Award. His principal interests include compression, sparsification, pruning of deep neural networks, computer vision, debiasing, and regularization for deep learning.
+# ACADEMIC APPOINTMENTS 
 
-ACADEMIC APPOINTMENTS [<img src="figures/icon_linkedin.png" style="width:1.8%" alt="image" />](https://www.linkedin.com/in/enzo-tartaglione-490950a2)
 **Télécom Paris, Institut Polytechnique de Paris, France**
 
 -   Responsible of the equipe Multimedia
@@ -21,7 +18,7 @@ ACADEMIC APPOINTMENTS [<img src="figures/icon_linkedin.png" style="width:1.8%" a
 
 -   Post-Doctorate in Computer Vision and Pattern Recognition.
 
-VISITING PERIODS
+# VISITING PERIODS
 
 **MILA / École de Technologie Supérieure, Montréal, Canada**
 
@@ -31,7 +28,7 @@ VISITING PERIODS
 
 -   Research collaboration and cooperation: worked in the area of model debiasing and fairness.
 
-EDUCATION
+# EDUCATION
 
 **Habilitation à diriger des recherches**  
 Institut Polytechnique de Paris, France  
@@ -44,12 +41,12 @@ Thesis: *From Statistical Physics to Algorithms in Deep Neural Systems*[ <img s
 **M.Sc. Embedded Systems (score: 110/110 cum laude)**  
 Politecnico di Torino (Italy), Politecnico di Milano (Italy), and University of Illinois at Chicago (USA)
 
-EDITORIAL ACTIVITY
+# EDITORIAL ACTIVITY
 **Associate Editor for IEEE Transactions of Neural Networks and Learning Systems**  
 **Action Editor for Transactions on Machine Learning Research**  
 **Associate Editor for the EURASIP Journal on Image and Video Processing**
 
-MEMBERSHIPS AND CONFERENCE ACTIVITY
+# MEMBERSHIPS AND CONFERENCE ACTIVITY
 **IEEE Senior Member**  
 **IEEE Member**  
 **ELLIS Society Member**  
@@ -58,8 +55,7 @@ MEMBERSHIPS AND CONFERENCE ACTIVITY
 **Session Chair:** ECML-PKDD (2024), ICIP (2022)  
 **Conference Reviewer:** CVPR (2025,2024,2023,2022,2021), ICCV (2025,2023,2021), ECCV (2024,2022), WACV (2026,2025,2024,2023), AAAI (2026,2025,2024,2023), ICLR (2025, 2024), ICML (2025,2024), NeurIPS(2025,2024,2023), ACM MM (2025), AISTATS (2025), BMVC (2024,2023), ECML-PKDD (2024), ICASSP (2025,2023), ICME (2025, 2023)
 
-SELECTION OF PUBLICATIONS [<img src="figures/icon_scholar.png" style="width:1.8%" alt="image" />](https://scholar.google.it/citations?user=uKuvN64AAAAJ&hl=it&oi=ao)
-
+# SELECTION OF PUBLICATIONS
 -   Wang, H., Yu, Z., Spadaro, G., Ju, C., Quétu, V., Xiao, S., & **Tartaglione, E.** (2025). FOLDER: Accelerating Multi-Modal Large Language Models with Enhanced Performance. IEEE International Conference on Computer Vision (ICCV).[ <img src="figures/icon_arxiv.png" style="width:1.8%" alt="image" />](https://arxiv.org/abs/2501.02430)
 
 -   Quétu, V., Liao, Z., Hezbri, N., Pizzati, F., & **Tartaglione, E.** (2025). LaCoOT: Layer Collapse through Optimal Transport. IEEE International Conference on Computer Vision (ICCV).[ <img src="figures/icon_arxiv.png" style="width:1.8%" alt="image" />](https://arxiv.org/abs/2406.08933)
@@ -92,7 +88,7 @@ SELECTION OF PUBLICATIONS [<img src="figures/icon_scholar.png" style="width:1.8%
 
 -   **Tartaglione, E.**, Lepsøy, S., Fiandrotti, A., & Francini, G. (2018). Learning sparse neural networks via sensitivity-driven regularization. Advances in neural information processing systems, 31 (NeurIPS).[ <img src="figures/icon_arxiv.png" style="width:1.8%" alt="image" />](https://arxiv.org/abs/1810.11764)[ <img src="figures/icon_pdf.jpg" style="width:1.8%" alt="image" />](https://proceedings.neurips.cc/paper_files/paper/2018/file/04df4d434d481c5bb723be1b6df1ee65-Paper.pdf)
 
-SELECTION OF PATENTS
+# SELECTION OF PATENTS
 
 -   De Sousa Trias, C., Mitrea, M., **Tartaglione, E.**, & Chaudhuri, S. Method for protecting an artificial neural network by tracing (2025). French patent application No. PI025792.FR\_IMT\_S112\_MVA/sto
 
@@ -108,7 +104,7 @@ SELECTION OF PATENTS
 
 -   Fiandrotti, A., Francini, G., Lepsoy, S., & **Tartaglione, E.** Neural networks having reduced number of parameters (2021). U.S. Patent No. 12,271,812.
 
-GRANTS AND FUNDING SOURCES
+# GRANTS AND FUNDING SOURCES
 
 -   Hi!Paris internal chair, Project GIFFAI *“Grounding Information Flow for Frugal AI”*.  
     **Role**: Principal Investigator. €  200,000. - 2028
@@ -127,7 +123,7 @@ GRANTS AND FUNDING SOURCES
 -   Hi!Paris external chair, 3 years fixed-term assistant professor recruitment.  
     **Role**: Principal Investigator. €  750,000. - 2024
 
-AWARDS
+# AWARDS
 
 -   Finalist for the [Multimedia Rising Star Award 2025](https://attend.ieee.org/mmsp-2025/rising-star/)
 
@@ -136,7 +132,7 @@ AWARDS
 -   Caianiello best paper award of the International Conference on Image Analysis and Processing,  
     [Sparse Double Descent in Vision Transformers: real or phantom threat?](https://link.springer.com/chapter/10.1007/978-3-031-43153-1_41)
 
-SELECTION OF RECENTLY ORGANIZED EVENTS
+# SELECTION OF RECENTLY ORGANIZED EVENTS
 
 -   Workshop organizer “IP Paris – Hi! PARIS
     Computer Vision Workshop”.  
@@ -164,7 +160,7 @@ SELECTION OF RECENTLY ORGANIZED EVENTS
 -   Tutorial organizing chair “Pruning deep neural networks: towards efficient models on the edge” at the International Conference on Image Analysis and Processing.  
     <https://www.iciap2021.org/t7/>
 
-SELECTION OF RECENT INVITED TALKS
+# SELECTION OF RECENT INVITED TALKS
 
 -   [Keynote speaker at the 2025 Picture Coding Symposium (PCS)](https://2025.picturecodingsymposium.org/)
 
@@ -174,7 +170,7 @@ SELECTION OF RECENT INVITED TALKS
 
 -   [Adra-e European Convergence Summit - ADR facing Environmental issues](https://adra-e.eu/european-convergence-summit-programme)
 
-Ph.D. EXAMINATION COMMITTEE
+# Ph.D. EXAMINATION COMMITTEE
 
 -   Tom BORDIN (Université de Rennes, France) - “Image semantic compression at extremely low bitrates”  
     Role: Thesis reviewerDec 2025
@@ -191,7 +187,7 @@ Ph.D. EXAMINATION COMMITTEE
 -   Yiqun LIU (Université de Rennes, France) - “Learning for new generation video coders”  
     Role: Committee member Dec 2023
 
-COURSES
+# COURSES
 The given courses include Multimedia elaboration and Deep Learning. A broader description is given in the Synthesis of works.
 
 -   2024 Course -“Advanced Deep Learning and Machine Learning” (40h) - Mathematical and Physical Methods for Space Sciences, Università degli Studi di Torino (Master level course)
@@ -211,7 +207,6 @@ The given courses include Multimedia elaboration and Deep Learning. A broader de
 
 -   2020 Lab assistance for the course “Learning for Multimedia” - Télécom Paris (9h)
 
-Ph.D. STUDENTS FOLLOWED
 
 -   2025-2028 Ivan Luiz de Moura Matos
 
