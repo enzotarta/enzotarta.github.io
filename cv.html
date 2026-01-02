@@ -4,4 +4,41 @@ title: Curriculum Vitae
 nav: cv
 ---
 
-{% include cv.md %}
+---
+layout: default
+title: Curriculum Vitae
+---
+
+<h1>Curriculum Vitae</h1>
+
+<select id="cv-selector" onchange="showSection(this.value)">
+  <option value="education">Education</option>
+  <option value="experience">Experience</option>
+  <option value="publications">Publications</option>
+  <option value="skills">Skills</option>
+</select>
+
+<div class="cv-section" id="education">
+## Education
+- PhD in ...
+- MSc in ...
+</div>
+
+<div class="cv-section" id="experience">
+## Experience
+- Researcher at ...
+- Engineer at ...
+</div>
+
+<div class="cv-section" id="publications">
+## Publications
+- Paper 1
+- Paper 2
+</div>
+
+<div class="cv-section" id="skills">
+## Skills
+- Python
+- C++
+</div>
+

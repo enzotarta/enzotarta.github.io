@@ -42,4 +42,17 @@
 <script src="js/custom.js"></script>
 
 </body>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.cv-section').forEach(sec => {
+    sec.style.display = 'none';
+  });
+  document.getElementById(id).style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSection("education"); // default
+});
+</script>
 </html>
