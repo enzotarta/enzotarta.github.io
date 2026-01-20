@@ -1670,18 +1670,6 @@ article .align-right {
     color: inherit; /* Inherit the color of the parent element */
     transition: color 0.3s ease;
 }
-.cv-section {
-  margin-bottom: 30px;
-}
-
-.cv-section h3 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-}
-
-.cv-item {
-  margin-bottom: 10px;
-}
 
 .footer-logos {
   margin-top: 30px;
@@ -1702,4 +1690,37 @@ article .align-right {
   opacity: 1;
 }
 
+/* ===== CV SUMMARY MENU ===== */
 
+#cv-summary {
+  margin: 40px 0 60px;
+  text-align: center;
+}
+
+.cv-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cv-card {
+  display: block;
+  padding: 18px 24px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+.cv-card:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+  color: #007bff;
+}
