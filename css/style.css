@@ -1741,3 +1741,22 @@ article .align-right {
   color: #007bff;
 }
 
+.cv-section {
+  margin: 60px 0;
+}
+
+.cv-title {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.cv-list {
+  padding-left: 20px;
+}
+
+.cv-list li {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
