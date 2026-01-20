@@ -1760,3 +1760,12 @@ article .align-right {
   margin-bottom: 18px;
   line-height: 1.6;
 }
+
+.cv-section {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
