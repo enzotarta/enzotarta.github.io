@@ -1690,10 +1690,12 @@ article .align-right {
 }
 
 .footer-logo {
-  max-height: 60px;
+  max-height: 60px;     /* controls size */
+  width: auto;          /* keeps aspect ratio */
+  height: auto;         /* keeps aspect ratio */
   margin: 10px 20px;
-  opacity: 0.9;
-  transition: opacity 0.2s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer-logo:hover {
