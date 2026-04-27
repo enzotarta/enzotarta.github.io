@@ -1018,12 +1018,13 @@ footer .social-network a:hover img { filter: brightness(1.4) !important; }
 }
 
 .footer-logo-item img {
-  filter: brightness(0.65) grayscale(0.2) !important;
+  filter: none !important;
   transition: var(--transition) !important;
-  max-height: 56px !important;
+  max-height: 80px !important;
   width: auto !important;
+  opacity: 0.9 !important;
 }
-.footer-logo-item img:hover { filter: brightness(1) grayscale(0) !important; }
+.footer-logo-item img:hover { opacity: 1 !important; }
 
 /* ---- Bottom copyright bar ---- */
 .footer-bottom {
