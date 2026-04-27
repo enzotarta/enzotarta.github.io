@@ -51,6 +51,19 @@
 <script>
 (function () {
   function initScrollAnimations() {
+    /* On inner pages, auto-tag top-level containers so they animate in too */
+    var isHome = document.body.classList.contains('home');
+    if (!isHome) {
+      document.querySelectorAll(
+        '#content > .container, .cv-section, #content > .row, section#content > .container'
+      ).forEach(function (el, i) {
+        if (!el.classList.contains('animate-on-scroll')) {
+          el.classList.add('animate-on-scroll');
+          if (i > 0) el.classList.add('delay-' + Math.min(i, 5));
+        }
+      });
+    }
+
     var els = document.querySelectorAll('.animate-on-scroll');
     if (!els.length) return;
     var observer = new IntersectionObserver(function (entries) {
@@ -60,7 +73,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
     els.forEach(function (el) { observer.observe(el); });
   }
 
