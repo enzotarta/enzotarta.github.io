@@ -1012,15 +1012,15 @@ footer .social-network a:hover img { filter: brightness(1.4) !important; }
 /* Logos */
 .footer-logos-row {
   display: flex !important;
-  gap: 20px !important;
+  gap: 28px !important;
   align-items: center !important;
   flex-wrap: wrap !important;
 }
 
 .footer-logo-item img {
-  filter: brightness(0.55) grayscale(0.3) !important;
+  filter: brightness(0.65) grayscale(0.2) !important;
   transition: var(--transition) !important;
-  max-height: 36px !important;
+  max-height: 56px !important;
   width: auto !important;
 }
 .footer-logo-item img:hover { filter: brightness(1) grayscale(0) !important; }
