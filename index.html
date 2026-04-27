@@ -5,79 +5,52 @@ nav: home
 home: true
 ---
 
-<!DOCTYPE html>
+<section id="banner">
+    <!-- Animated background blobs -->
+    <div class="hero-bg-blob hero-bg-blob-1"></div>
+    <div class="hero-bg-blob hero-bg-blob-2"></div>
+    <div class="hero-bg-blob hero-bg-blob-3"></div>
+    <!-- Dot-grid overlay -->
+    <div class="hero-grid"></div>
 
-<html lang="en">
-<head>
-    <style>
-    @keyframes flash {
-	0%, 100% { opacity: 1; }   /* Fully visible at the start and end */
-	50% { opacity: 0; }       /* Completely invisible in the middle */
-    }
-    .flashing-text {
-	animation: flash 2s linear infinite;  /* 2s duration, infinite loop */
-    }
-    body {
-    padding-top: 0;
-    }
-    </style>
-</head>
+    <!-- Main content -->
+    <div class="hero-content">
+        <div class="hero-eyebrow">Télécom Paris &nbsp;·&nbsp; Hi! Paris Research Lab</div>
 
-<body class="{% if page.home %}home{% endif %}">
-<div class="home-page" id="wrapper">
-    <section id="banner">
-        <!-- Slider -->
+        <h1 class="hero-name">Enzo Tartaglione</h1>
 
-        <div class="flexslider" id="main-slider">
-            <ul class="slides">
-                <li>
-                    <img height="600" alt="" src="img/slides/pruning.jpeg">
+        <p class="hero-title">
+            <strong>Associate Professor</strong> &mdash; leading a multimedia AI research team<br>
+            at the intersection of efficiency, fairness &amp; privacy
+        </p>
 
-                    <div class="flex-caption wow fadeInLeft animated" data-wow-animation-name="none">
-                        <h3>Deploy efficient deep learning</h3>
+        <div class="hero-themes">
+            <span class="hero-theme-chip">&#127807; Green AI</span>
+            <span class="hero-theme-chip">&#9878; Model Debiasing</span>
+            <span class="hero-theme-chip">&#128274; Privacy in AI</span>
+            <span class="hero-theme-chip">&#129504; Information Flow</span>
+            <span class="hero-theme-chip">&#127909; Multimedia AI</span>
+            <span class="hero-theme-chip">&#128376; Model Compression</span>
+        </div>
 
-                        <p>We prune deep models via structured sparsity, cutting away what is unnecessary.</p>
-                    </div>
-                </li>
+        <div class="hero-cta">
+            <a href="/about.html" class="btn-primary-hero">View Publications</a>
+            <a href="/cv.html" class="btn-secondary-hero">Curriculum Vitae</a>
+        </div>
+    </div>
 
-                <li>
-                    <img height="600" alt="" src="img/slides/bias.jpg">
-
-                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                        <h3>Data debiasing</h3>
-
-                        <p>Reduce the impact of biases with proper regularization.</p>
-                    </div>
-                </li>
-                
-                <li>
-                    <img height="600" alt="" src="img/slides/privacy.jpg">
-
-                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                        <h3>Privacy preservation</h3>
-
-                        <p>Worried about information leakage in deep learning models? We do as well!</p>
-                    </div>
-                </li>
-                
-                <li>
-                    <img height="600" alt="" src="img/slides/compression.jpg">
-
-                    <div class="flex-caption wow fadeInRight animated" data-wow-animation-name="none">
-                        <h3>Compression for deep learning</h3>
-
-                        <p>Reduce the final size of the deployed model at training time!</p>
-                    </div>
-                </li>
-            </ul>
-        </div><!-- end slider -->
-    </section>        
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll
+    </div>
+</section>        
 
     <section id="content">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="aligncenter">
+                    <div class="aligncenter animate-on-scroll">
                         <h2 class="aligncenter">Latest news</h2>
             <div class="news-container">
                 {% assign items = site.news | sort: "date" | reverse %}
@@ -123,17 +96,19 @@ home: true
                     <p><i class="fa fa-check fa-lg pr-10"></i> PhD positions are now available spanning multimodality and efficiency! Reach out for more info</p><br/>
                     <p><i class="fa fa-check fa-lg pr-10"></i> <a href="5_openpositions.html">Looking for stagiaires! Email for more info!</a></p><br/>
                 </div> 
-                <div class="row">
+                <div class="row animate-on-scroll">
                     <div class="col-md-12">
                         <div class="aligncenter">
                             <h2 class="aligncenter">Mission</h2>
-                            In a world where deep learning is becoming more and more state-of-the-art, where the race to the computational capabilities determines the new technologies, it is crucial to open the black box deep learning is. Many good-willing researchers are already moving important steps in such direction, despite a wide multitiude and hetereogeneity of scientific backgrounds. This is good, this is progress!<br/>
-                            We target it in the long term developing techniques which simplify these models. Some are easier to prune than others: why? How is the information being processed inside a deep model, from a macroscopic perspective? These are few of the questions to be answered to move in the right direction!
+                            <div class="mission-box">
+                            In a world where deep learning is becoming more and more state-of-the-art, where the race to computational capabilities determines new technologies, it is crucial to open the black box that deep learning is. Many researchers are already moving important steps in such direction, despite a wide multitude and heterogeneity of scientific backgrounds. This is good — this is progress!<br/><br/>
+                            We target it in the long term, developing techniques which simplify these models. Some are easier to prune than others: why? How is information being processed inside a deep model from a macroscopic perspective? These are few of the questions to be answered to move in the right direction.
+                            </div>
                         </div><br>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row animate-on-scroll">
                     <div class="skill-home">
                         <div class="skill-home-solid clearfix">
                             <div class="col-md-3 text-center">
@@ -185,18 +160,8 @@ home: true
                 </div>
             </div>
         </section>
-        <style>
-		img {
-		  max-width: 100%;
-		}
-		img.thumbnail {
-		  width: 160px;
-		  height:200px;
-		  object-fit: cover;
-		}
-	</style>
         <!-- Our team starts -->
-        <div class="container">
+        <div class="container animate-on-scroll">
             <h2 class="aligncenter">Currently working with</h2>
                 <div class="row">
 		<div class="col-md-3 text-center">
@@ -219,17 +184,6 @@ home: true
 	</div>
 	<div class="container">
                 <div class="row">
-                    <style>
-                        img {
-                          max-width: 100%;
-                        }
-                        img.thumbnail {
-                          width: 160px;
-                          height:200px;
-                          object-fit: cover;
-                        }
-                    </style>
-		    
                     <div class="col-md-3 text-center">
                         <div class="team-member">
                             <img class="thumbnail" width="400" height="300" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Z6xFbwQAAAAJ&citpid=1" alt="">
@@ -344,7 +298,7 @@ home: true
 			
 		</div>
         </div>
-	<div class="container">
+	<div class="container animate-on-scroll">
         	<h3 class="aligncenter">Formerly advising</h3>
 		<ul>
         <li> <h4>Marta Milovanovic</h4> (PostDoc 2022/23) <br> Main achievement: written a paper, <a href="Learn how to Prune Pixels for Multi-view Neural Image-based Synthesis">published at ICMEW 2023</a> </li><be>
@@ -376,10 +330,5 @@ home: true
 		</ul>
 	</div>
         <!-- Our team ends -->
-    </div><a class="scrollup fa fa-angle-up active" href="#" style=
-    "font-style: italic"></a> <!-- javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script> <script src="js/jquery.easing.1.3.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/jquery.fancybox.pack.js"></script> <script src="js/jquery.fancybox-media.js"></script> <script src="js/portfolio/jquery.quicksand.js"></script> <script src="js/portfolio/setting.js"></script> <script src="js/jquery.flexslider.js"></script> <script src="js/animate.js"></script> <script src="js/custom.js"></script> <script src="js/owl-carousel/owl.carousel.js"></script>
-</body>
-</html>
+    </div>
+    <a class="scrollup fa fa-angle-up active" href="#"></a>

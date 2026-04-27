@@ -5,20 +5,27 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Modern fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="/css/jcarousel.css" rel="stylesheet" />
   <link href="/css/flexslider.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet" />
+  <!-- Modern theme override — must come last -->
+  <link href="/css/modern-theme.css" rel="stylesheet" />
 
   {% if page.extra_css %}
     {{ page.extra_css }}
   {% endif %}
 </head>
 
-<body>
-<div id="wrapper">
+<body class="{% if page.home %}home{% endif %}">
+<div id="wrapper" class="{% if page.home %}home-page{% endif %}">
 
     <!-- Header / Navbar -->
     {% include navbar.html %}
@@ -29,30 +36,55 @@
     {% include footer.html %}
 </div>
 
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Scripts -->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/jquery.fancybox-media.js"></script>
 <script src="js/portfolio/jquery.quicksand.js"></script>
 <script src="js/portfolio/setting.js"></script>
-<script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
 
-</body>
+<!-- Scroll-triggered fade-in animations -->
+<script>
+(function () {
+  function initScrollAnimations() {
+    var els = document.querySelectorAll('.animate-on-scroll');
+    if (!els.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { observer.observe(el); });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollAnimations);
+  } else {
+    initScrollAnimations();
+  }
+})();
+</script>
 
 <script>
 function showSection(id) {
-  document.querySelectorAll('.cv-section').forEach(sec => {
+  document.querySelectorAll('.cv-section').forEach(function(sec) {
     sec.style.display = 'none';
   });
-  document.getElementById(id).style.display = 'block';
+  var target = document.getElementById(id);
+  if (target) target.style.display = 'block';
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  showSection("education"); // default
+document.addEventListener("DOMContentLoaded", function() {
+  var first = document.getElementById("education");
+  if (first) showSection("education");
 });
 </script>
+</body>
 </html>
