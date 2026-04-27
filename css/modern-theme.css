@@ -30,6 +30,9 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --glow-blue:   0 0 30px rgba(59, 130, 246, 0.22);
   --glow-purple: 0 0 30px rgba(139, 92, 246, 0.22);
+
+  /* Single source-of-truth for the heading gradient — tweak here to repaint everything */
+  --grad-hot: linear-gradient(135deg, #ffffff 0%, #c4b5fd 24%, #60a5fa 54%, #00e5ff 90%);
 }
 
 /* ---- Base ---- */
@@ -49,10 +52,10 @@ body.home { padding-top: 0 !important; }
 a { color: var(--blue-light); transition: var(--transition); }
 a:hover { color: var(--cyan); text-decoration: none; }
 
-/* Gradient text — same fill as the hero name, applied site-wide */
+/* Gradient text — single source: --grad-hot, applied site-wide */
 h1, h2, h3, h4 {
   font-family: 'Space Grotesk', 'Open Sans', sans-serif !important;
-  background: linear-gradient(135deg, #ffffff 18%, var(--blue-light) 56%, var(--cyan) 90%) !important;
+  background: var(--grad-hot) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -291,7 +294,7 @@ header ul.nav li a:focus {
   line-height: 1.02 !important;
   letter-spacing: -3px !important;
   margin-bottom: 20px !important;
-  background: linear-gradient(135deg, #ffffff 20%, var(--blue-light) 55%, var(--cyan) 85%);
+  background: var(--grad-hot) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -574,15 +577,23 @@ h3.aligncenter::after {
    OPEN POSITIONS
    ============================================================ */
 
-/* Replace the tacky flash with a smooth gradient shimmer */
+/* Heading-like treatment for the flashing-text <p> (browsers parse it outside the h2) */
 .flashing-text {
-  background: linear-gradient(90deg, var(--gold), var(--blue-light), var(--cyan), var(--gold)) !important;
+  /* Typography — matches section headings */
+  font-family: 'Space Grotesk', 'Open Sans', sans-serif !important;
+  font-size: clamp(18px, 2.8vw, 28px) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  /* Animated version of --grad-hot, same hue family */
+  background: linear-gradient(90deg, #c4b5fd, #60a5fa, #00e5ff, #c4b5fd) !important;
   background-size: 300% !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
   animation: gradientShimmer 4s linear infinite !important;
   opacity: 1 !important;
+  display: block !important;
+  margin-bottom: 20px !important;
 }
 
 @keyframes gradientShimmer {
@@ -1048,7 +1059,7 @@ footer .social-network a:hover img {
   line-height: 1.08 !important;
   margin: 0 !important;
   padding: 0 !important;
-  background: linear-gradient(135deg, #ffffff 25%, var(--blue-light) 60%, var(--cyan) 95%) !important;
+  background: var(--grad-hot) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -1167,7 +1178,7 @@ section.hero-text a:hover { color: var(--cyan) !important; }
 .cv-title a,
 .cv-title a.cv-card {
   display: inline !important;
-  background: linear-gradient(135deg, #ffffff 18%, var(--blue-light) 56%, var(--cyan) 90%) !important;
+  background: var(--grad-hot) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
