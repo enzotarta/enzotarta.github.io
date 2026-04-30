@@ -1,44 +1,99 @@
-# Research topics. Each entry's `regex` is matched (case-insensitive) against
-# title + venue of every publication in _data/publications/{preprints,main}.yml
-# by tools/build_research_tree.py. Papers may match multiple topics.
-# `color` feeds the D3 force-directed graph on /research.html.
+# Research topics. Each entry has:
+#   - concept_keywords  matched (case-insensitive substring) against OpenAlex
+#                       concept and topic display names (rich semantic signal).
+#   - regex             title+venue fallback for papers OpenAlex doesn't index
+#                       or that fail to match concept keywords.
+# A paper is tagged with a topic if EITHER source matches.
 
 - id: compression
   label: "Compression & Pruning"
   color: "#60a5fa"
+  concept_keywords:
+    - compression
+    - pruning
+    - quantization
+    - knowledge distillation
+    - model compression
+    - sparsity
+    - low-rank
   regex: "compress|prun|sparsif|quantiz|distill|low.?rank"
 
 - id: gaussian
   label: "3D & Gaussian Splatting"
   color: "#06b6d4"
+  concept_keywords:
+    - gaussian splatting
+    - radiance
+    - voxel
+    - point cloud
+    - 3d reconstruction
+    - rendering
+    - computer graphics
+    - novel view synthesis
   regex: "gaussian.?splat|nerf|radiance|\\b3d\\b|point.?cloud"
 
 - id: debias
   label: "Debiasing & Fairness"
   color: "#f472b6"
-  regex: "debias|fair(ness)?|bias"
+  concept_keywords:
+    - bias
+    - fairness
+    - debiasing
+    - adversarial
+    - spurious
+  regex: "debias|fair(ness)?|\\bbias\\b|spurious"
 
 - id: regularization
   label: "Regularization"
   color: "#c4b5fd"
-  regex: "regulari[sz]|dropout|weight.?decay|normali[sz]"
+  concept_keywords:
+    - regularization
+    - dropout
+    - batch normalization
+    - weight decay
+    - generalization
+  regex: "regulari[sz]|dropout|weight.?decay|normali[sz]|generaliz"
 
 - id: privacy
   label: "Privacy"
   color: "#fbbf24"
-  regex: "privacy|differential"
+  concept_keywords:
+    - privacy
+    - differential privacy
+    - federated
+    - membership inference
+  regex: "privacy|differential|federat"
 
 - id: efficient
   label: "Efficient & Frugal AI"
   color: "#34d399"
-  regex: "efficien|frugal|edge|on-?device|energy|carbon|green"
+  concept_keywords:
+    - efficiency
+    - efficient
+    - edge computing
+    - on-device
+    - energy
+    - inference
+    - latency
+    - mobile
+  regex: "efficien|frugal|edge|on-?device|energy|carbon|green|latenc"
 
 - id: continual
   label: "Continual Learning"
   color: "#fb923c"
+  concept_keywords:
+    - continual learning
+    - catastrophic forgetting
+    - incremental learning
+    - lifelong
+    - transfer of learning
+    - domain adaptation
   regex: "continual|incremental|catastrophic|forget|life-?long"
 
 - id: nas
   label: "Architecture Search"
   color: "#a78bfa"
-  regex: "neural.?architect|\\bnas\\b"
+  concept_keywords:
+    - neural architecture search
+    - automl
+  regex: "neural.?architect|\\bnas\\b|automl"
