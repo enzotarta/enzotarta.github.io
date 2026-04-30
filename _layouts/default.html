@@ -2,8 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {% assign page_desc = page.description | default: site.description %}
+  {% assign page_image = page.image | default: site.default_image | absolute_url %}
+  {% assign page_url = page.url | absolute_url %}
+
+  <meta name="description" content="{{ page_desc | strip_newlines | strip }}">
+  <link rel="canonical" href="{{ page_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ page_image }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  {% if site.twitter_handle %}<meta name="twitter:creator" content="@{{ site.twitter_handle }}">{% endif %}
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page_desc | strip_newlines | strip }}">
+  <meta name="twitter:image" content="{{ page_image }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/img/logonew.png">
+  <link rel="apple-touch-icon" href="/img/logonew.png">
+
+  {% feed_meta %}
 
   <!-- Modern fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
