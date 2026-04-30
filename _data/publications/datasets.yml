@@ -1,0 +1,38 @@
+- id: x8ea-vh16-21
+  type: data
+  title: UniTOBrain
+  year: 2021
+  venue: IEEE Dataport
+  url: "https://dx.doi.org/10.21227/x8ea-vh16"
+  doi: 10.21227/x8ea-vh16
+  authors:
+    - Umberto Gava
+    - Federico D'Agata
+    - Edwin Bennink
+    - Enzo Tartaglione
+    - Daniele Perlo
+    - Annamaria Vernone
+    - Francesca Bertolino
+    - Eleonora Ficiarà
+    - Alessandro Cicerale
+    - Fabrizio Pizzagalli
+    - Caterina Guiot
+    - Marco Grangetto
+    - Mauro Bergui
+- id: 9fsv-tm25-21
+  type: data
+  title: UNITOPATHO
+  year: 2021
+  venue: IEEE Dataport
+  url: "https://dx.doi.org/10.21227/9fsv-tm25"
+  doi: 10.21227/9fsv-tm25
+  authors:
+    - Luca Bertero
+    - Carlo Alberto Barbano
+    - Daniele Perlo
+    - Enzo Tartaglione
+    - Paola Cassoni
+    - Marco Grangetto
+    - Attilio Fiandrotti
+    - Alessandro Gambella
+    - Luca Cavallo

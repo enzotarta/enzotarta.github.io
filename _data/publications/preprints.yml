@@ -1,0 +1,105 @@
+- id: salman2025compression
+  type: article
+  title: "Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and Future Directions"
+  year: 2025
+  venue: arXiv e-prints
+  url: "https://arxiv.org/pdf/2502.19457"
+  doi: ""
+  authors:
+    - Muhammad Salman Ali
+    - Chaoning Zhang
+    - Marco Cagnazzo
+    - Giuseppe Valenzise
+    - Enzo Tartaglione
+    - Sung-Ho Bae
+- id: gailhard2025feature
+  type: article
+  title: Feature-aware Hypergraph Generation via Next-Scale Prediction
+  year: 2025
+  venue: "arXiv preprint arXiv:2506.01467"
+  url: ""
+  doi: ""
+  authors:
+    - Dorian Gailhard
+    - Enzo Tartaglione
+    - Lirida Naviner
+    - Jhony H Giraldo
+- id: di2025gode
+  type: article
+  title: "GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression"
+  year: 2025
+  venue: "arXiv preprint arXiv:2501.13558"
+  url: "https://arxiv.org/pdf/2501.13558"
+  doi: ""
+  authors:
+    - Francesco Di Sario
+    - Riccardo Renzulli
+    - Marco Grangetto
+    - Akihiro Sugimoto
+    - Enzo Tartaglione
+- id: mazouz2025lightweight
+  type: article
+  title: Lightweight Embedded FPGA Deployment of Learned Image Compression with Knowledge Distillation and Hybrid Quantization
+  year: 2025
+  venue: "arXiv preprint arXiv:2503.04832"
+  url: ""
+  doi: ""
+  authors:
+    - Alaa Mazouz
+    - Sumanta Chaudhuri
+    - Marco Cagnanzzo
+    - Mihai Mitrea
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+- id: quelennec2025memory
+  type: article
+  title: Memory Constrained Dynamic Subnetwork Update for Transfer Learning
+  year: 2025
+  venue: "arXiv preprint arXiv:2510.20979"
+  url: ""
+  doi: ""
+  authors:
+    - Ael Quelennec
+    - Pavlo Mozharovskyi
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: mazouz2025security
+  type: article
+  title: Security and real-time fpga integration for learned image compression
+  year: 2025
+  venue: "arXiv preprint arXiv:2503.04867"
+  url: ""
+  doi: ""
+  authors:
+    - Alaa Mazouz
+    - Carl De Sousa Tria
+    - Sumanta Chaudhuri
+    - Attilio Fiandrotti
+    - Marco Cagnanzzo
+    - Mihai Mitrea
+    - Enzo Tartaglione
+- id: diecidue2025silence
+  type: article
+  title: "The silence of the weights: an investigation of structural pruning strategies for attention-based audio signal architectures"
+  year: 2025
+  venue: "arXiv preprint arXiv:2509.26207"
+  url: ""
+  doi: ""
+  authors:
+    - Andrea Diecidue
+    - Carlo Alberto Barbano
+    - Piero Fraternali
+    - Mathieu Fontaine
+    - Enzo Tartaglione
+- id: liao2024nepenthe
+  type: article
+  title: "NEPENTHE: Entropy-Based Pruning as a Neural Network Depth's Reducer"
+  year: 2024
+  venue: "arXiv preprint arXiv:2404.16890"
+  url: "https://arxiv.org/pdf/2404.16890"
+  doi: ""
+  authors:
+    - Zhu Liao
+    - Victor Quetu
+    - Van-Tam Nguyen
+    - Enzo Tartaglione

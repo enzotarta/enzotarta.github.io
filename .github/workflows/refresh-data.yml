@@ -1,0 +1,40 @@
+name: Refresh publications and citations
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # daily at 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install bibtexparser
+
+      - name: Refresh publications from BibBase
+        run: python tools/build_publications.py
+
+      - name: Refresh citations from OpenAlex
+        run: python tools/build_citations.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/publications _data/citations.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "data: refresh publications + citations"
+            git push
+          fi

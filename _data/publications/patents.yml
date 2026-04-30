@@ -1,0 +1,115 @@
+- id: presta2023method
+  type: misc
+  title: Method for learned image compression and related autoencoder
+  year: 2025
+  venue: ""
+  url: "https://www.freepatentsonline.com/y2025/0088648.html"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Attilio Fiandrotti
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: spadaro2024method
+  type: misc
+  title: METHOD FOR ENHANCED IMAGE ENCODING AND DECODING USING A GRAPH-BASED ATTENTION BLOCK, AND RELATED ENCODER AND DECODER
+  year: 2024
+  venue: ""
+  url: ""
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Enzo Tartaglione
+    - ZULUAGA Jhony Heriberto GIRALDO
+    - Marco Grangetto
+    - Attilio Fiandrotti
+    - others
+- id: presta2024method
+  type: misc
+  title: METHOD FOR LEARNED IMAGE COMPRESSION AND RELATED AUTOENCODER
+  year: 2024
+  venue: ""
+  url: "https://iris.unito.it/handle/2318/2037386"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - Enzo Tartaglione
+    - others
+- id: presta2024method
+  type: misc
+  title: METHOD FOR LEARNED IMAGE DECOMPRESSION AND RELATED DECODER NETWORK AND DECODER-ENCODER ARCHITECTURE
+  year: 2024
+  venue: ""
+  url: ""
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Gabriele Spadaro
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - others
+- id: presta2024method
+  type: misc
+  title: METHOD FOR LEARNED IMAGE DECOMPRESSION AND RELATED DECODER NETWORK AND DECODER-ENCODER ARCHITECTURE
+  year: 2024
+  venue: ""
+  url: "https://iris.unito.it/bitstream/2318/2037770/2/DCC_adapter.pdf"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Gabriele Spadaro
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - others
+- id: spadaro2024method
+  type: misc
+  title: METHOD FOR REDUCING LATENCY IN VIDEO TRANSMISSION
+  year: 2024
+  venue: ""
+  url: ""
+  doi: ""
+  authors:
+    - CAGNAZZO Marco, VALENZISE Giuseppe, TARTAGLIONE Enzo VIJAYARATNAM Melan
+- id: spadaro2024method
+  type: misc
+  title: METHOD FOR ENHANCED IMAGE ENCODING AND DECODING USING A GRAPH-BASED ATTENTION BLOCK, AND RELATED ENCODER AND DECODER
+  year: 2023
+  venue: ""
+  url: ""
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Alberto Presta
+    - Enzo Tartaglione
+    - Jhony Heriberto Giraldo Zuluaga
+    - Marco Grangetto
+    - Attilio Fiandrotti
+- id: tartaglione2022method
+  type: misc
+  title: Method and apparatus for pruning neural networks
+  year: 2022
+  venue: ""
+  url: "https://patentimages.storage.googleapis.com/ad/94/26/67226b0ad06a5f/US20220284298A1.pdf"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Marco Grangetto
+    - Francesco and Odierna
+    - Andrea Bragagnolo
+    - Attilio Fiandrotti
+- id: fiandrotti2021neural
+  type: misc
+  title: Neural networks having reduced number of parameters
+  year: 2021
+  venue: Google Patents
+  url: "https://patentimages.storage.googleapis.com/43/be/92/341f4abfdb2ab8/US20210142175A1.pdf"
+  doi: ""
+  authors:
+    - Attilio Fiandrotti
+    - Gianluca Francini
+    - Skjalg Lepsoy
+    - Enzo Tartaglione

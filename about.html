@@ -4,59 +4,143 @@ title: Enzo Tartaglione – Publications
 nav: about
 ---
 <section id="inner-headline">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="pageTitle">Publications</h2>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">Publications</h2>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="cv-summary">
-  <div class="container">
-    <div class="cv-summary-grid">
-        <a href="#preprints" class="cv-card">Preprints</a>
-        <a href="#publications" class="cv-card">Papers</a>
-        <a href="#patents" class="cv-card">Patents</a>
-        <a href="#datasets" class="cv-card">Datasets</a>
+    <div class="container">
+        <div class="cv-summary-grid">
+            <a href="#metrics"   class="cv-card">Metrics</a>
+            <a href="#preprints" class="cv-card">Preprints</a>
+            <a href="#papers"    class="cv-card">Papers</a>
+            <a href="#patents"   class="cv-card">Patents</a>
+            <a href="#datasets"  class="cv-card">Datasets</a>
+        </div>
     </div>
-  </div>
 </section>
 
-<div class="cv-section" id="editor">
-    <div class="container">
-        <h2 class="cv-title"><a href="#preprints" class="cv-card">Preprints</a></h2>
-        <div class="about-logo wow fadeInRight animated" data-wow-animation-name="none">
-            <script src="https://bibbase.org/show?bib=https://bibbase.org/f/eigNBhSMoESt5Ygkm/preprints.bib&jsonp=1"></script> 
-        </div>
-    </div>
-</div>
+{% assign c = site.data.citations %}
 
-<div class="cv-section" id="editor">
+<section class="cv-content" id="metrics-section">
     <div class="container">
-        <h2 class="cv-title"><a href="#publications" class="cv-card">Papers</a></h2>
-        <div class="about-logo wow fadeInRight animated" data-wow-animation-name="none">
-            <script src="https://bibbase.org/show?bib=https://bibbase.org/show?bib=https://bibbase.org/f/eigNBhSMoESt5Ygkm/main.bib&jsonp=1"></script> 
-        </div>
-    </div>
-</div>
+        <h2 id="metrics">Metrics</h2>
 
-<div class="cv-section" id="editor">
-    <div class="container">
-        <h2 class="cv-title"><a href="#patents" class="cv-card">Patents</a></h2>
-        <div class="about-logo wow fadeInRight animated" data-wow-animation-name="none">
-            <h2 class="aligncenter">Patents</h2>
-            <script src="https://bibbase.org/show?bib=https://bibbase.org/f/eigNBhSMoESt5Ygkm/patents.bib&jsonp=1"></script> 
+        <div class="pub-metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">{{ c.cited_by_count }}</div>
+                <div class="metric-label">Citations</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">{{ c.h_index }}</div>
+                <div class="metric-label">h-index</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">{{ c.i10_index }}</div>
+                <div class="metric-label">i10-index</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">{{ c.works_count }}</div>
+                <div class="metric-label">Works</div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="cv-section" id="editor">
-    <div class="container">
-        <h2 class="cv-title"><a href="#datasets" class="cv-card">Datasets</a></h2>
-        <div class="about-logo wow fadeInRight animated" data-wow-animation-name="none">
-            <script src="https://bibbase.org/show?bib=https://bibbase.org/f/eigNBhSMoESt5Ygkm/datasets.bib&jsonp=1"></script> 
+        <div class="pub-chart-wrap">
+            <canvas id="citationsChart" height="180"></canvas>
         </div>
+
+        <p class="pub-source">
+            Source: <a href="https://openalex.org/{{ c.openalex_id }}" target="_blank" rel="noopener">OpenAlex</a>,
+            updated {{ c.updated }}.
+            See also <a href="{{ c.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+
+        <h2 id="preprints">Preprints</h2>
+        {% include publication-list.html entries=site.data.publications.preprints %}
+
+        <h2 id="papers">Papers</h2>
+        {% include publication-list.html entries=site.data.publications.main %}
+
+        <h2 id="patents">Patents</h2>
+        {% include publication-list.html entries=site.data.publications.patents %}
+
+        <h2 id="datasets">Datasets</h2>
+        {% include publication-list.html entries=site.data.publications.datasets %}
     </div>
-</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+    var data = {{ site.data.citations | jsonify }};
+    var ctx = document.getElementById('citationsChart');
+    if (!ctx || !data || !data.years || !data.years.length) return;
+
+    var styles = getComputedStyle(document.documentElement);
+    var grad = ctx.getContext('2d').createLinearGradient(0, 0, 0, 280);
+    grad.addColorStop(0, 'rgba(96,165,250,0.95)');
+    grad.addColorStop(1, 'rgba(6,182,212,0.55)');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: data.years,
+            datasets: [{
+                label: 'Citations',
+                data: data.citations_by_year,
+                backgroundColor: grad,
+                borderRadius: 4,
+                yAxisID: 'y',
+                order: 2,
+            }, {
+                label: 'Publications',
+                data: data.works_by_year,
+                type: 'line',
+                borderColor: '#c4b5fd',
+                backgroundColor: 'rgba(196,181,253,0.15)',
+                tension: 0.35,
+                pointRadius: 3,
+                pointBackgroundColor: '#c4b5fd',
+                yAxisID: 'y1',
+                order: 1,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { intersect: false, mode: 'index' },
+            plugins: {
+                legend: { labels: { color: '#94a3b8' } },
+                tooltip: {
+                    backgroundColor: 'rgba(15,23,42,0.95)',
+                    borderColor: 'rgba(96,165,250,0.4)',
+                    borderWidth: 1,
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { color: '#94a3b8' },
+                    grid:  { color: 'rgba(255,255,255,0.04)' }
+                },
+                y: {
+                    position: 'left',
+                    title: { display: true, text: 'Citations', color: '#60a5fa' },
+                    ticks: { color: '#94a3b8' },
+                    grid:  { color: 'rgba(255,255,255,0.06)' }
+                },
+                y1: {
+                    position: 'right',
+                    title: { display: true, text: 'Publications', color: '#c4b5fd' },
+                    ticks: { color: '#94a3b8' },
+                    grid:  { display: false }
+                }
+            }
+        }
+    });
+})();
+</script>

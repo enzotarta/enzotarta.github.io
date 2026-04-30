@@ -1,0 +1,1157 @@
+- id: nguyen2026efficient
+  type: inproceedings
+  title: Efficient Resource-Constrained Training of Vision Transformers via Subspace Optimization
+  year: 2026
+  venue: The Fourteenth International Conference on Learning Representations
+  url: "https://openreview.net/forum?id=0nvQ5kHXf4"
+  doi: ""
+  authors:
+    - Le-Trung Nguyen
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: roos2026met
+  type: inproceedings
+  title: "How I Met Your Bias: Investigating Bias Amplification in Diffusion Models"
+  year: 2026
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://arxiv.org/pdf/2512.20233"
+  doi: ""
+  authors:
+    - Nathan Roos
+    - Ekaterina Iakovleva
+    - Ani Gjergji
+    - Vito Paolo Pastore
+    - Enzo Tartaglione
+- id: haider2025inr
+  type: inproceedings
+  title: "I-INR: Iterative Implicit Neural Representations"
+  year: 2026
+  venue: Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026). AAAI Press
+  url: "https://arxiv.org/pdf/2504.17364"
+  doi: ""
+  authors:
+    - Ali Haider
+    - Muhammad Salman Ali
+    - Maryam Qamar
+    - Tahir Khalil
+    - Soo Ye Kim
+    - Jihyong Oh
+    - Enzo Tartaglione
+    - Sung-Ho Bae
+- id: anonymous2026instant
+  type: inproceedings
+  title: "INSTANT: Compressing Gradients and Activations for Resource-Efficient Training"
+  year: 2026
+  venue: The Fourteenth International Conference on Learning Representations
+  url: "https://openreview.net/forum?id=P2q6Y7UweV"
+  doi: ""
+  authors:
+    - Tuan-Kiet Doan
+    - Trung-Hieu Tran
+    - Enzo Tartaglione
+    - Nikola Simidjievski
+    - Van-Tam Nguyen
+- id: tran2025rave
+  type: article
+  title: "RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting"
+  year: 2026
+  venue: 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)
+  url: "https://arxiv.org/pdf/2512.07052"
+  doi: ""
+  authors:
+    - Hoang-Nhat Tran
+    - Francesco Di Sario
+    - Gabriele Spadaro
+    - Giuseppe Valenzise
+    - Enzo Tartaglione
+- id: anonymous2026study
+  type: inproceedings
+  title: Study of Training Dynamics for Memory-Constrained Fine-Tuning
+  year: 2026
+  venue: The Fourteenth International Conference on Learning Representations
+  url: "https://openreview.net/forum?id=BhfIg0tuti"
+  doi: ""
+  authors:
+    - Ael Quelennec
+    - Nour Hezbri
+    - Pavlo Mozharovskyi
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: marouf2025no
+  type: article
+  title: "Ask and Remember: A Questions-Only Replay Strategy for Continual Visual Question Answering"
+  year: 2025
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
+  url: "https://arxiv.org/pdf/2502.04469"
+  doi: ""
+  authors:
+    - Imad Eddine Marouf
+    - Enzo Tartaglione
+    - Stephane Lathuiliere
+    - Joost van de Weijer
+- id: nguyen2025beyond
+  type: inproceedings
+  title: "Beyond Low-rank Decomposition: A Shortcut Approach for Efficient On-Device Learning"
+  year: 2025
+  venue: Forty-second International Conference on Machine Learning
+  url: "https://openreview.net/forum?id=YWUYqN2laV"
+  doi: ""
+  authors:
+    - Le-Trung Nguyen
+    - Ael Quelennec
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: renzulli2025capsule
+  type: article
+  title: Capsule Networks Do Not Need to Model Everything
+  year: 2025
+  venue: Pattern Recognition
+  url: "https://www.sciencedirect.com/science/article/pii/S0031320325007794/pdfft?md5=f944bdf7fd039f6b42f5e3e50db40265&pid=1-s2.0-S0031320325007794-main.pdf"
+  doi: ""
+  authors:
+    - Riccardo Renzulli
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: spadaro2025denoising
+  type: inproceedings
+  title: Denoising Diffusion Probabilistic Model for Point Cloud Compression at Low Bit-Rates
+  year: 2025
+  venue: IEEE International Conference on Multimedia and Expo (ICME)
+  url: "https://arxiv.org/pdf/2505.13316"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Alberto Presta
+    - Jhony H Giraldo
+    - Marco Grangetto
+    - Wei Hu
+    - Giuseppe Valenzise
+    - Attilio Fiandrotti
+    - Enzo Tartaglione
+- id: ciranni2025diffusing
+  type: inproceedings
+  title: "Diffusing DeBias: Synthetic Bias Amplification for Model Debiasing"
+  year: 2025
+  venue: The Thirty-ninth Annual Conference on Neural Information Processing Systems
+  url: "https://openreview.net/forum?id=66Z5tS8E45"
+  doi: ""
+  authors:
+    - Massimiliano Ciranni
+    - Vito Paolo Pastore
+    - Roberto Di Via
+    - Enzo Tartaglione
+    - Francesca Odone
+    - Vittorio Murino
+- id: olivi2025efficient
+  type: article
+  title: Efficient adaptation of deep neural networks for semantic segmentation in space applications
+  year: 2025
+  venue: Scientific Reports
+  url: "https://www.nature.com/articles/s41598-025-99192-5"
+  doi: ""
+  authors:
+    - Leonardo Olivi
+    - Edoardo Santero Mormile
+    - Enzo Tartaglione
+- id: presta2024efficient
+  type: inproceedings
+  title: Efficient Progressive Image Compression with Variance-aware Masking
+  year: 2025
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://openaccess.thecvf.com/content/WACV2025/papers/Presta_Efficient_Progressive_Image_Compression_with_Variance-Aware_Masking_WACV_2025_paper.pdf"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - Pamela Cosman
+- id: ali2024elmgs
+  type: inproceedings
+  title: "ELMGS: Enhancing memory and computation scaLability through coMpression for 3D Gaussian Splatting"
+  year: 2025
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://openaccess.thecvf.com/content/WACV2025/papers/Ali_ELMGS_Enhancing_Memory_and_Computation_Scalability_through_Compression_for_3D_WACV_2025_paper.pdf"
+  doi: ""
+  authors:
+    - Muhammad Salman Ali
+    - Sung-Ho Bae
+    - Enzo Tartaglione
+- id: marouf2023rethinking
+  type: article
+  title: Enhancing Plasticity for First Session Adaptation Continual Learning
+  year: 2025
+  venue: CoLLAs
+  url: "https://arxiv.org/pdf/2310.11482.pdf"
+  doi: ""
+  authors:
+    - Imad Eddine Marouf
+    - Subhankar Roy
+    - Stephane Lathuiliere
+    - Enzo Tartaglione
+- id: wang2025folder
+  type: article
+  title: "FOLDER: Accelerating Multi-modal Large Language Models with Enhanced Performance"
+  year: 2025
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
+  url: "https://arxiv.org/pdf/2501.02430"
+  doi: ""
+  authors:
+    - Haicheng Wang
+    - Zhemeng Yu
+    - Gabriele Spadaro
+    - Chen Ju
+    - Victor Quetu
+    - Shuai Xiao
+    - Enzo Tartaglione
+- id: gailhard2024hygene
+  type: inproceedings
+  title: "HYGENE: A Diffusion-based Hypergraph Generation Method"
+  year: 2025
+  venue: Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025). AAAI Press
+  url: "https://ojs.aaai.org/index.php/AAAI/article/view/33833/35988"
+  doi: ""
+  authors:
+    - Dorian Gailhard
+    - Enzo Tartaglione
+    - Lirida Naviner
+    - Jhony H Giraldo
+- id: craparotta2025improving
+  type: inproceedings
+  title: Improving Generative Data Augmentation with Prior-Knowledge for Dysplasia Grading of Colorectal Polyps
+  year: 2025
+  venue: International Conference on Image Analysis and Processing
+  url: ""
+  doi: ""
+  authors:
+    - Roberto Craparotta
+    - Desislav Ivanov
+    - Carlo Alberto Barbano
+    - Enzo Tartaglione
+    - Alessandro Gambella
+    - Luca Cavallo
+    - Paola Cassoni
+    - Luca Bertero
+    - Marco Grangetto
+- id: quetu2024lacoot
+  type: article
+  title: "LaCoOT: Layer Collapse through Optimal Transport"
+  year: 2025
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
+  url: "https://arxiv.org/pdf/2406.08933"
+  doi: ""
+  authors:
+    - Victor Quetu
+    - Nour Hezbri
+    - Enzo Tartaglione
+- id: PILO2025102030
+  type: article
+  title: "LayerFold: A Python library to reduce the depth of neural networks"
+  year: 2025
+  venue: SoftwareX
+  url: "https://www.sciencedirect.com/science/article/pii/S2352711024004011"
+  doi: "https://doi.org/10.1016/j.softx.2024.102030"
+  authors:
+    - Giommaria Pilo
+    - Nour Hezbri
+    - André Pereira e Ferreira
+    - Victor Quétu
+    - Enzo Tartaglione
+- id: dalmasso2025neural
+  type: inproceedings
+  title: Neural Velocity for hyperparameter tuning
+  year: 2025
+  venue: 2025 International Joint Conference on Neural Networks (IJCNN)
+  url: "https://arxiv.org/pdf/2507.05309"
+  doi: ""
+  authors:
+    - Gianluca Dalmasso
+    - Andrea Bragagnolo
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: ciranni2025say
+  type: article
+  title: "Say My Name: a Model's Bias Discovery Framework"
+  year: 2025
+  venue: Transactions on Machine Learning Research
+  url: "https://openreview.net/forum?id=EuUxiiDZ7d"
+  doi: ""
+  authors:
+    - Massimiliano Ciranni
+    - Luca Molinaro
+    - Carlo Alberto Barbano
+    - Attilio Fiandrotti
+    - Vittorio Murino
+    - Vito Paolo Pastore
+    - Enzo Tartaglione
+- id: 10843163
+  type: article
+  title: "STanH: Parametric Quantization for Variable Rate Learned Image Compression"
+  year: 2025
+  venue: IEEE Transactions on Image Processing
+  url: "https://ieeexplore.ieee.org/abstract/document/10843163"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: spadaro2025tep
+  type: article
+  title: "TEP-ones: A simple yet effective approach for transferability estimation of pruned backbones"
+  year: 2025
+  venue: Neurocomputing
+  url: ""
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Andrea Bragagnolo
+    - Riccardo Renzulli
+    - Marco Grangetto
+    - Jhony H Giraldo
+    - Attilio Fiandrotti
+    - Enzo Tartaglione
+- id: liao2025till
+  type: inproceedings
+  title: "Till the Layers Collapse: Compressing a Deep Neural Network Through the Lenses of Batch Normalization Layers"
+  year: 2025
+  venue: Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025). AAAI Press
+  url: "https://ojs.aaai.org/index.php/AAAI/article/view/34058"
+  doi: ""
+  authors:
+    - Zhu Liao
+    - Nour Hezbri
+    - Victor Quetu
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: WANG2025129422
+  type: article
+  title: Unified Pipeline for Generalized Mental State Detection Using EEG Signals
+  year: 2025
+  venue: Expert Systems with Applications
+  url: "https://www.sciencedirect.com/science/article/pii/S0957417425030386"
+  doi: ""
+  authors:
+    - Yinghao Wang
+    - Rayan Elrawas
+    - Anh-Dung Nguyen
+    - Maxime Girard
+    - Pavlo Mozharovskyi
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: 10.1007/978-3-031-78169-8_20
+  type: inproceedings
+  title: "WaterMAS: Sharpness-Aware Maximization for Neural Network Watermarking"
+  year: 2025
+  venue: Pattern Recognition
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-78169-8_20"
+  doi: ""
+  authors:
+    - Carl De Sousa Trias
+    - Mihai Mitrea
+    - Attilio Fiandrotti
+    - Marco Cagnazzo
+    - Sumanta Chaudhuri
+    - Enzo Tartaglione
+- id: spadaro2024wignet
+  type: inproceedings
+  title: "WiGNet: Windowed Vision Graph Neural Network"
+  year: 2025
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://arxiv.org/pdf/2410.00807"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Marco Grangetto
+    - Attilio Fiandrotti
+    - Enzo Tartaglione
+    - Jhony H Giraldo
+- id: nguyen2024activation
+  type: inproceedings
+  title: Activation Map Compression through Tensor Decomposition for Deep Learning
+  year: 2024
+  venue: The Thirty-eighth Annual Conference on Neural Information Processing Systems
+  url: "https://openreview.net/forum?id=S93hrwT8u9"
+  doi: ""
+  authors:
+    - Le-Trung Nguyen
+    - Ael Quelennec
+    - Enzo Tartaglione
+    - Samuel Tardieu
+    - Van-Tam Nguyen
+- id: 10849832
+  type: inproceedings
+  title: "ALICE: Adapt your Learnable Image Compression modEl for variable bitrates"
+  year: 2024
+  venue: 2024 IEEE International Conference on Visual Communications and Image Processing (VCIP)
+  url: "https://ieeexplore.ieee.org/document/10849832"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Muhammad Salman Ali
+    - Alberto Presta
+    - Giommaria Pilo
+    - Sung-Ho Bae
+    - Jhony H. Giraldo
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - Enzo Tartaglione
+- id: di2024boost
+  type: article
+  title: "Boost Your NeRF: A Model-Agnostic Mixture of Experts Framework for High Quality and Efficient Rendering"
+  year: 2024
+  venue: European Conference on Computer Vision (ECCV)
+  url: "https://www.springerprofessional.de/en/boost-your-nerf-a-model-agnostic-mixture-of-experts-framework-fo/50194746"
+  doi: ""
+  authors:
+    - Francesco Di Sario
+    - Riccardo Renzulli
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: nahon2024debiasing
+  type: article
+  title: "Debiasing surgeon: fantastic weights and how to find them"
+  year: 2024
+  venue: European Conference on Computer Vision (ECCV)
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-73013-9_25"
+  doi: ""
+  authors:
+    - Remi Nahon
+    - Ivan Luiz De Moura Matos
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: presta2024domain
+  type: inproceedings
+  title: Domain Adaptation for Learned Image Compression with Supervised Adapters
+  year: 2024
+  venue: 2024 Data Compression Conference (DCC)
+  url: "https://ieeexplore.ieee.org/document/10533818"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Gabriele Spadaro
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: quetu2024dsd2
+  type: inproceedings
+  title: "DSD$^2$: Can We Dodge Sparse Double Descent and Compress the Neural Network Worry-Free?"
+  year: 2024
+  venue: Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024). AAAI Press
+  url: "https://ojs.aaai.org/index.php/AAAI/article/view/29393/30631"
+  doi: ""
+  authors:
+    - Victor Quetu
+    - Enzo Tartaglione
+- id: desousa2024find
+  type: inproceedings
+  title: "Find the Lady: Permutation and Re-Synchronization of Deep Neural Networks"
+  year: 2024
+  venue: Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024). AAAI Press
+  url: "https://ojs.aaai.org/index.php/AAAI/article/view/30091/31922"
+  doi: ""
+  authors:
+    - Carl De Sousa Trias
+    - Mihai Mitrea
+    - Attilio Fiandrotti
+    - Marco Cagnazzo
+    - Sumanta Chaudhuri
+    - Enzo Tartaglione
+- id: 10647413
+  type: inproceedings
+  title: "Gabic: Graph-Based Attention Block for Image Compression"
+  year: 2024
+  venue: 2024 IEEE International Conference on Image Processing (ICIP)
+  url: "https://ieeexplore.ieee.org/document/10647413"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Alberto Presta
+    - Enzo Tartaglione
+    - Jhony H. Giraldo
+    - Marco Grangetto
+    - Attilio Fiandrotti
+- id: girard2024memory
+  type: inproceedings
+  title: Memory-Optimized Once-For-All Network
+  year: 2024
+  venue: European Conference on Computer Vision
+  url: "https://arxiv.org/pdf/2409.05900"
+  doi: ""
+  authors:
+    - Maxime Girard
+    - Victor Quetu
+    - Samuel Tardieu
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: marouf2024mini
+  type: inproceedings
+  title: "Mini but Mighty: Finetuning ViTs with Mini Adapters"
+  year: 2024
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://openaccess.thecvf.com/content/WACV2024/papers/Marouf_Mini_but_Mighty_Finetuning_ViTs_With_Mini_Adapters_WACV_2024_paper.pdf"
+  doi: ""
+  authors:
+    - Imad Eddine Marouf
+    - Enzo Tartaglione
+    - Stephane Lathuiliere
+- id: quetu2024simpler
+  type: inproceedings
+  title: "The Simpler The Better: An Entropy-Based Importance Metric To Reduce Neural Networks' Depth"
+  year: 2024
+  venue: Joint European Conference on Machine Learning and Knowledge Discovery in Databases
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-70365-2_6"
+  doi: ""
+  authors:
+    - Victor Quetu
+    - Zhu Liao
+    - Enzo Tartaglione
+- id: quelennec2024towards
+  type: inproceedings
+  title: "Towards On-device Learning on the Edge: Ways to Select Neurons to Update under a Budget Constraint"
+  year: 2024
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
+  url: "https://openaccess.thecvf.com/content/WACV2024W/SCIoT/papers/Quelennec_Towards_On-Device_Learning_on_the_Edge_Ways_To_Select_Neurons_WACVW_2024_paper.pdf"
+  doi: ""
+  authors:
+    - Ael Quelennec
+    - Enzo Tartaglione
+    - Pavlo Mozharovskyi
+    - Van-Tam Nguyen
+- id: Ali_2024_BMVC
+  type: inproceedings
+  title: "Trimming the Fat: Efficient Compression of 3D Gaussian Splats through Pruning"
+  year: 2024
+  venue: 35th British Machine Vision Conference 2024, BMVC 2024, Glasgow, UK, November 25-28, 2024
+  url: "https://papers.bmvc2024.org/0358.pdf"
+  doi: ""
+  authors:
+    - Muhammad Salman Ali
+    - Maryam Qamar
+    - Sung-Ho Bae
+    - Enzo Tartaglione
+- id: 10791867
+  type: article
+  title: Unsupervised Learning of Unbiased Visual Representations
+  year: 2024
+  venue: IEEE Transactions on Artificial Intelligence
+  url: "https://ieeexplore.ieee.org/document/10791867"
+  doi: ""
+  authors:
+    - Carlo Alberto Barbano
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: marouf2023weighted
+  type: article
+  title: Weighted Ensemble Models Are Strong Continual Learners
+  year: 2024
+  venue: European Conference on Computer Vision (ECCV)
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-73209-6_18"
+  doi: ""
+  authors:
+    - Imad Eddine Marouf
+    - Subhankar Roy
+    - Enzo Tartaglione
+    - Stephane Lathuiliere
+- id: presta2023differentiable
+  type: inproceedings
+  title: A Differentiable Entropy Model for Learned Image Compression
+  year: 2023
+  venue: International Conference on Image Analysis and Processing
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-43148-7_28"
+  doi: ""
+  authors:
+    - Alberto Presta
+    - Attilio Fiandrotti
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: dsousa
+  type: inproceedings
+  title: A hitchhiker's guide to white-box neural network watermarking robustness
+  year: 2023
+  venue: European Workshop on Visual Information Processing
+  url: ""
+  doi: ""
+  authors:
+    - Carl De Sousa Trias
+    - Mihai Mitrea
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Cagnazzo
+    - Sumanta Chaudhuri
+- id: wang2023optimized
+  type: inproceedings
+  title: "AIoT-based Neural Decoding and Neurofeedback for Accelerated Cognitive Training: Vision, Directions and Preliminary Results"
+  year: 2023
+  venue: 22nd IEEE Statistical Signal Processing Workshop
+  url: ""
+  doi: ""
+  authors:
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+    - Tuan Dinh
+- id: nahon2023mining
+  type: inproceedings
+  title: "All predictions matter: an online video prediction approach"
+  year: 2023
+  venue: European Workshop on Visual Information Processing
+  url: ""
+  doi: ""
+  authors:
+    - Melan Vijayaratnam
+    - Giuseppe Valenzise
+    - Enzo Tartaglione
+    - Marco Cagnazzo
+- id: liao2023can
+  type: inproceedings
+  title: "Can Unstructured Pruning Reduce the Depth in Deep Neural Networks?"
+  year: 2023
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision
+  url: "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Liao_Can_Unstructured_Pruning_Reduce_the_Depth_in_Deep_Neural_Networks_ICCVW_2023_paper.pdf"
+  doi: ""
+  authors:
+    - Zhu Liao
+    - Victor Quetu
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: quetu2023dodginge
+  type: inproceedings
+  title: "Can we avoid Double Descent in Deep Neural Networks?"
+  year: 2023
+  venue: 2023 IEEE International Conference on Image Processing (ICIP)
+  url: "https://arxiv.org/pdf/2302.13259"
+  doi: ""
+  authors:
+    - Victor Quetu
+    - Enzo Tartaglione
+- id: Deng_2023_WACV
+  type: inproceedings
+  title: "Compressing Explicit Voxel Grid Representations: Fast NeRFs Become Also Small"
+  year: 2023
+  venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+  url: "https://openaccess.thecvf.com/content/WACV2023/papers/Deng_Compressing_Explicit_Voxel_Grid_Representations_Fast_NeRFs_Become_Also_Small_WACV_2023_paper.pdf"
+  doi: ""
+  authors:
+    - Chenxi Lola Deng
+    - Enzo Tartaglione
+- id: TARTAGLIONE2023126612
+  type: article
+  title: Disentangling private classes through regularization
+  year: 2023
+  venue: Neurocomputing
+  url: "https://www.sciencedirect.com/science/article/pii/S092523122300735X"
+  doi: "https://doi.org/10.1016/j.neucom.2023.126612"
+  authors:
+    - Enzo Tartaglione
+    - Francesca Gennari
+    - Victor Quétu
+    - Marco Grangetto
+- id: milovanovic2023learn
+  type: inproceedings
+  title: Learn how to Prune Pixels for Multi-view Neural Image-based Synthesis
+  year: 2023
+  venue: IEEE International Cnference on Multimedia and Expo - Immersive Media Compression Workshop
+  url: "https://arxiv.org/pdf/2305.03572"
+  doi: ""
+  authors:
+    - Marta Milovanovic
+    - Enzo Tartaglione
+    - Marco Cagnazzo
+    - Felix Henry
+- id: nahon2023mental
+  type: inproceedings
+  title: "Mental State Classification Using EEG Signals: Ethics, Law and Challenges"
+  year: 2023
+  venue: Joint European Conference on Machine Learning and Knowledge Discovery in Databases
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_28"
+  doi: ""
+  authors:
+    - Remi Nahon
+    - Nasim Bagheri
+    - Giovanna Varni
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: nahon2023mining
+  type: inproceedings
+  title: "Mental state classification using EEG signals: ethics, law and challenges"
+  year: 2023
+  venue: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery - workshop track
+  url: ""
+  doi: ""
+  authors:
+    - Remi Nahon
+    - Nasim Bagheri
+    - Giovanna Varni
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: Nahon_2023_ICCV
+  type: inproceedings
+  title: Mining bias-target Alignment from Voronoi Cells
+  year: 2023
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
+  url: "https://openaccess.thecvf.com/content/ICCV2023/papers/Nahon_Mining_bias-target_Alignment_from_Voronoi_Cells_ICCV_2023_paper.pdf"
+  doi: ""
+  authors:
+    - R\'emi Nahon
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: 10.3389/fninf.2023.852105
+  type: article
+  title: "Neural network-derived perfusion maps: A model-free approach to computed tomography perfusion in patients with acute ischemic stroke"
+  year: 2023
+  venue: Frontiers in Neuroinformatics
+  url: "https://www.frontiersin.org/articles/10.3389/fninf.2023.852105"
+  doi: 10.3389/fninf.2023.852105
+  authors:
+    - Umberto A. Gava
+    - Federico D’Agata
+    - Enzo Tartaglione
+    - Riccardo Renzulli
+    - Marco Grangetto
+    - Francesca Bertolino
+    - Ambra Santonocito
+    - Edwin Bennink
+    - Giacomo Vaudano
+    - Andrea Boghi
+    - Mauro Bergui
+- id: wang2023optimized
+  type: inproceedings
+  title: Optimized preprocessing and Tiny ML for Attention State Classification
+  year: 2023
+  venue: 22nd IEEE Statistical Signal Processing Workshop
+  url: "https://arxiv.org/pdf/2303.11371"
+  doi: ""
+  authors:
+    - Yinghao Wang
+    - Remi Nahon
+    - Enzo Tartaglione
+    - Pavlo Mozharovskyi
+    - Van-Tam Nguyen
+- id: laurent2023packed
+  type: inproceedings
+  title: Packed Ensembles for efficient uncertainty estimation
+  year: 2023
+  venue: The Eleventh International Conference on Learning Representations (spotlight paper)
+  url: "https://openreview.net/forum?id=XXTyv1zD9zD"
+  doi: ""
+  authors:
+    - Olivier Laurent
+    - Adrien Lafage
+    - Enzo Tartaglione
+    - Geoffrey Daniel
+    - Jean-marc Martinez
+    - Andrei Bursuc
+    - Gianni Franchi
+- id: li2023scotti
+  type: inproceedings
+  title: "SCoTTi: Save Computation at Training Time with an adaptive framework"
+  year: 2023
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision
+  url: "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Li_SCoTTi_Save_Computation_at_Training_Time_with_an_Adaptive_Framework_ICCVW_2023_paper.pdf"
+  doi: ""
+  authors:
+    - Ziyu Li
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: spadaro2023shannon
+  type: inproceedings
+  title: "Shannon strikes again! entropy-based pruning in deep neural networks for transfer learning under extreme memory and computation budgets"
+  year: 2023
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision
+  url: "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Spadaro_Shannon_Strikes_Again_Entropy-Based_Pruning_in_Deep_Neural_Networks_for_ICCVW_2023_paper.pdf"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Riccardo Renzulli
+    - Andrea Bragagnolo
+    - Jhony H Giraldo
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - Enzo Tartaglione
+- id: quetu2023sparse
+  type: inproceedings
+  title: "Sparse Double Descent in Vision Transformers: real or phantom threat?"
+  year: 2023
+  venue: International Conference on Image Analysis and Processing
+  url: "https://arxiv.org/pdf/2307.14253"
+  doi: ""
+  authors:
+    - Victor Quetu
+    - Marta Milovanovic
+    - Enzo Tartaglione
+- id: di2023two
+  type: inproceedings
+  title: "Two is Better than One: Achieving High-Quality 3D Scene Modeling with a NeRF Ensemble"
+  year: 2023
+  venue: International Conference on Image Analysis and Processing
+  url: "https://telecom-paris.hal.science/hal-04205640/file/ICIAP23_EnsembleNeRF-2.pdf"
+  doi: ""
+  authors:
+    - Francesco Di Sario
+    - Riccardo Renzulli
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: barbano2023unbiased
+  type: inproceedings
+  title: Unbiased Supervised Contrastive Learning
+  year: 2023
+  venue: The Eleventh International Conference on Learning Representations
+  url: "https://openreview.net/forum?id=Ph5cJSfD2XN"
+  doi: ""
+  authors:
+    - Carlo Alberto Barbano
+    - Benoit Dufumier
+    - Enzo Tartaglione
+    - Marco Grangetto
+    - Pietro Gori
+- id: vijayaratnam2023unified
+  type: inproceedings
+  title: Unified Measures for the Rate-Distortion-Latency Trade-off
+  year: 2023
+  venue: IEEE International Conference on Visual Communications and Image Processing
+  url: "https://centralesupelec.hal.science/hal-04350236/file/VCIP_2023_Melan_final_camera_ready.pdf"
+  doi: ""
+  authors:
+    - Melan Vijayaratnam
+    - Marta Milovanovic
+    - Marco Cagnazzo
+    - Enzo Tartaglione
+    - Giuseppe Valenzise
+- id: barbano2022two
+  type: inproceedings
+  title: A Two-Step Radiologist-Like Approach for Covid-19 Computer-Aided Diagnosis from Chest X-Ray Images
+  year: 2022
+  venue: International Conference on Image Analysis and Processing
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-06427-2_15"
+  doi: ""
+  authors:
+    - Carlo Alberto Barbano
+    - Enzo Tartaglione
+    - Claudio Berzovini
+    - Marco Calandri
+    - Marco Grangetto
+- id: oniga2022applications
+  type: incollection
+  title: Applications of AI and HPC in the Health Domain
+  year: 2022
+  venue: HPC, Big Data, and AI Convergence Towards Exascale
+  url: ""
+  doi: ""
+  authors:
+    - Dana Oniga
+    - Barbara Cantalupo
+    - Enzo Tartaglione
+    - Daniele Perlo
+    - Marco Grangetto
+    - Marco Aldinucci
+    - Federico Bolelli
+    - Federico Pollastri
+    - Michele Cancilla
+    - Laura Canalini
+    - others
+- id: Tartaglione_2022_BMVC
+  type: inproceedings
+  title: Information Removal at the bottleneck in Deep Neural Networks
+  year: 2022
+  venue: 33rd British Machine Vision Conference 2022, BMVC 2022, London, UK, November 21-24, 2022
+  url: "https://bmvc2022.mpi-inf.mpg.de/0488.pdf"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+- id: tartaglione2022loss
+  type: article
+  title: "Loss-based sensitivity regularization: towards deep sparse neural networks"
+  year: 2022
+  venue: Neural Networks
+  url: "https://arxiv.org/pdf/2011.09905"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Andrea Bragagnolo
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: tartaglione2022marco
+  type: article
+  title: Marco Aldinucci, David Atienza, Federico Bolelli, Monica Caballero, Iacopo Colonnelli, Jose Flich, Jon A. Gomez, David Gonzalez, Costantino Grana, Marco Grangetto, Simone Leo, Pedro Lopez, Dana Oniga, Roberto Paredes, Luca Pireddu, Eduardo Quinones, Tatiana Silva
+  year: 2022
+  venue: Technologies and Applications for Big Data Value
+  url: ""
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Marina Zapater
+- id: quinones2022deephealth
+  type: incollection
+  title: "The DeepHealth HPC Infrastructure: Leveraging Heterogenous HPC and Cloud-Computing Infrastructures for IA-Based Medical Solutions"
+  year: 2022
+  venue: HPC, Big Data, and AI Convergence Towards Exascale
+  url: ""
+  doi: ""
+  authors:
+    - Eduardo Quinones
+    - Jesus Perales
+    - Jorge Ejarque
+    - Asaf Badouh
+    - Santiago Marco
+    - Fabrice Auzanneau
+    - Francois Galea
+    - David Gonzalez
+    - Jose Ramon Hervas
+    - Tatiana Silva
+    - others
+- id: aldinucci2022deephealth
+  type: incollection
+  title: "The DeepHealth Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous HPC and Cloud Architectures"
+  year: 2022
+  venue: Technologies and Applications for Big Data Value
+  url: ""
+  doi: ""
+  authors:
+    - Marco Aldinucci
+    - David Atienza
+    - Federico Bolelli
+    - Monica Caballero
+    - Iacopo Colonnelli
+    - Jose Flich
+    - Jon A Gomez
+    - David Gonzalez
+    - Costantino Grana
+    - Marco Grangetto
+    - others
+- id: 9897223
+  type: inproceedings
+  title: "The Rise of the Lottery Heroes: Why Zero-Shot Pruning is Hard"
+  year: 2022
+  venue: 2022 IEEE International Conference on Image Processing (ICIP)
+  url: "https://hal.archives-ouvertes.fr/hal-03766740/document"
+  doi: 10.1109/ICIP46576.2022.9897223
+  authors:
+    - Enzo Tartaglione
+- id: bragagnolo2022update
+  type: article
+  title: "To update or not to update? Neurons at equilibrium in deep models"
+  year: 2022
+  venue: Advances in Neural Information Processing Systems
+  url: "https://proceedings.neurips.cc/paper_files/paper/2022/file/8b2fc235787852ead92da2268cd9e90c-Paper-Conference.pdf"
+  doi: ""
+  authors:
+    - Andrea Bragagnolo
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: tartaglione2021hitchhiker
+  type: inproceedings
+  title: A Hitchhiker’s Guide towards Transactive Memory System Modeling in Small Group Interactions
+  year: 2021
+  venue: Companion Publication of the 2021 International Conference on Multimodal Interaction
+  url: "https://dl.acm.org/doi/10.1145/3461615.3485414"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Beatrice Biancardi
+    - Maurizio Mancini
+    - Giovanna Varni
+- id: barbano2021bridging
+  type: inproceedings
+  title: Bridging the gap between debiasing and privacy for deep learning
+  year: 2021
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision
+  url: "https://openaccess.thecvf.com/content/ICCV2021W/RPRMI/papers/Barbano_Bridging_the_Gap_Between_Debiasing_and_Privacy_for_Deep_Learning_ICCVW_2021_paper.pdf"
+  doi: ""
+  authors:
+    - Carlo Alberto Barbano
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: renzulli2021capsule
+  type: inproceedings
+  title: Capsule Networks with Routing Annealing
+  year: 2021
+  venue: International Conference on Artificial Neural Networks
+  url: "https://iris.unito.it/retrieve/e27ce434-ea60-2581-e053-d805fe0acbaa/ICANN21_capsule.pdf"
+  doi: ""
+  authors:
+    - Riccardo Renzulli
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: tartaglione2021delving
+  type: inproceedings
+  title: Delving in the loss landscape to embed robust watermarks into neural networks
+  year: 2021
+  venue: 2020 25th International Conference on Pattern Recognition (ICPR)
+  url: "https://ieeexplore.ieee.org/document/9413062"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Marco Grangetto
+    - Davide Cavagnino
+    - Marco Botta
+- id: perlo2021dysplasia
+  type: inproceedings
+  title: Dysplasia grading of colorectal polyps through convolutional neural network analysis of whole slide images
+  year: 2021
+  venue: International Conference on Medical Imaging and Computer-Aided Diagnosis
+  url: "https://link.springer.com/chapter/10.1007/978-981-16-3880-0_34"
+  doi: ""
+  authors:
+    - Daniele Perlo
+    - Enzo Tartaglione
+    - Luca Bertero
+    - Paola Cassoni
+    - Marco Grangetto
+- id: tartaglione2021end
+  type: inproceedings
+  title: "End: Entangling and disentangling deep representations for bias correction"
+  year: 2021
+  venue: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition
+  url: "https://openaccess.thecvf.com/content/CVPR2021/papers/Tartaglione_EnD_Entangling_and_Disentangling_Deep_Representations_for_Bias_Correction_CVPR_2021_paper.pdf"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Carlo Alberto Barbano
+    - Marco Grangetto
+- id: tartaglione2021hemp
+  type: article
+  title: "HEMP: High-order entropy minimization for neural network compression"
+  year: 2021
+  venue: Neurocomputing
+  url: "https://www.sciencedirect.com/science/article/pii/S0925231221010663"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Stephane Lathuiliere
+    - Attilio Fiandrotti
+    - Marco Cagnazzo
+    - Marco Grangetto
+- id: bragagnolo2021role
+  type: inproceedings
+  title: On the role of structured pruning for neural network compression
+  year: 2021
+  venue: 2021 IEEE International Conference on Image Processing (ICIP)
+  url: "https://iris.unito.it/retrieve/e27ce432-d3d0-2581-e053-d805fe0acbaa/ICIP2021_pruning.pdf"
+  doi: ""
+  authors:
+    - Andrea Bragagnolo
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: tartaglione2021serene
+  type: article
+  title: "Serene: Sensitivity-based regularization of neurons for structured sparsity in neural networks"
+  year: 2021
+  venue: IEEE Transactions on Neural Networks and Learning Systems
+  url: "https://arxiv.org/pdf/2102.03773"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Andrea Bragagnolo
+    - Francesco Odierna
+    - Attilio Fiandrotti
+    - Marco Grangetto
+- id: barbano2021unitopatho
+  type: inproceedings
+  title: UniToPatho, a labeled histopathological dataset for colorectal polyps classification and adenoma dysplasia grading
+  year: 2021
+  venue: 2021 IEEE International Conference on Image Processing (ICIP)
+  url: "https://ieeexplore.ieee.org/document/9506198"
+  doi: ""
+  authors:
+    - Carlo Alberto Barbano
+    - Daniele Perlo
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
+    - Luca Bertero
+    - Paola Cassoni
+    - Marco Grangetto
+- id: tartaglione2020non
+  type: inproceedings
+  title: A non-discriminatory approach to ethical deep learning
+  year: 2020
+  venue: 2020 IEEE 19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)
+  url: "https://arxiv.org/pdf/2008.01430"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: tartaglione2020pruning
+  type: inproceedings
+  title: "Pruning artificial neural networks: A way to find well-generalizing, high-entropy sharp minima"
+  year: 2020
+  venue: International Conference on Artificial Neural Networks
+  url: "https://arxiv.org/pdf/2004.14765"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Andrea Bragagnolo
+    - Marco Grangetto
+- id: tartaglione2020unveiling
+  type: article
+  title: "Unveiling covid-19 from chest x-ray with deep learning: a hurdles race with small data"
+  year: 2020
+  venue: International Journal of Environmental Research and Public Health
+  url: "https://www.mdpi.com/1660-4601/17/18/6933"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Carlo Alberto Barbano
+    - Claudio Berzovini
+    - Marco Calandri
+    - Marco Grangetto
+- id: tartaglione2019post
+  type: inproceedings
+  title: Post-synaptic potential regularization has potential
+  year: 2019
+  venue: International Conference on Artificial Neural Networks
+  url: "https://arxiv.org/pdf/1907.08544"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Daniele Perlo
+    - Marco Grangetto
+- id: tartaglione2019take
+  type: inproceedings
+  title: Take a ramble into solution spaces for classification problems in neural networks
+  year: 2019
+  venue: International conference on image analysis and processing
+  url: "https://iris.unito.it/retrieve/e27ce42e-7422-2581-e053-d805fe0acbaa/ICIAP19_takearamble.pdf"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Marco Grangetto
+- id: tartaglione2018learning
+  type: article
+  title: Learning sparse neural networks via sensitivity-driven regularization
+  year: 2018
+  venue: Advances in neural information processing systems
+  url: "https://proceedings.neurips.cc/paper/2018/file/04df4d434d481c5bb723be1b6df1ee65-Paper.pdf"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Skjalg Leps\oy
+    - Attilio Fiandrotti
+    - Gianluca Francini
+- id: baldassi2018role
+  type: article
+  title: Role of synaptic stochasticity in training low-precision neural networks
+  year: 2018
+  venue: Physical review letters
+  url: "https://arxiv.org/pdf/1710.09825"
+  doi: ""
+  authors:
+    - Carlo Baldassi
+    - Federica Gerace
+    - Hilbert J Kappen
+    - Carlo Lucibello
+    - Luca Saglietti
+    - Enzo Tartaglione
+    - Riccardo Zecchina
+- id: tartaglione2015communication
+  type: inproceedings
+  title: Communication scheduling and buslet synthesis for low-interconnect HLS designs
+  year: 2015
+  venue: 2015 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)
+  url: "https://ieeexplore.ieee.org/abstract/document/7372554"
+  doi: ""
+  authors:
+    - Enzo Tartaglione
+    - Shantanu Dutt
