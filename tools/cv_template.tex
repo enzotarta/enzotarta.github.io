@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks,colorlinks=true,urlcolor=blue!60!black,linkcolor=blue!60!black]{hyperref}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=2pt}
+
+\newcommand{\cvsection}[1]{%
+  \par\addvspace{14pt}%
+  {\large\bfseries\MakeUppercase{#1}}\par\nopagebreak%
+  \vspace{2pt}\hrule\vspace{6pt}%
+}
+
+\newenvironment{cventries}{%
+  \begin{tabular}{@{}p{0.70\linewidth}@{\hspace{6pt}}>{\raggedleft\arraybackslash}p{0.26\linewidth}@{}}%
+}{%
+  \end{tabular}\par\addvspace{4pt}%
+}
+
+\newcommand{\cventry}[2]{#1 & #2 \\[2pt]}
+\newcommand{\cvgroup}[1]{\multicolumn{2}{@{}l@{}}{\textbf{#1}} \\[2pt]}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Enzo Tartaglione}\\[2pt]
+\href{mailto:enzo.tartaglione@telecom-paris.fr}{enzo.tartaglione@telecom-paris.fr}\quad
+\href{https://enzotarta.github.io/}{https://enzotarta.github.io/}
+\end{center}
+
+\vspace{4pt}
+
+%% --- BODY (auto-generated from cv.md) ---
+__BODY__
+%% --- END BODY ---
+
+\end{document}

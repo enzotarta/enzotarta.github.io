@@ -1446,6 +1446,81 @@ table tr:hover td { background: var(--bg-card) !important; }
 }
 .panel-heading { background: rgba(59,130,246,0.07) !important; border-color: var(--border) !important; }
 
+/* ---- CV markdown content (cv.md rendered into .cv-content) ---- */
+.cv-content { padding: 30px 0 80px !important; }
+
+.cv-content h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin: 50px 0 24px !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid var(--border) !important;
+  scroll-margin-top: 100px;
+  background: var(--grad-hot) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+.cv-content h2:first-of-type { margin-top: 10px !important; }
+
+.cv-content p {
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  margin-bottom: 16px !important;
+  text-align: justify;
+}
+
+.cv-content ul {
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  padding-left: 22px !important;
+  margin-bottom: 16px !important;
+}
+.cv-content ul li { margin-bottom: 10px !important; }
+.cv-content ul li::marker { color: var(--blue-light); }
+
+.cv-content strong { color: var(--text-primary) !important; font-weight: 700 !important; }
+.cv-content em     { color: var(--text-primary) !important; font-style: italic !important; }
+.cv-content a      { color: var(--blue-light) !important; }
+.cv-content a:hover { color: var(--cyan) !important; }
+
+/* CV tables: 2-col, role left + date right */
+.cv-content table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 0 0 18px !important;
+  background: transparent !important;
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+}
+.cv-content table thead { display: none; }
+.cv-content table th,
+.cv-content table td {
+  padding: 12px 14px !important;
+  border: none !important;
+  border-bottom: 1px solid var(--border) !important;
+  vertical-align: top !important;
+  line-height: 1.55 !important;
+}
+.cv-content table td:first-child { width: 70%; }
+.cv-content table td:last-child {
+  text-align: right !important;
+  white-space: nowrap;
+  color: var(--text-muted) !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 13.5px !important;
+}
+.cv-content table tr:last-child td { border-bottom: none !important; }
+.cv-content table strong { color: var(--blue-light) !important; }
+
+@media (max-width: 768px) {
+  .cv-content table td,
+  .cv-content table th { display: block; width: 100% !important; }
+  .cv-content table td:last-child { text-align: left !important; padding-top: 0 !important; }
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<section id="inner-headline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">Curriculum Vitae</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cv-summary">
+    <div class="container">
+        <div class="cv-summary-grid">
+            <a href="#bio" class="cv-card">Biography</a>
+            <a href="#appointments" class="cv-card">Appointments</a>
+            <a href="#education" class="cv-card">Education</a>
+            <a href="about.html" class="cv-card">Publications</a>
+            <a href="#editor" class="cv-card">Editorial Activity</a>
+            <a href="#grants" class="cv-card">Grants &amp; Funding</a>
+            <a href="#awards" class="cv-card">Awards</a>
+            <a href="#animation" class="cv-card">Scientific Animation</a>
+            <a href="#exam" class="cv-card">Ph.D. Examination</a>
+        </div>
+
+        {% if site.cv_pdf %}
+        <p style="text-align:center; margin-top:30px;">
+            <a class="cv-card" style="display:inline-block; max-width:300px;" href="{{ site.cv_pdf | relative_url }}">Download PDF version</a>
+        </p>
+        {% else %}
+        <p style="text-align:center; margin-top:30px;">
+            <a class="cv-card" style="display:inline-block; max-width:300px;" href="/assets/pdf/cv.pdf">Download PDF version</a>
+        </p>
+        {% endif %}
+    </div>
+</section>
+
+<section class="cv-content">
+    <div class="container">
+        {{ content }}
+    </div>
+</section>

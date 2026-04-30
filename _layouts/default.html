@@ -84,20 +84,5 @@
   }
 })();
 </script>
-
-<script>
-function showSection(id) {
-  document.querySelectorAll('.cv-section').forEach(function(sec) {
-    sec.style.display = 'none';
-  });
-  var target = document.getElementById(id);
-  if (target) target.style.display = 'block';
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  var first = document.getElementById("education");
-  if (first) showSection("education");
-});
-</script>
 </body>
 </html>
