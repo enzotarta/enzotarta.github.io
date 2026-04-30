@@ -1,0 +1,256 @@
+---
+layout: default
+title: Enzo Tartaglione – Research
+nav: research
+---
+<section id="inner-headline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">Research</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="research-intro">
+    <div class="container">
+        <p>
+            An animated map of my research — every paper is a node, attached
+            to one or more topics. Drag to rearrange, hover for details, click
+            a paper to open it, click a topic to isolate its cluster.
+        </p>
+    </div>
+</section>
+
+<section class="research-graph-section">
+    <div class="container">
+        <div class="research-legend" id="research-legend"></div>
+
+        <div class="research-graph-wrap">
+            <svg id="research-graph"></svg>
+            <div class="research-tooltip" id="research-tooltip" hidden></div>
+        </div>
+
+        <p class="research-source">
+            Topics are assigned by keyword regex from
+            <a href="https://github.com/enzotarta/enzotarta.github.io/blob/gh-pages/_data/topics.yml" target="_blank" rel="noopener">_data/topics.yml</a>.
+            Papers can belong to multiple topics. Auto-rebuilt daily from BibBase.
+        </p>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(function () {
+    var DATA = {{ site.data.research_tree | jsonify }};
+    if (!DATA || !DATA.nodes || !DATA.nodes.length) return;
+
+    var svg = d3.select('#research-graph');
+    var wrap = document.querySelector('.research-graph-wrap');
+    var tooltip = d3.select('#research-tooltip');
+
+    var width  = wrap.clientWidth;
+    var height = Math.max(560, Math.round(width * 0.62));
+    svg.attr('viewBox', '0 0 ' + width + ' ' + height)
+       .attr('preserveAspectRatio', 'xMidYMid meet');
+
+    /* ---------- Build node/link copies (D3 mutates them) ---------- */
+    var nodes = DATA.nodes.map(function (d) { return Object.assign({}, d); });
+    var links = DATA.links.map(function (d) { return Object.assign({}, d); });
+    var topicById = {};
+    DATA.topics.forEach(function (t) { topicById[t.id] = t; });
+
+    /* Each paper picks one "primary" topic for fill color (first match) */
+    nodes.forEach(function (n) {
+        if (n.type === 'paper' && n.topics && n.topics.length) {
+            var t = topicById[n.topics[0]];
+            n.color = t ? t.color : '#94a3b8';
+        }
+    });
+
+    /* ---------- Defs: glow + gradient for root ---------- */
+    var defs = svg.append('defs');
+    defs.append('filter').attr('id', 'glow')
+        .html('<feGaussianBlur stdDeviation="2.4" result="blur"/>'
+            + '<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>');
+
+    var rootGrad = defs.append('radialGradient').attr('id', 'rootGrad');
+    rootGrad.append('stop').attr('offset', '0%').attr('stop-color', '#ffffff');
+    rootGrad.append('stop').attr('offset', '40%').attr('stop-color', '#60a5fa');
+    rootGrad.append('stop').attr('offset', '100%').attr('stop-color', '#06b6d4');
+
+    var g = svg.append('g');
+
+    /* ---------- Force simulation ---------- */
+    var paperCharge = -28;
+    var topicCharge = -180;
+    var sim = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(function (d) { return d.id; })
+            .distance(function (l) {
+                if (l.source.type === 'root')  return 130;
+                if (l.target.type === 'paper') return 60;
+                return 90;
+            })
+            .strength(function (l) {
+                if (l.source.type === 'root')  return 0.6;
+                return 0.25;
+            }))
+        .force('charge', d3.forceManyBody().strength(function (d) {
+            if (d.type === 'root')  return -400;
+            if (d.type === 'topic') return topicCharge;
+            return paperCharge;
+        }))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collide', d3.forceCollide().radius(function (d) {
+            if (d.type === 'root')  return 36;
+            if (d.type === 'topic') return 28;
+            return 7;
+        }));
+
+    var link = g.append('g').attr('class', 'links')
+        .selectAll('line').data(links).enter().append('line')
+        .attr('stroke', 'rgba(255,255,255,0.07)')
+        .attr('stroke-width', 1);
+
+    var node = g.append('g').attr('class', 'nodes')
+        .selectAll('g').data(nodes).enter().append('g')
+        .attr('class', function (d) { return 'node node-' + d.type; })
+        .style('cursor', function (d) {
+            if (d.type === 'paper' && d.url) return 'pointer';
+            if (d.type === 'topic') return 'pointer';
+            return 'default';
+        })
+        .call(d3.drag()
+            .on('start', function (event, d) {
+                if (!event.active) sim.alphaTarget(0.3).restart();
+                d.fx = d.x; d.fy = d.y;
+            })
+            .on('drag', function (event, d) { d.fx = event.x; d.fy = event.y; })
+            .on('end', function (event, d) {
+                if (!event.active) sim.alphaTarget(0);
+                d.fx = null; d.fy = null;
+            }));
+
+    /* Root */
+    node.filter(function (d) { return d.type === 'root'; })
+        .append('circle')
+        .attr('r', 26)
+        .attr('fill', 'url(#rootGrad)')
+        .attr('filter', 'url(#glow)');
+    node.filter(function (d) { return d.type === 'root'; })
+        .append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', 4)
+        .attr('fill', '#0f172a')
+        .style('font-weight', '800')
+        .style('font-size', '11px')
+        .style('letter-spacing', '0.5px')
+        .text('RESEARCH');
+
+    /* Topics */
+    var topicG = node.filter(function (d) { return d.type === 'topic'; });
+    topicG.append('circle')
+        .attr('r', 18)
+        .attr('fill', function (d) { return d.color; })
+        .attr('opacity', 0.85)
+        .attr('stroke', 'rgba(255,255,255,0.4)')
+        .attr('stroke-width', 1)
+        .attr('filter', 'url(#glow)');
+    topicG.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', 32)
+        .attr('fill', '#e2e8f0')
+        .style('font-weight', '600')
+        .style('font-size', '12px')
+        .style('letter-spacing', '0.3px')
+        .text(function (d) { return d.label; });
+
+    /* Papers */
+    var paperG = node.filter(function (d) { return d.type === 'paper'; });
+    paperG.append('circle')
+        .attr('r', 4.5)
+        .attr('fill', function (d) { return d.color; })
+        .attr('stroke', 'rgba(255,255,255,0.15)')
+        .attr('stroke-width', 0.6);
+
+    /* ---------- Interaction ---------- */
+    paperG.on('mouseenter', function (event, d) {
+        d3.select(this).select('circle').transition().duration(120).attr('r', 7);
+        showTip(event, d);
+    }).on('mousemove', function (event, d) {
+        showTip(event, d);
+    }).on('mouseleave', function () {
+        d3.select(this).select('circle').transition().duration(120).attr('r', 4.5);
+        tooltip.attr('hidden', true);
+    }).on('click', function (event, d) {
+        if (d.url) window.open(d.url, '_blank', 'noopener');
+    });
+
+    function showTip(event, d) {
+        var rect = wrap.getBoundingClientRect();
+        var html = '<strong>' + escape(d.label) + '</strong>'
+                 + '<div class="t-meta">' + (d.year || '') + (d.venue ? ' · ' + escape(d.venue) : '') + '</div>';
+        tooltip.html(html)
+               .style('left', (event.clientX - rect.left + 14) + 'px')
+               .style('top',  (event.clientY - rect.top  + 14) + 'px')
+               .attr('hidden', null);
+    }
+    function escape(s) {
+        return String(s || '').replace(/[<>&"]/g, function (c) {
+            return ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'})[c];
+        });
+    }
+
+    /* Topic isolation: click a topic → keep its papers, dim everything else */
+    var isolated = null;
+    topicG.on('click', function (event, d) {
+        isolated = (isolated === d.id) ? null : d.id;
+        applyIsolation();
+    });
+
+    function applyIsolation() {
+        node.style('opacity', function (n) {
+            if (!isolated) return 1;
+            if (n.id === 'root') return 0.3;
+            if (n.type === 'topic') return n.id === isolated ? 1 : 0.2;
+            if (n.type === 'paper') return (n.topics || []).indexOf(isolated.replace(/^topic:/, '')) !== -1 ? 1 : 0.1;
+            return 1;
+        });
+        link.style('stroke-opacity', function (l) {
+            if (!isolated) return 1;
+            return (l.source.id === isolated || l.target.id === isolated) ? 0.7 : 0.05;
+        });
+    }
+
+    /* ---------- Legend ---------- */
+    var legend = d3.select('#research-legend')
+        .selectAll('.legend-chip').data(DATA.topics).enter()
+        .append('span').attr('class', 'legend-chip')
+        .style('cursor', 'pointer')
+        .on('click', function (event, d) {
+            isolated = (isolated === ('topic:' + d.id)) ? null : ('topic:' + d.id);
+            applyIsolation();
+        });
+    legend.append('span').attr('class', 'legend-dot').style('background', function (d) { return d.color; });
+    legend.append('span').text(function (d) { return d.label; });
+
+    /* ---------- Tick ---------- */
+    sim.on('tick', function () {
+        link.attr('x1', function (d) { return d.source.x; })
+            .attr('y1', function (d) { return d.source.y; })
+            .attr('x2', function (d) { return d.target.x; })
+            .attr('y2', function (d) { return d.target.y; });
+        node.attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+    });
+
+    /* ---------- Resize ---------- */
+    window.addEventListener('resize', function () {
+        var w = wrap.clientWidth;
+        var h = Math.max(560, Math.round(w * 0.62));
+        svg.attr('viewBox', '0 0 ' + w + ' ' + h);
+        sim.force('center', d3.forceCenter(w / 2, h / 2));
+        sim.alpha(0.3).restart();
+    });
+})();
+</script>

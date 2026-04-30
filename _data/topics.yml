@@ -1,0 +1,44 @@
+# Research topics. Each entry's `regex` is matched (case-insensitive) against
+# title + venue of every publication in _data/publications/{preprints,main}.yml
+# by tools/build_research_tree.py. Papers may match multiple topics.
+# `color` feeds the D3 force-directed graph on /research.html.
+
+- id: compression
+  label: "Compression & Pruning"
+  color: "#60a5fa"
+  regex: "compress|prun|sparsif|quantiz|distill|low.?rank"
+
+- id: gaussian
+  label: "3D & Gaussian Splatting"
+  color: "#06b6d4"
+  regex: "gaussian.?splat|nerf|radiance|\\b3d\\b|point.?cloud"
+
+- id: debias
+  label: "Debiasing & Fairness"
+  color: "#f472b6"
+  regex: "debias|fair(ness)?|bias"
+
+- id: regularization
+  label: "Regularization"
+  color: "#c4b5fd"
+  regex: "regulari[sz]|dropout|weight.?decay|normali[sz]"
+
+- id: privacy
+  label: "Privacy"
+  color: "#fbbf24"
+  regex: "privacy|differential"
+
+- id: efficient
+  label: "Efficient & Frugal AI"
+  color: "#34d399"
+  regex: "efficien|frugal|edge|on-?device|energy|carbon|green"
+
+- id: continual
+  label: "Continual Learning"
+  color: "#fb923c"
+  regex: "continual|incremental|catastrophic|forget|life-?long"
+
+- id: nas
+  label: "Architecture Search"
+  color: "#a78bfa"
+  regex: "neural.?architect|\\bnas\\b"

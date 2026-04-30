@@ -1620,6 +1620,106 @@ table tr:hover td { background: var(--bg-card) !important; }
 }
 .pub-venue em { font-style: italic !important; }
 
+/* ---- Research page ---- */
+.research-intro {
+  padding: 30px 0 10px !important;
+}
+.research-intro p {
+  color: var(--text-secondary) !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  max-width: 760px;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.research-graph-section {
+  padding: 10px 0 80px !important;
+}
+
+.research-legend {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 10px 14px !important;
+  max-width: 900px;
+  margin: 0 auto 18px !important;
+}
+
+.legend-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 12px !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 999px !important;
+  font-size: 12.5px !important;
+  color: var(--text-secondary) !important;
+  transition: var(--transition) !important;
+  user-select: none;
+}
+.legend-chip:hover {
+  background: var(--bg-card-hover) !important;
+  border-color: var(--border-accent) !important;
+  color: var(--text-primary) !important;
+}
+.legend-dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.research-graph-wrap {
+  position: relative;
+  background: radial-gradient(ellipse at center, rgba(59,130,246,0.06) 0%, transparent 70%),
+              var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+}
+.research-graph-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-tooltip {
+  position: absolute;
+  pointer-events: none;
+  padding: 10px 12px;
+  background: rgba(15,23,42,0.96) !important;
+  border: 1px solid var(--border-accent) !important;
+  border-radius: var(--radius-sm, 8px) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 1.4;
+  max-width: 320px;
+  z-index: 5;
+}
+.research-tooltip .t-meta {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+
+.research-source {
+  text-align: right !important;
+  font-size: 12.5px !important;
+  color: var(--text-muted) !important;
+  margin-top: 14px !important;
+}
+.research-source a { color: var(--blue-light) !important; }
+
+/* Subtle pulse on the root node */
+@keyframes researchRootPulse {
+  0%, 100% { filter: drop-shadow(0 0 12px rgba(96,165,250,0.45)); }
+  50%      { filter: drop-shadow(0 0 22px rgba(6,182,212,0.7)); }
+}
+.node-root circle { animation: researchRootPulse 4s ease-in-out infinite; }
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

@@ -1,0 +1,1699 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "root",
+      "label": "Research"
+    },
+    {
+      "id": "topic:compression",
+      "type": "topic",
+      "label": "Compression & Pruning",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "topic:gaussian",
+      "type": "topic",
+      "label": "3D & Gaussian Splatting",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "topic:debias",
+      "type": "topic",
+      "label": "Debiasing & Fairness",
+      "color": "#f472b6"
+    },
+    {
+      "id": "topic:regularization",
+      "type": "topic",
+      "label": "Regularization",
+      "color": "#c4b5fd"
+    },
+    {
+      "id": "topic:privacy",
+      "type": "topic",
+      "label": "Privacy",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "topic:efficient",
+      "type": "topic",
+      "label": "Efficient & Frugal AI",
+      "color": "#34d399"
+    },
+    {
+      "id": "topic:continual",
+      "type": "topic",
+      "label": "Continual Learning",
+      "color": "#fb923c"
+    },
+    {
+      "id": "topic:other",
+      "type": "topic",
+      "label": "Other",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "paper:salman2025compression",
+      "type": "paper",
+      "label": "Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and Future Directions",
+      "year": 2025,
+      "venue": "arXiv e-prints",
+      "url": "https://arxiv.org/pdf/2502.19457",
+      "topics": [
+        "compression",
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:gailhard2025feature",
+      "type": "paper",
+      "label": "Feature-aware Hypergraph Generation via Next-Scale Prediction",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2506.01467",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:di2025gode",
+      "type": "paper",
+      "label": "GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2501.13558",
+      "url": "https://arxiv.org/pdf/2501.13558",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:mazouz2025lightweight",
+      "type": "paper",
+      "label": "Lightweight Embedded FPGA Deployment of Learned Image Compression with Knowledge Distillation and Hybrid Quantization",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2503.04832",
+      "url": "",
+      "topics": [
+        "compression",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:quelennec2025memory",
+      "type": "paper",
+      "label": "Memory Constrained Dynamic Subnetwork Update for Transfer Learning",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2510.20979",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:mazouz2025security",
+      "type": "paper",
+      "label": "Security and real-time fpga integration for learned image compression",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2503.04867",
+      "url": "",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:diecidue2025silence",
+      "type": "paper",
+      "label": "The silence of the weights: an investigation of structural pruning strategies for attention-based audio signal architectures",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2509.26207",
+      "url": "",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:liao2024nepenthe",
+      "type": "paper",
+      "label": "NEPENTHE: Entropy-Based Pruning as a Neural Network Depth's Reducer",
+      "year": 2024,
+      "venue": "arXiv preprint arXiv:2404.16890",
+      "url": "https://arxiv.org/pdf/2404.16890",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:nguyen2026efficient",
+      "type": "paper",
+      "label": "Efficient Resource-Constrained Training of Vision Transformers via Subspace Optimization",
+      "year": 2026,
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "url": "https://openreview.net/forum?id=0nvQ5kHXf4",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:roos2026met",
+      "type": "paper",
+      "label": "How I Met Your Bias: Investigating Bias Amplification in Diffusion Models",
+      "year": 2026,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://arxiv.org/pdf/2512.20233",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:haider2025inr",
+      "type": "paper",
+      "label": "I-INR: Iterative Implicit Neural Representations",
+      "year": 2026,
+      "venue": "Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026). AAAI Press",
+      "url": "https://arxiv.org/pdf/2504.17364",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:anonymous2026instant",
+      "type": "paper",
+      "label": "INSTANT: Compressing Gradients and Activations for Resource-Efficient Training",
+      "year": 2026,
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "url": "https://openreview.net/forum?id=P2q6Y7UweV",
+      "topics": [
+        "compression",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:tran2025rave",
+      "type": "paper",
+      "label": "RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting",
+      "year": 2026,
+      "venue": "2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)",
+      "url": "https://arxiv.org/pdf/2512.07052",
+      "topics": [
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:anonymous2026study",
+      "type": "paper",
+      "label": "Study of Training Dynamics for Memory-Constrained Fine-Tuning",
+      "year": 2026,
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "url": "https://openreview.net/forum?id=BhfIg0tuti",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:marouf2025no",
+      "type": "paper",
+      "label": "Ask and Remember: A Questions-Only Replay Strategy for Continual Visual Question Answering",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "url": "https://arxiv.org/pdf/2502.04469",
+      "topics": [
+        "continual"
+      ]
+    },
+    {
+      "id": "paper:nguyen2025beyond",
+      "type": "paper",
+      "label": "Beyond Low-rank Decomposition: A Shortcut Approach for Efficient On-Device Learning",
+      "year": 2025,
+      "venue": "Forty-second International Conference on Machine Learning",
+      "url": "https://openreview.net/forum?id=YWUYqN2laV",
+      "topics": [
+        "compression",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:renzulli2025capsule",
+      "type": "paper",
+      "label": "Capsule Networks Do Not Need to Model Everything",
+      "year": 2025,
+      "venue": "Pattern Recognition",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0031320325007794/pdfft?md5=f944bdf7fd039f6b42f5e3e50db40265&pid=1-s2.0-S0031320325007794-main.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:spadaro2025denoising",
+      "type": "paper",
+      "label": "Denoising Diffusion Probabilistic Model for Point Cloud Compression at Low Bit-Rates",
+      "year": 2025,
+      "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+      "url": "https://arxiv.org/pdf/2505.13316",
+      "topics": [
+        "compression",
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:ciranni2025diffusing",
+      "type": "paper",
+      "label": "Diffusing DeBias: Synthetic Bias Amplification for Model Debiasing",
+      "year": 2025,
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems",
+      "url": "https://openreview.net/forum?id=66Z5tS8E45",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:olivi2025efficient",
+      "type": "paper",
+      "label": "Efficient adaptation of deep neural networks for semantic segmentation in space applications",
+      "year": 2025,
+      "venue": "Scientific Reports",
+      "url": "https://www.nature.com/articles/s41598-025-99192-5",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:presta2024efficient",
+      "type": "paper",
+      "label": "Efficient Progressive Image Compression with Variance-aware Masking",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/WACV2025/papers/Presta_Efficient_Progressive_Image_Compression_with_Variance-Aware_Masking_WACV_2025_paper.pdf",
+      "topics": [
+        "compression",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:ali2024elmgs",
+      "type": "paper",
+      "label": "ELMGS: Enhancing memory and computation scaLability through coMpression for 3D Gaussian Splatting",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/WACV2025/papers/Ali_ELMGS_Enhancing_Memory_and_Computation_Scalability_through_Compression_for_3D_WACV_2025_paper.pdf",
+      "topics": [
+        "compression",
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:marouf2023rethinking",
+      "type": "paper",
+      "label": "Enhancing Plasticity for First Session Adaptation Continual Learning",
+      "year": 2025,
+      "venue": "CoLLAs",
+      "url": "https://arxiv.org/pdf/2310.11482.pdf",
+      "topics": [
+        "continual"
+      ]
+    },
+    {
+      "id": "paper:wang2025folder",
+      "type": "paper",
+      "label": "FOLDER: Accelerating Multi-modal Large Language Models with Enhanced Performance",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "url": "https://arxiv.org/pdf/2501.02430",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:gailhard2024hygene",
+      "type": "paper",
+      "label": "HYGENE: A Diffusion-based Hypergraph Generation Method",
+      "year": 2025,
+      "venue": "Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025). AAAI Press",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33833/35988",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:craparotta2025improving",
+      "type": "paper",
+      "label": "Improving Generative Data Augmentation with Prior-Knowledge for Dysplasia Grading of Colorectal Polyps",
+      "year": 2025,
+      "venue": "International Conference on Image Analysis and Processing",
+      "url": "",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:quetu2024lacoot",
+      "type": "paper",
+      "label": "LaCoOT: Layer Collapse through Optimal Transport",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "url": "https://arxiv.org/pdf/2406.08933",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:PILO2025102030",
+      "type": "paper",
+      "label": "LayerFold: A Python library to reduce the depth of neural networks",
+      "year": 2025,
+      "venue": "SoftwareX",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352711024004011",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:dalmasso2025neural",
+      "type": "paper",
+      "label": "Neural Velocity for hyperparameter tuning",
+      "year": 2025,
+      "venue": "2025 International Joint Conference on Neural Networks (IJCNN)",
+      "url": "https://arxiv.org/pdf/2507.05309",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:ciranni2025say",
+      "type": "paper",
+      "label": "Say My Name: a Model's Bias Discovery Framework",
+      "year": 2025,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "https://openreview.net/forum?id=EuUxiiDZ7d",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:10843163",
+      "type": "paper",
+      "label": "STanH: Parametric Quantization for Variable Rate Learned Image Compression",
+      "year": 2025,
+      "venue": "IEEE Transactions on Image Processing",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10843163",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:spadaro2025tep",
+      "type": "paper",
+      "label": "TEP-ones: A simple yet effective approach for transferability estimation of pruned backbones",
+      "year": 2025,
+      "venue": "Neurocomputing",
+      "url": "",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:liao2025till",
+      "type": "paper",
+      "label": "Till the Layers Collapse: Compressing a Deep Neural Network Through the Lenses of Batch Normalization Layers",
+      "year": 2025,
+      "venue": "Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025). AAAI Press",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34058",
+      "topics": [
+        "compression",
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:WANG2025129422",
+      "type": "paper",
+      "label": "Unified Pipeline for Generalized Mental State Detection Using EEG Signals",
+      "year": 2025,
+      "venue": "Expert Systems with Applications",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417425030386",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:10.1007/978-3-031-78169-8_20",
+      "type": "paper",
+      "label": "WaterMAS: Sharpness-Aware Maximization for Neural Network Watermarking",
+      "year": 2025,
+      "venue": "Pattern Recognition",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-78169-8_20",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:spadaro2024wignet",
+      "type": "paper",
+      "label": "WiGNet: Windowed Vision Graph Neural Network",
+      "year": 2025,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://arxiv.org/pdf/2410.00807",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:nguyen2024activation",
+      "type": "paper",
+      "label": "Activation Map Compression through Tensor Decomposition for Deep Learning",
+      "year": 2024,
+      "venue": "The Thirty-eighth Annual Conference on Neural Information Processing Systems",
+      "url": "https://openreview.net/forum?id=S93hrwT8u9",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:10849832",
+      "type": "paper",
+      "label": "ALICE: Adapt your Learnable Image Compression modEl for variable bitrates",
+      "year": 2024,
+      "venue": "2024 IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+      "url": "https://ieeexplore.ieee.org/document/10849832",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:di2024boost",
+      "type": "paper",
+      "label": "Boost Your NeRF: A Model-Agnostic Mixture of Experts Framework for High Quality and Efficient Rendering",
+      "year": 2024,
+      "venue": "European Conference on Computer Vision (ECCV)",
+      "url": "https://www.springerprofessional.de/en/boost-your-nerf-a-model-agnostic-mixture-of-experts-framework-fo/50194746",
+      "topics": [
+        "gaussian",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:nahon2024debiasing",
+      "type": "paper",
+      "label": "Debiasing surgeon: fantastic weights and how to find them",
+      "year": 2024,
+      "venue": "European Conference on Computer Vision (ECCV)",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-73013-9_25",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:presta2024domain",
+      "type": "paper",
+      "label": "Domain Adaptation for Learned Image Compression with Supervised Adapters",
+      "year": 2024,
+      "venue": "2024 Data Compression Conference (DCC)",
+      "url": "https://ieeexplore.ieee.org/document/10533818",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:quetu2024dsd2",
+      "type": "paper",
+      "label": "DSD$^2$: Can We Dodge Sparse Double Descent and Compress the Neural Network Worry-Free?",
+      "year": 2024,
+      "venue": "Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024). AAAI Press",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29393/30631",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:desousa2024find",
+      "type": "paper",
+      "label": "Find the Lady: Permutation and Re-Synchronization of Deep Neural Networks",
+      "year": 2024,
+      "venue": "Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024). AAAI Press",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30091/31922",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:10647413",
+      "type": "paper",
+      "label": "Gabic: Graph-Based Attention Block for Image Compression",
+      "year": 2024,
+      "venue": "2024 IEEE International Conference on Image Processing (ICIP)",
+      "url": "https://ieeexplore.ieee.org/document/10647413",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:girard2024memory",
+      "type": "paper",
+      "label": "Memory-Optimized Once-For-All Network",
+      "year": 2024,
+      "venue": "European Conference on Computer Vision",
+      "url": "https://arxiv.org/pdf/2409.05900",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:marouf2024mini",
+      "type": "paper",
+      "label": "Mini but Mighty: Finetuning ViTs with Mini Adapters",
+      "year": 2024,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/WACV2024/papers/Marouf_Mini_but_Mighty_Finetuning_ViTs_With_Mini_Adapters_WACV_2024_paper.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:quetu2024simpler",
+      "type": "paper",
+      "label": "The Simpler The Better: An Entropy-Based Importance Metric To Reduce Neural Networks' Depth",
+      "year": 2024,
+      "venue": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-70365-2_6",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:quelennec2024towards",
+      "type": "paper",
+      "label": "Towards On-device Learning on the Edge: Ways to Select Neurons to Update under a Budget Constraint",
+      "year": 2024,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/WACV2024W/SCIoT/papers/Quelennec_Towards_On-Device_Learning_on_the_Edge_Ways_To_Select_Neurons_WACVW_2024_paper.pdf",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:Ali_2024_BMVC",
+      "type": "paper",
+      "label": "Trimming the Fat: Efficient Compression of 3D Gaussian Splats through Pruning",
+      "year": 2024,
+      "venue": "35th British Machine Vision Conference 2024, BMVC 2024, Glasgow, UK, November 25-28, 2024",
+      "url": "https://papers.bmvc2024.org/0358.pdf",
+      "topics": [
+        "compression",
+        "gaussian",
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:10791867",
+      "type": "paper",
+      "label": "Unsupervised Learning of Unbiased Visual Representations",
+      "year": 2024,
+      "venue": "IEEE Transactions on Artificial Intelligence",
+      "url": "https://ieeexplore.ieee.org/document/10791867",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:marouf2023weighted",
+      "type": "paper",
+      "label": "Weighted Ensemble Models Are Strong Continual Learners",
+      "year": 2024,
+      "venue": "European Conference on Computer Vision (ECCV)",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-73209-6_18",
+      "topics": [
+        "continual"
+      ]
+    },
+    {
+      "id": "paper:presta2023differentiable",
+      "type": "paper",
+      "label": "A Differentiable Entropy Model for Learned Image Compression",
+      "year": 2023,
+      "venue": "International Conference on Image Analysis and Processing",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-43148-7_28",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:dsousa",
+      "type": "paper",
+      "label": "A hitchhiker's guide to white-box neural network watermarking robustness",
+      "year": 2023,
+      "venue": "European Workshop on Visual Information Processing",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:wang2023optimized",
+      "type": "paper",
+      "label": "AIoT-based Neural Decoding and Neurofeedback for Accelerated Cognitive Training: Vision, Directions and Preliminary Results",
+      "year": 2023,
+      "venue": "22nd IEEE Statistical Signal Processing Workshop",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:nahon2023mining",
+      "type": "paper",
+      "label": "All predictions matter: an online video prediction approach",
+      "year": 2023,
+      "venue": "European Workshop on Visual Information Processing",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:liao2023can",
+      "type": "paper",
+      "label": "Can Unstructured Pruning Reduce the Depth in Deep Neural Networks?",
+      "year": 2023,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Liao_Can_Unstructured_Pruning_Reduce_the_Depth_in_Deep_Neural_Networks_ICCVW_2023_paper.pdf",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:quetu2023dodginge",
+      "type": "paper",
+      "label": "Can we avoid Double Descent in Deep Neural Networks?",
+      "year": 2023,
+      "venue": "2023 IEEE International Conference on Image Processing (ICIP)",
+      "url": "https://arxiv.org/pdf/2302.13259",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:Deng_2023_WACV",
+      "type": "paper",
+      "label": "Compressing Explicit Voxel Grid Representations: Fast NeRFs Become Also Small",
+      "year": 2023,
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+      "url": "https://openaccess.thecvf.com/content/WACV2023/papers/Deng_Compressing_Explicit_Voxel_Grid_Representations_Fast_NeRFs_Become_Also_Small_WACV_2023_paper.pdf",
+      "topics": [
+        "compression",
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:TARTAGLIONE2023126612",
+      "type": "paper",
+      "label": "Disentangling private classes through regularization",
+      "year": 2023,
+      "venue": "Neurocomputing",
+      "url": "https://www.sciencedirect.com/science/article/pii/S092523122300735X",
+      "topics": [
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:milovanovic2023learn",
+      "type": "paper",
+      "label": "Learn how to Prune Pixels for Multi-view Neural Image-based Synthesis",
+      "year": 2023,
+      "venue": "IEEE International Cnference on Multimedia and Expo - Immersive Media Compression Workshop",
+      "url": "https://arxiv.org/pdf/2305.03572",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:nahon2023mental",
+      "type": "paper",
+      "label": "Mental State Classification Using EEG Signals: Ethics, Law and Challenges",
+      "year": 2023,
+      "venue": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_28",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:nahon2023mining",
+      "type": "paper",
+      "label": "Mental state classification using EEG signals: ethics, law and challenges",
+      "year": 2023,
+      "venue": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery - workshop track",
+      "url": "",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:Nahon_2023_ICCV",
+      "type": "paper",
+      "label": "Mining bias-target Alignment from Voronoi Cells",
+      "year": 2023,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Nahon_Mining_bias-target_Alignment_from_Voronoi_Cells_ICCV_2023_paper.pdf",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:10.3389/fninf.2023.852105",
+      "type": "paper",
+      "label": "Neural network-derived perfusion maps: A model-free approach to computed tomography perfusion in patients with acute ischemic stroke",
+      "year": 2023,
+      "venue": "Frontiers in Neuroinformatics",
+      "url": "https://www.frontiersin.org/articles/10.3389/fninf.2023.852105",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:wang2023optimized",
+      "type": "paper",
+      "label": "Optimized preprocessing and Tiny ML for Attention State Classification",
+      "year": 2023,
+      "venue": "22nd IEEE Statistical Signal Processing Workshop",
+      "url": "https://arxiv.org/pdf/2303.11371",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:laurent2023packed",
+      "type": "paper",
+      "label": "Packed Ensembles for efficient uncertainty estimation",
+      "year": 2023,
+      "venue": "The Eleventh International Conference on Learning Representations (spotlight paper)",
+      "url": "https://openreview.net/forum?id=XXTyv1zD9zD",
+      "topics": [
+        "efficient"
+      ]
+    },
+    {
+      "id": "paper:li2023scotti",
+      "type": "paper",
+      "label": "SCoTTi: Save Computation at Training Time with an adaptive framework",
+      "year": 2023,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Li_SCoTTi_Save_Computation_at_Training_Time_with_an_Adaptive_Framework_ICCVW_2023_paper.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:spadaro2023shannon",
+      "type": "paper",
+      "label": "Shannon strikes again! entropy-based pruning in deep neural networks for transfer learning under extreme memory and computation budgets",
+      "year": 2023,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Spadaro_Shannon_Strikes_Again_Entropy-Based_Pruning_in_Deep_Neural_Networks_for_ICCVW_2023_paper.pdf",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:quetu2023sparse",
+      "type": "paper",
+      "label": "Sparse Double Descent in Vision Transformers: real or phantom threat?",
+      "year": 2023,
+      "venue": "International Conference on Image Analysis and Processing",
+      "url": "https://arxiv.org/pdf/2307.14253",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:di2023two",
+      "type": "paper",
+      "label": "Two is Better than One: Achieving High-Quality 3D Scene Modeling with a NeRF Ensemble",
+      "year": 2023,
+      "venue": "International Conference on Image Analysis and Processing",
+      "url": "https://telecom-paris.hal.science/hal-04205640/file/ICIAP23_EnsembleNeRF-2.pdf",
+      "topics": [
+        "gaussian"
+      ]
+    },
+    {
+      "id": "paper:barbano2023unbiased",
+      "type": "paper",
+      "label": "Unbiased Supervised Contrastive Learning",
+      "year": 2023,
+      "venue": "The Eleventh International Conference on Learning Representations",
+      "url": "https://openreview.net/forum?id=Ph5cJSfD2XN",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:vijayaratnam2023unified",
+      "type": "paper",
+      "label": "Unified Measures for the Rate-Distortion-Latency Trade-off",
+      "year": 2023,
+      "venue": "IEEE International Conference on Visual Communications and Image Processing",
+      "url": "https://centralesupelec.hal.science/hal-04350236/file/VCIP_2023_Melan_final_camera_ready.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:barbano2022two",
+      "type": "paper",
+      "label": "A Two-Step Radiologist-Like Approach for Covid-19 Computer-Aided Diagnosis from Chest X-Ray Images",
+      "year": 2022,
+      "venue": "International Conference on Image Analysis and Processing",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-06427-2_15",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:oniga2022applications",
+      "type": "paper",
+      "label": "Applications of AI and HPC in the Health Domain",
+      "year": 2022,
+      "venue": "HPC, Big Data, and AI Convergence Towards Exascale",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:Tartaglione_2022_BMVC",
+      "type": "paper",
+      "label": "Information Removal at the bottleneck in Deep Neural Networks",
+      "year": 2022,
+      "venue": "33rd British Machine Vision Conference 2022, BMVC 2022, London, UK, November 21-24, 2022",
+      "url": "https://bmvc2022.mpi-inf.mpg.de/0488.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2022loss",
+      "type": "paper",
+      "label": "Loss-based sensitivity regularization: towards deep sparse neural networks",
+      "year": 2022,
+      "venue": "Neural Networks",
+      "url": "https://arxiv.org/pdf/2011.09905",
+      "topics": [
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2022marco",
+      "type": "paper",
+      "label": "Marco Aldinucci, David Atienza, Federico Bolelli, Monica Caballero, Iacopo Colonnelli, Jose Flich, Jon A. Gomez, David Gonzalez, Costantino Grana, Marco Grangetto, Simone Leo, Pedro Lopez, Dana Oniga, Roberto Paredes, Luca Pireddu, Eduardo Quinones, Tatiana Silva",
+      "year": 2022,
+      "venue": "Technologies and Applications for Big Data Value",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:quinones2022deephealth",
+      "type": "paper",
+      "label": "The DeepHealth HPC Infrastructure: Leveraging Heterogenous HPC and Cloud-Computing Infrastructures for IA-Based Medical Solutions",
+      "year": 2022,
+      "venue": "HPC, Big Data, and AI Convergence Towards Exascale",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:aldinucci2022deephealth",
+      "type": "paper",
+      "label": "The DeepHealth Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous HPC and Cloud Architectures",
+      "year": 2022,
+      "venue": "Technologies and Applications for Big Data Value",
+      "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:9897223",
+      "type": "paper",
+      "label": "The Rise of the Lottery Heroes: Why Zero-Shot Pruning is Hard",
+      "year": 2022,
+      "venue": "2022 IEEE International Conference on Image Processing (ICIP)",
+      "url": "https://hal.archives-ouvertes.fr/hal-03766740/document",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:bragagnolo2022update",
+      "type": "paper",
+      "label": "To update or not to update? Neurons at equilibrium in deep models",
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/8b2fc235787852ead92da2268cd9e90c-Paper-Conference.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2021hitchhiker",
+      "type": "paper",
+      "label": "A Hitchhiker’s Guide towards Transactive Memory System Modeling in Small Group Interactions",
+      "year": 2021,
+      "venue": "Companion Publication of the 2021 International Conference on Multimodal Interaction",
+      "url": "https://dl.acm.org/doi/10.1145/3461615.3485414",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:barbano2021bridging",
+      "type": "paper",
+      "label": "Bridging the gap between debiasing and privacy for deep learning",
+      "year": 2021,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021W/RPRMI/papers/Barbano_Bridging_the_Gap_Between_Debiasing_and_Privacy_for_Deep_Learning_ICCVW_2021_paper.pdf",
+      "topics": [
+        "debias",
+        "privacy"
+      ]
+    },
+    {
+      "id": "paper:renzulli2021capsule",
+      "type": "paper",
+      "label": "Capsule Networks with Routing Annealing",
+      "year": 2021,
+      "venue": "International Conference on Artificial Neural Networks",
+      "url": "https://iris.unito.it/retrieve/e27ce434-ea60-2581-e053-d805fe0acbaa/ICANN21_capsule.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2021delving",
+      "type": "paper",
+      "label": "Delving in the loss landscape to embed robust watermarks into neural networks",
+      "year": 2021,
+      "venue": "2020 25th International Conference on Pattern Recognition (ICPR)",
+      "url": "https://ieeexplore.ieee.org/document/9413062",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:perlo2021dysplasia",
+      "type": "paper",
+      "label": "Dysplasia grading of colorectal polyps through convolutional neural network analysis of whole slide images",
+      "year": 2021,
+      "venue": "International Conference on Medical Imaging and Computer-Aided Diagnosis",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-16-3880-0_34",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2021end",
+      "type": "paper",
+      "label": "End: Entangling and disentangling deep representations for bias correction",
+      "year": 2021,
+      "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
+      "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Tartaglione_EnD_Entangling_and_Disentangling_Deep_Representations_for_Bias_Correction_CVPR_2021_paper.pdf",
+      "topics": [
+        "debias"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2021hemp",
+      "type": "paper",
+      "label": "HEMP: High-order entropy minimization for neural network compression",
+      "year": 2021,
+      "venue": "Neurocomputing",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231221010663",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:bragagnolo2021role",
+      "type": "paper",
+      "label": "On the role of structured pruning for neural network compression",
+      "year": 2021,
+      "venue": "2021 IEEE International Conference on Image Processing (ICIP)",
+      "url": "https://iris.unito.it/retrieve/e27ce432-d3d0-2581-e053-d805fe0acbaa/ICIP2021_pruning.pdf",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2021serene",
+      "type": "paper",
+      "label": "Serene: Sensitivity-based regularization of neurons for structured sparsity in neural networks",
+      "year": 2021,
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "url": "https://arxiv.org/pdf/2102.03773",
+      "topics": [
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:barbano2021unitopatho",
+      "type": "paper",
+      "label": "UniToPatho, a labeled histopathological dataset for colorectal polyps classification and adenoma dysplasia grading",
+      "year": 2021,
+      "venue": "2021 IEEE International Conference on Image Processing (ICIP)",
+      "url": "https://ieeexplore.ieee.org/document/9506198",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2020non",
+      "type": "paper",
+      "label": "A non-discriminatory approach to ethical deep learning",
+      "year": 2020,
+      "venue": "2020 IEEE 19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+      "url": "https://arxiv.org/pdf/2008.01430",
+      "topics": [
+        "privacy"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2020pruning",
+      "type": "paper",
+      "label": "Pruning artificial neural networks: A way to find well-generalizing, high-entropy sharp minima",
+      "year": 2020,
+      "venue": "International Conference on Artificial Neural Networks",
+      "url": "https://arxiv.org/pdf/2004.14765",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2020unveiling",
+      "type": "paper",
+      "label": "Unveiling covid-19 from chest x-ray with deep learning: a hurdles race with small data",
+      "year": 2020,
+      "venue": "International Journal of Environmental Research and Public Health",
+      "url": "https://www.mdpi.com/1660-4601/17/18/6933",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2019post",
+      "type": "paper",
+      "label": "Post-synaptic potential regularization has potential",
+      "year": 2019,
+      "venue": "International Conference on Artificial Neural Networks",
+      "url": "https://arxiv.org/pdf/1907.08544",
+      "topics": [
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2019take",
+      "type": "paper",
+      "label": "Take a ramble into solution spaces for classification problems in neural networks",
+      "year": 2019,
+      "venue": "International conference on image analysis and processing",
+      "url": "https://iris.unito.it/retrieve/e27ce42e-7422-2581-e053-d805fe0acbaa/ICIAP19_takearamble.pdf",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2018learning",
+      "type": "paper",
+      "label": "Learning sparse neural networks via sensitivity-driven regularization",
+      "year": 2018,
+      "venue": "Advances in neural information processing systems",
+      "url": "https://proceedings.neurips.cc/paper/2018/file/04df4d434d481c5bb723be1b6df1ee65-Paper.pdf",
+      "topics": [
+        "regularization"
+      ]
+    },
+    {
+      "id": "paper:baldassi2018role",
+      "type": "paper",
+      "label": "Role of synaptic stochasticity in training low-precision neural networks",
+      "year": 2018,
+      "venue": "Physical review letters",
+      "url": "https://arxiv.org/pdf/1710.09825",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2015communication",
+      "type": "paper",
+      "label": "Communication scheduling and buslet synthesis for low-interconnect HLS designs",
+      "year": 2015,
+      "venue": "2015 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)",
+      "url": "https://ieeexplore.ieee.org/abstract/document/7372554",
+      "topics": [
+        "other"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "root",
+      "target": "topic:compression"
+    },
+    {
+      "source": "root",
+      "target": "topic:gaussian"
+    },
+    {
+      "source": "root",
+      "target": "topic:debias"
+    },
+    {
+      "source": "root",
+      "target": "topic:regularization"
+    },
+    {
+      "source": "root",
+      "target": "topic:privacy"
+    },
+    {
+      "source": "root",
+      "target": "topic:efficient"
+    },
+    {
+      "source": "root",
+      "target": "topic:continual"
+    },
+    {
+      "source": "root",
+      "target": "topic:other"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:salman2025compression"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:salman2025compression"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:gailhard2025feature"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:di2025gode"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:mazouz2025lightweight"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:mazouz2025lightweight"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:quelennec2025memory"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:mazouz2025security"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:diecidue2025silence"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:liao2024nepenthe"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:nguyen2026efficient"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:roos2026met"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:haider2025inr"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:anonymous2026instant"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:anonymous2026instant"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:tran2025rave"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:anonymous2026study"
+    },
+    {
+      "source": "topic:continual",
+      "target": "paper:marouf2025no"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:nguyen2025beyond"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:nguyen2025beyond"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:renzulli2025capsule"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:spadaro2025denoising"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:spadaro2025denoising"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:ciranni2025diffusing"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:olivi2025efficient"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:presta2024efficient"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:presta2024efficient"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:ali2024elmgs"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:ali2024elmgs"
+    },
+    {
+      "source": "topic:continual",
+      "target": "paper:marouf2023rethinking"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:wang2025folder"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:gailhard2024hygene"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:craparotta2025improving"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:quetu2024lacoot"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:PILO2025102030"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:dalmasso2025neural"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:ciranni2025say"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:10843163"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:spadaro2025tep"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:liao2025till"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:liao2025till"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:WANG2025129422"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:10.1007/978-3-031-78169-8_20"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:spadaro2024wignet"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:nguyen2024activation"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:10849832"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:di2024boost"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:di2024boost"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:nahon2024debiasing"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:presta2024domain"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:quetu2024dsd2"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:desousa2024find"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:10647413"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:girard2024memory"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:marouf2024mini"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:quetu2024simpler"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:quelennec2024towards"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:Ali_2024_BMVC"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:Ali_2024_BMVC"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:Ali_2024_BMVC"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:10791867"
+    },
+    {
+      "source": "topic:continual",
+      "target": "paper:marouf2023weighted"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:presta2023differentiable"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:dsousa"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:wang2023optimized"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:nahon2023mining"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:liao2023can"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:quetu2023dodginge"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:Deng_2023_WACV"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:Deng_2023_WACV"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:TARTAGLIONE2023126612"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:milovanovic2023learn"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:nahon2023mental"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:nahon2023mining"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:Nahon_2023_ICCV"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:10.3389/fninf.2023.852105"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:wang2023optimized"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:laurent2023packed"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:li2023scotti"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:spadaro2023shannon"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:quetu2023sparse"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:di2023two"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:barbano2023unbiased"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:vijayaratnam2023unified"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:barbano2022two"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:oniga2022applications"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:Tartaglione_2022_BMVC"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:tartaglione2022loss"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2022marco"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:quinones2022deephealth"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:aldinucci2022deephealth"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:9897223"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:bragagnolo2022update"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2021hitchhiker"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:barbano2021bridging"
+    },
+    {
+      "source": "topic:privacy",
+      "target": "paper:barbano2021bridging"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:renzulli2021capsule"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2021delving"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:perlo2021dysplasia"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:tartaglione2021end"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:tartaglione2021hemp"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:bragagnolo2021role"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:tartaglione2021serene"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:barbano2021unitopatho"
+    },
+    {
+      "source": "topic:privacy",
+      "target": "paper:tartaglione2020non"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:tartaglione2020pruning"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2020unveiling"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:tartaglione2019post"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2019take"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:tartaglione2018learning"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:baldassi2018role"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:tartaglione2015communication"
+    }
+  ],
+  "topics": [
+    {
+      "id": "compression",
+      "label": "Compression & Pruning",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "gaussian",
+      "label": "3D & Gaussian Splatting",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "debias",
+      "label": "Debiasing & Fairness",
+      "color": "#f472b6"
+    },
+    {
+      "id": "regularization",
+      "label": "Regularization",
+      "color": "#c4b5fd"
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy",
+      "color": "#fbbf24"
+    },
+    {
+      "id": "efficient",
+      "label": "Efficient & Frugal AI",
+      "color": "#34d399"
+    },
+    {
+      "id": "continual",
+      "label": "Continual Learning",
+      "color": "#fb923c"
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "color": "#94a3b8",
+      "regex": null
+    }
+  ],
+  "stats": {
+    "papers": 99,
+    "topics": 8,
+    "by_topic": {
+      "compression": 29,
+      "gaussian": 8,
+      "debias": 9,
+      "regularization": 6,
+      "privacy": 2,
+      "efficient": 14,
+      "continual": 3,
+      "nas": 0,
+      "other": 41
+    }
+  }
+}
