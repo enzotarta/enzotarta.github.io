@@ -44,10 +44,6 @@ nav: about
                 <div class="metric-value">{{ c.i10_index }}</div>
                 <div class="metric-label">i10-index</div>
             </div>
-            <div class="metric-card">
-                <div class="metric-value">{{ c.works_count }}</div>
-                <div class="metric-label">Works</div>
-            </div>
         </div>
 
         <div class="pub-chart-wrap">
@@ -55,9 +51,8 @@ nav: about
         </div>
 
         <p class="pub-source">
-            Source: <a href="https://openalex.org/{{ c.openalex_id }}" target="_blank" rel="noopener">OpenAlex</a>,
+            Source: <a href="{{ c.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>,
             updated {{ c.updated }}.
-            See also <a href="{{ c.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>.
         </p>
 
         <h2 id="preprints">Preprints</h2>
@@ -95,19 +90,6 @@ nav: about
                 data: data.citations_by_year,
                 backgroundColor: grad,
                 borderRadius: 4,
-                yAxisID: 'y',
-                order: 2,
-            }, {
-                label: 'Publications',
-                data: data.works_by_year,
-                type: 'line',
-                borderColor: '#c4b5fd',
-                backgroundColor: 'rgba(196,181,253,0.15)',
-                tension: 0.35,
-                pointRadius: 3,
-                pointBackgroundColor: '#c4b5fd',
-                yAxisID: 'y1',
-                order: 1,
             }]
         },
         options: {
@@ -115,7 +97,7 @@ nav: about
             maintainAspectRatio: false,
             interaction: { intersect: false, mode: 'index' },
             plugins: {
-                legend: { labels: { color: '#94a3b8' } },
+                legend: { display: false },
                 tooltip: {
                     backgroundColor: 'rgba(15,23,42,0.95)',
                     borderColor: 'rgba(96,165,250,0.4)',
@@ -128,16 +110,9 @@ nav: about
                     grid:  { color: 'rgba(255,255,255,0.04)' }
                 },
                 y: {
-                    position: 'left',
                     title: { display: true, text: 'Citations', color: '#60a5fa' },
                     ticks: { color: '#94a3b8' },
                     grid:  { color: 'rgba(255,255,255,0.06)' }
-                },
-                y1: {
-                    position: 'right',
-                    title: { display: true, text: 'Publications', color: '#c4b5fd' },
-                    ticks: { color: '#94a3b8' },
-                    grid:  { display: false }
                 }
             }
         }

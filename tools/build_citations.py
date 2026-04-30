@@ -1,62 +1,89 @@
 #!/usr/bin/env python3
-"""Fetch OpenAlex per-year publication and citation counts and write
-_data/citations.json for the site to render as a Scholar-style chart.
+"""Fetch Google Scholar author stats via SerpAPI and write
+_data/citations.json for the publications page to render.
 
-Usage:  python3 tools/build_citations.py [openalex_id]
+Reads SERPAPI_KEY from the environment; fails loudly if missing.
+
+Usage:  SERPAPI_KEY=... python3 tools/build_citations.py [scholar_id]
 """
 
 from __future__ import annotations
 import json
+import os
 import sys
+import urllib.parse
 import urllib.request
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_data" / "citations.json"
-DEFAULT_ID = "A5046851981"
-USER_AGENT = "enzotarta.github.io/1.0 (mailto:enzo.tartaglione@telecom-paris.fr)"
+DEFAULT_SCHOLAR_ID = "uKuvN64AAAAJ"
 
 
 def fetch(url: str) -> dict:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=30) as r:
+    with urllib.request.urlopen(url, timeout=30) as r:
         return json.loads(r.read().decode("utf-8"))
 
 
-def main() -> None:
-    aid = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ID
-    data = fetch(f"https://api.openalex.org/authors/{aid}")
-    counts = sorted(data.get("counts_by_year", []), key=lambda c: c["year"])
+def extract_table_value(table: list[dict], key: str) -> int:
+    for row in table or []:
+        if key in row:
+            v = row[key]
+            return int(v.get("all", 0)) if isinstance(v, dict) else int(v or 0)
+    return 0
 
-    if counts:
-        years = list(range(counts[0]["year"], counts[-1]["year"] + 1))
-        by_year = {c["year"]: c for c in counts}
-        works  = [int(by_year.get(y, {}).get("works_count", 0))    for y in years]
-        cites  = [int(by_year.get(y, {}).get("cited_by_count", 0)) for y in years]
+
+def main() -> None:
+    api_key = os.getenv("SERPAPI_KEY", "").strip()
+    if not api_key:
+        sys.exit("SERPAPI_KEY env var not set. Get one at https://serpapi.com/")
+
+    scholar_id = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SCHOLAR_ID
+    params = {
+        "engine":    "google_scholar_author",
+        "author_id": scholar_id,
+        "hl":        "en",
+        "api_key":   api_key,
+    }
+    url = "https://serpapi.com/search.json?" + urllib.parse.urlencode(params)
+    data = fetch(url)
+
+    cited_by = data.get("cited_by", {}) or {}
+    table    = cited_by.get("table", []) or []
+    graph    = cited_by.get("graph", []) or []
+
+    cited_by_count = extract_table_value(table, "citations")
+    h_index        = extract_table_value(table, "h_index")
+    i10_index      = extract_table_value(table, "i10_index")
+
+    if graph:
+        graph = sorted(graph, key=lambda g: g.get("year", 0))
+        first, last = graph[0]["year"], graph[-1]["year"]
+        by_year = {int(g["year"]): int(g.get("citations", 0)) for g in graph}
+        years = list(range(first, last + 1))
+        cites = [by_year.get(y, 0) for y in years]
     else:
-        years, works, cites = [], [], []
+        years, cites = [], []
 
     payload = {
-        "author":           data.get("display_name", ""),
-        "openalex_id":      aid,
-        "scholar_url":      "https://scholar.google.com/citations?user=uKuvN64AAAAJ",
-        "works_count":      int(data.get("works_count", 0)),
-        "cited_by_count":   int(data.get("cited_by_count", 0)),
-        "h_index":          int(data.get("summary_stats", {}).get("h_index", 0)),
-        "i10_index":        int(data.get("summary_stats", {}).get("i10_index", 0)),
-        "years":            years,
-        "works_by_year":    works,
+        "author":            data.get("author", {}).get("name", ""),
+        "scholar_id":        scholar_id,
+        "scholar_url":       f"https://scholar.google.com/citations?user={scholar_id}",
+        "cited_by_count":    cited_by_count,
+        "h_index":           h_index,
+        "i10_index":         i10_index,
+        "years":             years,
         "citations_by_year": cites,
-        "updated":          date.today().isoformat(),
+        "updated":           date.today().isoformat(),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
                    encoding="utf-8")
     print(f"Wrote {OUT.relative_to(ROOT)}: "
-          f"{payload['works_count']} works, {payload['cited_by_count']} citations, "
-          f"h={payload['h_index']}, i10={payload['i10_index']}")
+          f"{cited_by_count} citations, h={h_index}, i10={i10_index}, "
+          f"{len(years)} years")
 
 
 if __name__ == "__main__":

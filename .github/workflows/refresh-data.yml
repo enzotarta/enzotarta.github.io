@@ -24,7 +24,9 @@ jobs:
       - name: Refresh publications from BibBase
         run: python tools/build_publications.py
 
-      - name: Refresh citations from OpenAlex
+      - name: Refresh citations from Google Scholar (via SerpAPI)
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python tools/build_citations.py
 
       - name: Commit changes if any
