@@ -246,7 +246,74 @@ header ul.nav li a:focus {
   pointer-events: none;
 }
 
-/* Hero content */
+/* Hero row: name+chips on the left, portrait on the right */
+.hero-row {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap-reverse;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+.hero-row .hero-content {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  max-width: 620px;
+  flex: 1 1 480px;
+}
+
+/* Portrait */
+.hero-photo-wrap {
+  position: relative;
+  flex: 0 0 auto;
+  width: clamp(220px, 28vw, 320px);
+  aspect-ratio: 1 / 1;
+  animation: fadeSlideDown 0.9s ease 0.4s both;
+}
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5),
+              0 0 0 1px rgba(96,165,250,0.15);
+  position: relative;
+  z-index: 2;
+}
+.hero-photo-glow {
+  position: absolute;
+  inset: -12px;
+  border-radius: 32px;
+  background: conic-gradient(from 120deg,
+              rgba(96,165,250,0.55),
+              rgba(6,182,212,0.55),
+              rgba(196,181,253,0.55),
+              rgba(96,165,250,0.55));
+  filter: blur(28px);
+  opacity: 0.55;
+  z-index: 1;
+  animation: heroPhotoSpin 18s linear infinite;
+}
+@keyframes heroPhotoSpin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .hero-row { gap: 32px; padding: 40px 20px 80px; }
+  .hero-row .hero-content { text-align: center; flex: 1 1 100%; max-width: 100%; }
+  .hero-row .hero-themes,
+  .hero-row .hero-cta { justify-content: center; }
+  .hero-photo-wrap { width: clamp(180px, 60vw, 240px); }
+}
+
+/* Hero content (legacy: still used on inner pages) */
 .hero-content {
   position: relative;
   z-index: 10;

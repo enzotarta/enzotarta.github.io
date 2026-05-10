@@ -1,0 +1,29 @@
+/* TEAM */
+
+  Site owner: Enzo Tartaglione
+  Role:       Full Professor — Deep Learning & Efficient AI
+  Affil.:     Télécom Paris, Institut Polytechnique de Paris
+  Email:      enzo.tartaglione@telecom-paris.fr
+  Site:       https://enzotarta.github.io
+  Scholar:    https://scholar.google.com/citations?user=uKuvN64AAAAJ
+  ORCID:      0000-0003-4274-8298
+  GitHub:     https://github.com/enzotarta
+  LinkedIn:   https://www.linkedin.com/in/enzo-tartaglione-490950a2
+
+/* THANKS */
+
+  Co-authors and collaborators across Télécom Paris, Hi!Paris, ELLIS,
+  Politecnico di Torino, Università di Torino, MILA / ÉTS Montréal,
+  University of Genova, and many partner labs.
+
+/* SITE */
+
+  Generator:    Jekyll on GitHub Pages (gh-pages branch)
+  Theme:        Custom dark theme (css/modern-theme.css)
+  Publications: BibBase → tools/build_publications.py → _data/publications/
+  Citations:    Google Scholar via SerpAPI → tools/build_citations.py
+  Research map: OpenAlex concepts + tools/build_research_tree.py with D3.js
+  CV:           Single Markdown source feeding both the page and a
+                LaTeX/PDF build (tools/build_cv.py)
+  Refresh:      Daily GitHub Actions workflow at 05:17 UTC
+  Last update:  Auto-tracked in commit history
