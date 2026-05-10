@@ -1,0 +1,37 @@
+# Enzo Tartaglione — enzotarta.github.io
+
+> Personal academic website of Enzo Tartaglione, Full Professor at Télécom
+> Paris (Institut Polytechnique de Paris). Research on deep neural network
+> compression, pruning, model debiasing, privacy in AI, 3D Gaussian Splatting,
+> and regularization for deep learning.
+
+## Identity
+
+- Name: Enzo Tartaglione
+- Affiliation: Télécom Paris, Institut Polytechnique de Paris
+- Role: Full Professor in Deep Learning and Efficient AI (since Jan 2026)
+- Email: enzo.tartaglione@telecom-paris.fr
+- Google Scholar: https://scholar.google.com/citations?user=uKuvN64AAAAJ
+- ORCID: https://orcid.org/0000-0003-4274-8298
+- GitHub: https://github.com/enzotarta
+- LinkedIn: https://www.linkedin.com/in/enzo-tartaglione-490950a2
+
+## Key resources
+
+- [Homepage](https://enzotarta.github.io/): bio, current team, latest news
+- [Curriculum Vitae](https://enzotarta.github.io/cv.html): full academic CV
+- [Publications](https://enzotarta.github.io/about.html): preprints, peer-reviewed papers, patents, datasets, with live Google Scholar citation metrics
+- [Research themes](https://enzotarta.github.io/research.html): interactive map of publications grouped by topic
+- [Talks & Slides](https://enzotarta.github.io/talks.html): invited talks, tutorials, slide decks
+- [Open positions](https://enzotarta.github.io/open_positions.html): current PhD/postdoc/internship openings
+
+## Structured data
+
+The publications page exposes JSON-LD `ScholarlyArticle` entries for every
+peer-reviewed paper and preprint. Topic tags for each paper live in
+[/_data/research_tree.json](https://enzotarta.github.io/_data/research_tree.json).
+
+## Contact
+
+For collaboration, supervision, or speaking invitations, write to
+enzo.tartaglione@telecom-paris.fr.

@@ -27,11 +27,71 @@
   <meta name="twitter:description" content="{{ page_desc | strip_newlines | strip }}">
   <meta name="twitter:image" content="{{ page_image }}">
 
+  <meta name="author" content="Enzo Tartaglione">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/logonew.png">
   <link rel="apple-touch-icon" href="/img/logonew.png">
 
   {% feed_meta %}
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Enzo Tartaglione",
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ site.default_image | absolute_url }}",
+    "jobTitle": "Full Professor",
+    "email": "mailto:{{ site.email }}",
+    "description": "{{ site.description | strip_newlines | strip }}",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Télécom Paris, Institut Polytechnique de Paris",
+      "url": "https://www.telecom-paris.fr/"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address.street }}",
+      "addressLocality": "{{ site.address.city }}",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": [
+      "Deep Learning",
+      "Neural Network Compression",
+      "Pruning",
+      "Model Debiasing",
+      "Privacy in AI",
+      "3D Gaussian Splatting",
+      "Regularization",
+      "Computer Vision",
+      "Frugal AI"
+    ],
+    "sameAs": [
+      "{{ site.social.scholar }}",
+      "{{ site.social.orcid }}",
+      "{{ site.social.linkedin }}",
+      "{{ site.social.github }}",
+      "{{ site.social.twitter }}",
+      "https://www.telecom-paris.fr/enzo-tartaglione"
+    ]
+  }
+  </script>
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "{{ '/' | absolute_url }}",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description | strip_newlines | strip }}",
+    "author": { "@type": "Person", "name": "Enzo Tartaglione" },
+    "inLanguage": "en"
+  }
+  </script>
 
   <!-- Modern fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -3,6 +3,11 @@ layout: cv
 title: Enzo Tartaglione – Curriculum Vitae
 nav: cv
 permalink: /cv.html
+description: >-
+  Curriculum Vitae of Enzo Tartaglione — Full Professor at Télécom Paris
+  (Institut Polytechnique de Paris). Academic appointments, education,
+  editorial activity, grants, awards, scientific animation, and Ph.D.
+  examination committees.
 ---
 
 ## Biography {#bio}

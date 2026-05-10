@@ -1720,6 +1720,61 @@ table tr:hover td { background: var(--bg-card) !important; }
 }
 .node-root circle { animation: researchRootPulse 4s ease-in-out infinite; }
 
+/* Static fallback list (crawler-readable; collapsed by default) */
+.research-list-fallback {
+  margin-top: 30px;
+  padding: 16px 20px;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+}
+.research-list-fallback > summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  list-style: none;
+}
+.research-list-fallback > summary::-webkit-details-marker { display: none; }
+.research-list-fallback > summary::before { content: "▸ "; color: var(--blue-light); }
+.research-list-fallback[open] > summary::before { content: "▾ "; }
+
+.research-list-topic {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin: 24px 0 10px !important;
+}
+.research-list-topic span {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  font-size: 13px;
+}
+.research-list-papers {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+.research-list-papers li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.research-list-papers li:last-child { border-bottom: none; }
+.research-list-papers a {
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+}
+.research-list-papers a:hover { color: var(--blue-light) !important; }
+.research-list-meta {
+  display: block;
+  color: var(--text-muted) !important;
+  font-size: 12.5px;
+  margin-top: 2px;
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

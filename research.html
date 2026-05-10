@@ -1,7 +1,12 @@
 ---
 layout: default
-title: Enzo Tartaglione – Research
+title: Enzo Tartaglione – Research themes
 nav: research
+description: >-
+  Interactive map of Enzo Tartaglione's published research, grouped by topic:
+  compression and pruning, debiasing, regularization, continual learning,
+  privacy, efficient AI, and 3D Gaussian Splatting. Every paper is one
+  clickable node, classified from OpenAlex concepts.
 ---
 <section id="inner-headline">
     <div class="container">
@@ -33,10 +38,35 @@ nav: research
         </div>
 
         <p class="research-source">
-            Topics are assigned by keyword regex from
+            Topics are assigned via OpenAlex concepts and a keyword override list in
             <a href="https://github.com/enzotarta/enzotarta.github.io/blob/gh-pages/_data/topics.yml" target="_blank" rel="noopener">_data/topics.yml</a>.
-            Papers can belong to multiple topics. Auto-rebuilt daily from BibBase.
+            Papers can belong to multiple topics. Auto-rebuilt daily.
         </p>
+
+        {% comment %}
+        Static fallback list — readable by search engines and AI crawlers
+        regardless of whether they execute the D3 graph. Visually collapsed
+        by default; click to expand.
+        {% endcomment %}
+        {% assign tree = site.data.research_tree %}
+        <details class="research-list-fallback">
+            <summary>Browse as list ({{ tree.stats.papers }} papers across {{ tree.stats.topics }} topics)</summary>
+            {% for t in tree.topics %}
+                {% assign topic_papers = tree.nodes | where_exp: "n", "n.type == 'paper'"
+                                         | where_exp: "n", "n.topics contains t.id" %}
+                {% if topic_papers.size > 0 %}
+                    <h3 class="research-list-topic" style="color: {{ t.color }};">{{ t.label }} <span>({{ topic_papers.size }})</span></h3>
+                    <ul class="research-list-papers">
+                        {% for p in topic_papers %}
+                            <li>
+                                {% if p.url and p.url != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.label }}</a>{% else %}{{ p.label }}{% endif %}
+                                <span class="research-list-meta">{{ p.year }}{% if p.venue and p.venue != "" %} · {{ p.venue }}{% endif %}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+        </details>
     </div>
 </section>
 

@@ -4,7 +4,7 @@ description: >-
   de Paris). Research on model compression, debiasing, privacy in AI, and
   information flow in deep neural networks.
 url: https://enzotarta.github.io
-default_image: /img/logonew.png
+default_image: /img/og-cover.png
 twitter_handle: TartaglioneEnzo
 
 plugins:

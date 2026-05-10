@@ -1,8 +1,33 @@
 ---
 layout: default
-title: Enzo Tartaglione – Publications
+title: Enzo Tartaglione – Publications & Citations
 nav: about
+description: >-
+  Publications by Enzo Tartaglione (Télécom Paris): preprints, peer-reviewed
+  papers, patents, and datasets — covering neural network compression,
+  pruning, debiasing, privacy, and efficient deep learning. Live citation
+  metrics from Google Scholar.
 ---
+
+{% comment %} Structured data for AI crawlers and search engines {% endcomment %}
+{% assign all_pubs = site.data.publications.preprints | concat: site.data.publications.main %}
+<script type="application/ld+json">
+[
+{% for p in all_pubs %}{% unless forloop.first %},{% endunless %}
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": {{ p.title | jsonify }},
+    "name":     {{ p.title | jsonify }},
+    "datePublished": "{{ p.year }}",
+    "author": [{% for a in p.authors %}{% unless forloop.first %},{% endunless %}{"@type":"Person","name": {{ a | jsonify }}}{% endfor %}],
+    "isPartOf": { "@type": "PublicationVolume", "name": {{ p.venue | default: '' | jsonify }} }{% if p.url and p.url != "" %},
+    "url": {{ p.url | jsonify }}{% endif %}{% if p.doi and p.doi != "" %},
+    "identifier": "doi:{{ p.doi }}"{% endif %}
+  }{% endfor %}
+]
+</script>
+
 <section id="inner-headline">
     <div class="container">
         <div class="row">
