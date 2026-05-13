@@ -1,8 +1,19 @@
 {% assign m = include.member %}
+{% assign photo_src = m.photo | default: '/assets/img/avatar.png' %}
+{% if photo_src == '' %}{% assign photo_src = '/assets/img/avatar.png' %}{% endif %}
 <div class="col-md-3 text-center">
-    <div class="team-member">
+    <div class="team-member"
+         tabindex="0"
+         role="button"
+         aria-label="Show details for {{ m.name }}"
+         data-name="{{ m.name | escape }}"
+         data-role="{{ m.role | escape }}"
+         data-photo="{{ photo_src | escape }}"
+         data-topic="{{ m.topic | default: '' | escape }}"
+         data-co-supervisor="{{ m.co_supervisor | default: '' | escape }}"
+         data-previously="{{ m.previously | default: '' | escape }}">
         <img class="thumbnail" width="400" height="300"
-             src="{% if m.photo and m.photo != '' %}{{ m.photo }}{% else %}/assets/img/avatar.png{% endif %}"
+             src="{{ photo_src }}"
              alt="{{ m.name }}">
         <h4>{{ m.name }}</h4>
         <span class="deg">{{ m.role }}<br></span>
