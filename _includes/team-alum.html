@@ -1,8 +1,27 @@
+{% comment %}
+  Render a former member as a single line.
+  Order of precedence for the summary text:
+    1. include.member.summary  (explicit frontmatter field)
+    2. include.member.content  (markdownified body, collapsed to one line)
+  Markdown links are preserved; paragraph breaks are flattened to spaces.
+{% endcomment %}
+
 {% assign m = include.member %}
+{% if m.summary and m.summary != "" %}
+  {% assign body_html = m.summary | markdownify %}
+{% else %}
+  {% assign body_html = m.content %}
+{% endif %}
+{% assign body_one = body_html
+    | replace: '<p>', ''
+    | replace: '</p>', ' '
+    | newline_to_br
+    | replace: '<br />', ' '
+    | replace: '<br/>', ' '
+    | replace: '<br>', ' '
+    | strip_newlines
+    | strip %}
+
 <li>
-    <strong>{{ m.name }}</strong>
-    <span class="alum-meta">({{ m.role }}{% if m.period and m.period != "" %}, {{ m.period }}{% endif %})</span>
-    {% if m.content and m.content != "" %}
-        <div class="alum-body">{{ m.content }}</div>
-    {% endif %}
+    <strong>{{ m.name }}</strong><span class="alum-meta"> ({{ m.role }}{% if m.period and m.period != "" %}, {{ m.period }}{% endif %})</span>{% if body_one != "" %} — <span class="alum-summary">{{ body_one }}</span>{% endif %}
 </li>
