@@ -1,0 +1,8 @@
+{% assign m = include.member %}
+<li>
+    <strong>{{ m.name }}</strong>
+    <span class="alum-meta">({{ m.role }}{% if m.period and m.period != "" %}, {{ m.period }}{% endif %})</span>
+    {% if m.content and m.content != "" %}
+        <div class="alum-body">{{ m.content }}</div>
+    {% endif %}
+</li>

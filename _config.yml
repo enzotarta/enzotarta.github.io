@@ -14,6 +14,28 @@ plugins:
 collections:
   news:
     output: false
+  team:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: team
+    values:
+      layout: null
+
+# Display ordering for the "Currently working with" / "Formerly advising"
+# sections on the homepage. Members of unlisted roles fall through to the end.
+role_order:
+  - PostDoc
+  - Research Engineer
+  - PhD student
+  - Invited PhD student
+  - Research path student
+  - PRIM project
+  - Stage M2
+  - Stage M1
+  - Free stage
 email: enzo.tartaglione@telecom-paris.fr
 
 address:

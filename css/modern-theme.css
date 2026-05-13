@@ -1787,6 +1787,58 @@ table tr:hover td { background: var(--bg-card) !important; }
 }
 .node-root circle { animation: researchRootPulse 4s ease-in-out infinite; }
 
+/* Team section: role-grouped current + former lists */
+.team-section { padding: 20px 0 30px; }
+.team-section + .team-section { padding-top: 0; }
+
+.team-role-heading {
+  margin: 30px 0 16px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px dashed var(--border);
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.8px !important;
+  text-transform: uppercase !important;
+  color: var(--text-muted) !important;
+  text-align: center;
+}
+
+.team-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 6px 0 !important;
+}
+
+.team-alum-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto 24px !important;
+  max-width: 920px;
+}
+.team-alum-list li {
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.team-alum-list li:last-child { border-bottom: none; }
+.team-alum-list strong {
+  color: var(--text-primary);
+  margin-right: 6px;
+}
+.team-alum-list .alum-meta {
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+.team-alum-list .alum-body {
+  margin-top: 4px;
+  color: var(--text-secondary);
+}
+.team-alum-list .alum-body a { color: var(--blue-light); }
+.team-alum-list .alum-body p { margin: 0; }
+
 /* Static fallback list (crawler-readable; collapsed by default) */
 .research-list-fallback {
   margin-top: 30px;

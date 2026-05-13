@@ -1,0 +1,13 @@
+{% assign m = include.member %}
+<div class="col-md-3 text-center">
+    <div class="team-member">
+        <img class="thumbnail" width="400" height="300"
+             src="{% if m.photo and m.photo != '' %}{{ m.photo }}{% else %}/assets/img/avatar.png{% endif %}"
+             alt="{{ m.name }}">
+        <h4>{{ m.name }}</h4>
+        <span class="deg">{{ m.role }}<br></span>
+        {% if m.topic and m.topic != "" %}<em>{{ m.topic }}</em><br>{% endif %}
+        {% if m.co_supervisor and m.co_supervisor != "" %}<em>Co-supervised with {{ m.co_supervisor }}</em><br>{% endif %}
+        {% if m.previously and m.previously != "" %}<em>Previously: {{ m.previously }}</em><br>{% endif %}
+    </div>
+</div>
