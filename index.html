@@ -155,22 +155,22 @@ description: >-
     </div>
 
     <!-- Team-member modal: opened on click of any .team-member card -->
-    <div class="team-modal" id="team-modal" hidden role="dialog" aria-modal="true" aria-labelledby="team-modal-name">
-        <button class="team-modal-close" id="team-modal-close" aria-label="Close">&times;</button>
+    <div class="team-modal" id="team-modal" role="dialog" aria-modal="true" aria-labelledby="team-modal-name">
+        <button class="team-modal-close" id="team-modal-close" type="button" aria-label="Close">&times;</button>
         <div class="team-modal-card" role="document">
             <img class="team-modal-photo" id="team-modal-photo" alt="">
             <div class="team-modal-body">
                 <h3 id="team-modal-name"></h3>
                 <div class="team-modal-role" id="team-modal-role"></div>
-                <p class="team-modal-topic" id="team-modal-topic" hidden></p>
-                <p class="team-modal-meta" id="team-modal-cosupervisor" hidden></p>
-                <p class="team-modal-meta" id="team-modal-previously" hidden></p>
+                <p class="team-modal-topic" id="team-modal-topic"></p>
+                <p class="team-modal-meta" id="team-modal-cosupervisor"></p>
+                <p class="team-modal-meta" id="team-modal-previously"></p>
             </div>
         </div>
     </div>
 
     <script>
-    (function () {
+    document.addEventListener('DOMContentLoaded', function () {
         var modal      = document.getElementById('team-modal');
         var modalPhoto = document.getElementById('team-modal-photo');
         var modalName  = document.getElementById('team-modal-name');
@@ -179,63 +179,61 @@ description: >-
         var modalCo    = document.getElementById('team-modal-cosupervisor');
         var modalPrev  = document.getElementById('team-modal-previously');
         var closeBtn   = document.getElementById('team-modal-close');
+        var cards      = document.querySelectorAll('.team-member');
         var lastFocus  = null;
 
+        if (!modal || !cards.length) return;
+
         function setLine(el, label, value) {
-            if (value && value !== '') {
+            if (value) {
                 el.innerHTML = label ? '<strong>' + label + '</strong> ' + value : value;
-                el.hidden = false;
+                el.style.display = '';
             } else {
-                el.hidden = true;
+                el.style.display = 'none';
             }
         }
 
         function openModal(card) {
             lastFocus = card;
-            modalPhoto.src = card.getAttribute('data-photo') || '';
-            modalPhoto.alt = card.getAttribute('data-name') || '';
-            modalName.textContent = card.getAttribute('data-name') || '';
-            modalRole.textContent = card.getAttribute('data-role') || '';
-            setLine(modalTopic, '',                card.getAttribute('data-topic'));
-            setLine(modalCo,    'Co-supervised with', card.getAttribute('data-co-supervisor'));
-            setLine(modalPrev,  'Previously:',       card.getAttribute('data-previously'));
-            modal.hidden = false;
+            modalPhoto.src        = card.getAttribute('data-photo') || '';
+            modalPhoto.alt        = card.getAttribute('data-name')  || '';
+            modalName.textContent = card.getAttribute('data-name')  || '';
+            modalRole.textContent = card.getAttribute('data-role')  || '';
+            setLine(modalTopic, '',                    card.getAttribute('data-topic'));
+            setLine(modalCo,    'Co-supervised with',  card.getAttribute('data-co-supervisor'));
+            setLine(modalPrev,  'Previously:',         card.getAttribute('data-previously'));
+            modal.classList.add('open');
             document.body.classList.add('team-modal-open');
-            requestAnimationFrame(function () { modal.classList.add('open'); });
-            closeBtn.focus();
+            if (closeBtn) closeBtn.focus();
         }
 
         function closeModal() {
             modal.classList.remove('open');
             document.body.classList.remove('team-modal-open');
-            setTimeout(function () { modal.hidden = true; }, 220);
             if (lastFocus) lastFocus.focus();
         }
 
-        document.addEventListener('click', function (e) {
-            var card = e.target.closest('.team-member');
-            if (card) {
+        cards.forEach(function (card) {
+            card.addEventListener('click', function (e) {
                 e.preventDefault();
                 openModal(card);
-                return;
-            }
-            if (e.target === modal || e.target === closeBtn) closeModal();
-        });
-
-        document.addEventListener('keydown', function (e) {
-            if (modal.hidden) return;
-            if (e.key === 'Escape') closeModal();
-        });
-
-        document.querySelectorAll('.team-member').forEach(function (el) {
-            el.addEventListener('keydown', function (e) {
+            });
+            card.addEventListener('keydown', function (e) {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    openModal(el);
+                    openModal(card);
                 }
             });
         });
-    })();
+
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+        });
+    });
     </script>
 
     <a class="scrollup fa fa-angle-up active" href="#"></a>

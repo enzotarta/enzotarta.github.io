@@ -1811,9 +1811,16 @@ body.team-modal-open { overflow: hidden; }
   justify-content: center;
   padding: 24px;
   opacity: 0;
-  transition: opacity 0.22s ease;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.22s ease, visibility 0s linear 0.22s;
 }
-.team-modal.open { opacity: 1; }
+.team-modal.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.22s ease, visibility 0s linear 0s;
+}
 
 .team-modal-card {
   background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
