@@ -16,11 +16,18 @@ collections:
     output: false
   team:
     output: false
+  talks:
+    output: false
 
 defaults:
   - scope:
       path: ""
       type: team
+    values:
+      layout: null
+  - scope:
+      path: ""
+      type: talks
     values:
       layout: null
 

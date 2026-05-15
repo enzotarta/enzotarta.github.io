@@ -5,113 +5,114 @@ nav: talks
 description: >-
   Invited talks, keynotes, tutorials, and presentation slide decks by
   Enzo Tartaglione (Télécom Paris) on neural network compression,
-  debiasing, frugal AI, and related topics.
+  debiasing, frugal AI, and related topics. Auto-rendered from
+  _talks/*.md, sorted by most-recent occurrence.
 ---
 <section id="inner-headline">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="pageTitle">Talks & Slides</h2>
-			</div>
-		</div>
-	</div>
-</section>
-  <section id="content">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Browse my invited talks, tutorials and presentations. Click <strong>Slides</strong> to open the PDF (in a new tab) or use the copy button to copy the slides URL.</p>
-
-          <!-- Search bar -->
-          <input type="text" id="searchBar" class="form-control" placeholder="Search by title, venue, topic or year...">
-
-          <hr>
-
-          <div id="talks-list">
-
-            <div class="talk-card" data-title="A journey through Deep Neural Network Debiasing" data-venue="JIVP" data-topics="Debiasing" data-year="2026">
-              <h4>Beyond Traditional Pruning: Layer Collapse for Efficient Deep Learning</h4>
-              <p><strong>an invited talk for the Theme Development Workshop on Trustworthy AI</strong><br><span class="muted">Paris — March 6, 2026</span></p>
-              <p class="talk-actions">
-                <a href="https://partage.imt.fr/index.php/s/QFwQr9HZrEPwArZ" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
-                <button class="btn btn-default btn-sm copy-link" data-url=""><i class="fa fa-copy"></i> Copy link</button>
-                <!--<a href="https://github.com/enzotarta" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-code"></i> Resources</a>
-				<a href="https://youtu.be/xxxxxxxx" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-play"></i> Video</a>-->
-              </p>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">Talks &amp; Slides</h2>
             </div>
-            <div class="talk-card" data-title="A journey through Deep Neural Network Debiasing" data-venue="JIVP" data-topics="Debiasing" data-year="2026">
-              <h4>A journey through Deep Neural Network Debiasing</h4>
-              <p><strong>an invited talk for the Journal on Image and Video Processing</strong><br><span class="muted">Webinar — February 4, 2026</span></p>
-              <p class="talk-actions">
-                <a href="https://partage.imt.fr/index.php/s/SrLq565it9XqjpA" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
-                <button class="btn btn-default btn-sm copy-link" data-url=""><i class="fa fa-copy"></i> Copy link</button>
-                <!--<a href="https://github.com/enzotarta" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-code"></i> Resources</a>
-				<a href="https://youtu.be/xxxxxxxx" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-play"></i> Video</a>-->
-              </p>
-            </div>
-
-            <div class="talk-card" data-title="Coding 3D Gaussian Splatting: from Theory to Real Time Rendering" data-venue="PCS 2025" data-topics="3D Gaussian Splatting" data-year="2025">
-              <h4>Coding 3D Gaussian Splatting: from Theory to Real Time Rendering</h4>
-              <p><strong>keynote talk at PCS 2025</strong><br><span class="muted">Aachen, Germany — December 9, 2025</span></p>
-              <p class="talk-actions">
-                <a href="https://partage.imt.fr/index.php/s/xsPMyJbAE7ywmWb" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
-                <button class="btn btn-default btn-sm copy-link" data-url="https://partage.imt.fr/index.php/s/xsPMyJbAE7ywmWb"><i class="fa fa-copy"></i> Copy link</button>
-                <!--<a href="https://github.com/enzotarta" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-code"></i> Resources</a>
-				<a href="https://youtu.be/xxxxxxxx" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-play"></i> Video</a>-->
-              </p>
-            </div>
-            <!--<div class="talk-card" data-title="A journey through Deep Neural Network Debiasing" data-venue="ETS" data-topics="Quantization,Efficient DL,Green AI" data-year="2025">
-              <h4>A journey through Deep Neural Network Debiasing</h4>
-              <p><strong>a seminar for the ILLS group at ETS</strong><br><span class="muted">Montréal, Canada — September 2, 2025</span></p>
-              <p class="talk-actions">
-                <a href="https://partage.imt.fr/index.php/s/4d2DzzdRG5ZoHnm" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
-                <button class="btn btn-default btn-sm copy-link" data-url="https://partage.imt.fr/index.php/s/4d2DzzdRG5ZoHnm"><i class="fa fa-copy"></i> Copy link</button>
-                
-              </p>
-            </div>-->
-          </div> <!-- /talks-list -->
-
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Browse my invited talks, tutorials and presentations. A single talk may have been given at several venues — each occurrence has its own slides version. Click <strong>Slides</strong> to open the PDF, or use <strong>Copy link</strong> to grab the URL.</p>
+
+                <input type="text" id="searchBar" class="form-control" placeholder="Search by title, venue, location, topic or year...">
+
+                <hr>
+
+                <div id="talks-list">
+                    {% assign talks = site.talks | sort: "date" | reverse %}
+                    {% for t in talks %}
+                        {% assign occ = t.occurrences | sort: "date" | reverse %}
+                        {% capture venues_blob %}{% for o in occ %}{{ o.venue }} {{ o.location }} {% endfor %}{% endcapture %}
+                        {% capture years_blob %}{% for o in occ %}{{ o.date | date: '%Y' }} {% endfor %}{% endcapture %}
+
+                        <div class="talk-card"
+                             data-title="{{ t.title | escape }}"
+                             data-venues="{{ venues_blob | strip_newlines | strip | escape }}"
+                             data-topics="{{ t.topics | join: ', ' | escape }}"
+                             data-years="{{ years_blob | strip_newlines | strip }}">
+
+                            <h4>{{ t.title }}</h4>
+
+                            {% if t.topics and t.topics.size > 0 %}
+                                <p class="talk-topics">
+                                    {% for tag in t.topics %}<span class="talk-tag">{{ tag }}</span>{% endfor %}
+                                </p>
+                            {% endif %}
+
+                            <ul class="talk-occurrences">
+                                {% for o in occ %}
+                                    <li>
+                                        <div class="occ-meta">
+                                            <strong>{{ o.venue }}</strong>
+                                            <span class="muted">{% if o.location and o.location != "" %}{{ o.location }} — {% endif %}{{ o.date | date: "%B %-d, %Y" }}</span>
+                                        </div>
+                                        <div class="occ-actions">
+                                            {% if o.slides_url and o.slides_url != "" %}
+                                                <a href="{{ o.slides_url }}" target="_blank" rel="noopener" class="btn btn-default btn-sm">
+                                                    <i class="fa fa-file-powerpoint-o"></i> Slides
+                                                </a>
+                                                <button type="button" class="btn btn-default btn-sm copy-link" data-url="{{ o.slides_url }}">
+                                                    <i class="fa fa-copy"></i> Copy link
+                                                </button>
+                                            {% else %}
+                                                <span class="muted occ-no-slides">slides not yet available</span>
+                                            {% endif %}
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
-// Filter talks by title, venue, topics or year
-function filterTalks() {
-  const q = document.getElementById('searchBar').value.toLowerCase();
-  const talks = document.querySelectorAll('#talks-list .talk-card');
-  talks.forEach(t => {
-    const title = t.getAttribute('data-title') || '';
-    const venue = t.getAttribute('data-venue') || '';
-    const topics = t.getAttribute('data-topics') || '';
-    const year = t.getAttribute('data-year') || '';
-    const hay = (title + ' ' + venue + ' ' + topics + ' ' + year).toLowerCase();
-    t.style.display = hay.indexOf(q) !== -1 ? '' : 'none';
-  });
-}
+document.addEventListener('DOMContentLoaded', function () {
+    var searchBar = document.getElementById('searchBar');
+    var cards     = document.querySelectorAll('#talks-list .talk-card');
 
-// copy link helper
-document.addEventListener('click', function(e){
-  if (e.target.closest('.copy-link')){
-    const btn = e.target.closest('.copy-link');
-    const url = btn.getAttribute('data-url');
-    if (navigator.clipboard){
-      navigator.clipboard.writeText(url).then(()=>{
-        const old = btn.innerHTML;
-        btn.innerHTML = '<i class="fa fa-check"></i> Copied';
-        setTimeout(()=> btn.innerHTML = old, 1400);
-      }).catch(()=> alert('Copy failed - please copy manually'));
-    } else {
-      prompt('Copy this link', url);
+    function filterTalks() {
+        var q = (searchBar.value || '').toLowerCase().trim();
+        cards.forEach(function (c) {
+            var hay = (
+                (c.getAttribute('data-title')  || '') + ' ' +
+                (c.getAttribute('data-venues') || '') + ' ' +
+                (c.getAttribute('data-topics') || '') + ' ' +
+                (c.getAttribute('data-years')  || '')
+            ).toLowerCase();
+            c.style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
+        });
     }
-  }
-});
+    searchBar.addEventListener('input', filterTalks);
 
-// wire search input
-document.getElementById('searchBar').addEventListener('input', filterTalks);
+    document.addEventListener('click', function (e) {
+        var btn = e.target.closest('.copy-link');
+        if (!btn) return;
+        var url = btn.getAttribute('data-url') || '';
+        if (!url) return;
+        var done = function () {
+            var prev = btn.innerHTML;
+            btn.innerHTML = '<i class="fa fa-check"></i> Copied';
+            setTimeout(function () { btn.innerHTML = prev; }, 1400);
+        };
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(done, function () { prompt('Copy this link', url); });
+        } else {
+            prompt('Copy this link', url);
+        }
+    });
+});
 </script>
-</body>
-</html>

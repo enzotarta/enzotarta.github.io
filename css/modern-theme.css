@@ -1418,6 +1418,43 @@ section.hero-text a:hover { color: var(--cyan) !important; }
 .talk-card .muted,
 .talk-card span.muted { color: var(--text-muted) !important; }
 
+.talk-topics {
+  margin: -2px 0 12px !important;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.talk-tag {
+  display: inline-block;
+  background: rgba(59,130,246,0.10);
+  border: 1px solid rgba(59,130,246,0.28);
+  color: var(--blue-light) !important;
+  font-size: 11px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.talk-occurrences {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.talk-occurrences > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 10px 0;
+  border-top: 1px dashed var(--border);
+}
+.talk-occurrences > li:first-child { border-top: none; padding-top: 4px; }
+.occ-meta { flex: 1 1 320px; min-width: 0; }
+.occ-meta strong { color: var(--text-primary); display: block; margin-bottom: 2px; font-size: 14px; }
+.occ-meta .muted { color: var(--text-muted); font-size: 13px; }
+.occ-actions { flex: 0 0 auto; display: flex; gap: 6px; align-items: center; }
+.occ-no-slides { font-size: 12px; font-style: italic; }
+
 /* Search bar */
 #searchBar.form-control {
   background: var(--bg-card) !important;
