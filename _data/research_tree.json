@@ -1039,7 +1039,9 @@
       "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
       "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Tartaglione_EnD_Entangling_and_Disentangling_Deep_Representations_for_Bias_Correction_CVPR_2021_paper.pdf",
       "topics": [
-        "debias"
+        "continual",
+        "debias",
+        "regularization"
       ]
     },
     {
@@ -1692,7 +1694,15 @@
       "target": "paper:perlo2021dysplasia"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:tartaglione2021end"
+    },
+    {
       "source": "topic:debias",
+      "target": "paper:tartaglione2021end"
+    },
+    {
+      "source": "topic:regularization",
       "target": "paper:tartaglione2021end"
     },
     {
@@ -1837,10 +1847,10 @@
       "compression": 31,
       "gaussian": 11,
       "debias": 24,
-      "regularization": 16,
+      "regularization": 17,
       "privacy": 5,
       "efficient": 19,
-      "continual": 16,
+      "continual": 17,
       "nas": 0,
       "other": 20
     },
