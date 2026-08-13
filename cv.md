@@ -32,6 +32,7 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 | Host | Period |
 |:---|---:|
+| **University of Salerno**, Salerno, Italy — Dissemination and collaborations in Computer Vision-related themes | Jul 2026 and Oct 2026 |
 | **Shanghai Jiao Tong University**, Shanghai, China — Computer Vision course in the frame of the SPEIT international program | Mar 2026 – Apr 2026 |
 | **MILA / École de Technologie Supérieure**, Montréal, Canada — Research collaboration in model debiasing, privacy, and efficiency | Aug 2025 – Sep 2025 |
 | **University of Genova**, Genova, Italy — Research collaboration in model debiasing and fairness | Jul 2024 – Aug 2024 |
@@ -46,8 +47,8 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Editorial Activity {#editor}
 
-- **Associate Editor** for *IEEE Transactions on Neural Networks and Learning Systems* (2024 – now)
 - **Action Editor** for *Transactions on Machine Learning Research* (2025 – now)
+- **Associate Editor** for *IEEE Transactions on Neural Networks and Learning Systems* (2024 – now)
 - **Associate Editor** for the *EURASIP Journal on Image and Video Processing* (2024 – now)
 
 ## Memberships and Conference Activity {#memberships}
@@ -55,15 +56,15 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 - **IEEE Senior Member** (2024 – now); IEEE Member (2019 – 2024)
 - **ELLIS Society Member** (2023 – now)
 - **International Association for Pattern Recognition (IAPR) Member** (2021 – now)
-- **Area Chair**: ICML (2026), ICLR (2026), NeurIPS (2026, 2025), ICME (2026), IJCNN (2026, 2025), ICASSP (2026)
-- **Senior Program Committee**: IJCAI-ECAI (2026)
-- **Session Chair**: ECML-PKDD (2024), ICIP (2022)
-- **Conference Reviewer**: CVPR (2026, 2025, 2024, 2023, 2022, 2021), ICCV (2025, 2023, 2021), ECCV (2024, 2022), WACV (2026, 2025, 2024, 2023), AAAI (2026, 2025, 2024, 2023), ICLR (2025, 2024), ICML (2025, 2024), NeurIPS (2025, 2024, 2023), ACM MM (2025), AISTATS (2025), BMVC (2024, 2023), ECML-PKDD (2024), ICASSP (2025, 2023), ICME (2025, 2023)
+- **Area Chair**: ICASSP (2026), ICML (2026), ICLR (2027, 2026), NeurIPS (2026, 2025), ICME (2026), IJCNN (2026, 2025), ICASSP (2026)
+- **Senior Program Committee**: AAAI (2027), IJCAI-ECAI (2026)
+- **Session Chair**: ICPR (2026), ECML-PKDD (2024), ICIP (2022)
+- **Conference Reviewer**: CVPR (2026, 2025, 2024, 2023, 2022, 2021), ICCV (2025, 2023, 2021), ECCV (2026, 2024, 2022), WACV (2027, 2026, 2025, 2024, 2023), AAAI (2026, 2025, 2024, 2023), ICLR (2025, 2024), ICML (2025, 2024), NeurIPS (2025, 2024, 2023), ACM MM (2026, 2025), AISTATS (2025), BMVC (2024, 2023), ECML-PKDD (2024), ICASSP (2025, 2023), ICME (2025, 2023)
 
 ## Grants and Funding Sources {#grants}
 
 - Hi!Paris internal chair, Project **GIFFAI** "Grounding Information Flow for Frugal AI". *Role: Principal Investigator.* (2025 – 2028)
-- Project **BANERA** "Bias-Aware NEural aRchitecture seArch". *Role: Principal Investigator.* (2024 – 2028)
+- ANR-JCJC Project. *Role: Principal Investigator.* (2024 – 2028)
 - Agence Nationale de la Recherche (ANR-TSIA) Project **SODA** "System On Chip Design leveraging Artificial Intelligence". *Role: Team Member.* (2023 – 2027)
 - European Project **ELIAS** "European Lighthouse of AI for Sustainability". *Role: Task leader for "Reducing Energy Requirements of Computation".* EU grant n. 101120237. (2023 – 2027)
 - Hi!Paris external chair, 3 years fixed-term assistant professor recruitment. *Role: Principal Investigator.* (2021 – 2024)
@@ -79,6 +80,7 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Selection of Recently Organized Events {#animation}
 
+- Workshop co-organizer: [3rd workshop on Fairness and ethics towards transparent AI: facing the chalLEnge through model Debiasing (FAILED)](https://3rd-failed-workshop-iccv-2025.github.io/), ECCV 2026, Malmö, Sweden — 2026
 - Workshop organizer: [IP Paris – Hi! PARIS Computer Vision Workshop](https://ippariscvworkshop.github.io/) — 2026
 - Workshop co-organizer: [Rethinking AI: Efficiency, Frugality, and Sustainability](https://rethinking-ai.github.io/), EurIPS 2025, Copenhagen, Denmark — 2025
 - Workshop co-organizer: [2nd workshop on Fairness and ethics towards transparent AI: facing the chalLEnge through model Debiasing (FAILED)](https://2nd-failed-workshop-iccv-2025.github.io/), ICCV 2025, Honolulu, USA — 2025
@@ -90,6 +92,7 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Selection of Recent Invited Talks {#talks-cv}
 
+- Keynote speaker at the Embedded Vision Workshop — 2026
 - Speaker for the Paris-Saclay Summit — 2026
 - Seminar for the *Journal on Image and Video Processing* — 2026
 - Keynote speaker at the 2025 Picture Coding Symposium (PCS) — 2025
@@ -99,9 +102,11 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Ph.D. Examination Committee {#exam}
 
+- **Saja TAWALBEH** — *Interpretable Capsule Networks for Visual Data*. Role: Thesis reviewer. University of Antwerp, Belgium — May/June 2026
+- **Luca SAVANT AIRA** — *Deep Learning for 3D World Representations*. Role: Thesis reviewer. Politecnico di Torino, Italy — May 2026
+- **Ali HASSAN** — *Parameter-Efficient Convolutional Neural Networks for Computer Vision Applications*. Role: Committee member. Mittuniversitetet, Sweden / Tampere University, Finland — Feb 2026
 - **Tom BORDIN** — *Image semantic compression at extremely low bitrates*. Role: Thesis reviewer. Université de Rennes, France — Dec 2025
 - **Miles EVERETT** — *Unlocking Scalability in Non-Iterative Capsule Networks*. Role: Thesis reviewer. University of Aberdeen, United Kingdom — May 2025
 - **Tharsan SENTHIVEL** — *Towards more Efficient Transformers for Object Detection and Tracking*. Role: Thesis reviewer. Cergy Paris Université, France — Dec 2024
 - **Farzad NIKFAM** — *Security and Privacy in Artificial Intelligence*. Role: Thesis reviewer. Politecnico di Torino, Italy — Sep 2024
-- **Ali HASSAN** — *Parameter-Efficient Convolutional Neural Networks for Computer Vision Applications*. Role: Committee member. Mittuniversitetet, Sweden / Tampere University, Finland — Feb 2026
 - **Yiqun LIU** — *Learning for new generation video coders*. Role: Committee member. Université de Rennes, France — Dec 2023
