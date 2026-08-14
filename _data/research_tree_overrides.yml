@@ -1,0 +1,15 @@
+# Manual topic overrides for the research graph (/research.html).
+#
+# The auto-classifier in tools/build_research_tree.py tags each paper from
+# OpenAlex concepts + regex matching against _data/topics.yml. If you
+# disagree with a paper's assigned topic(s), add it here — an override
+# always wins and is never touched by the classifier, so it survives every
+# rerun (manual or the nightly GitHub Action).
+#
+# Format: paper id (matches the `id:` field in _data/publications/*.yml) ->
+# list of topic ids from _data/topics.yml (or "other").
+#
+# Example:
+# gailhard2025feature:
+#   - gaussian
+#   - compression

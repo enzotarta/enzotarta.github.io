@@ -15,8 +15,13 @@ Reads:
   - _data/topics.yml
   - _data/publications/preprints.yml
   - _data/publications/main.yml
+  - _data/research_tree_overrides.yml   (paper id -> topics, hand-maintained)
 Writes:
   - _data/research_tree.json
+
+Manual overrides: if you disagree with a paper's auto-assigned topic(s), add
+an entry to _data/research_tree_overrides.yml — it always wins over the
+classifier and survives every rerun (auto or scheduled).
 """
 
 from __future__ import annotations
@@ -33,6 +38,7 @@ ROOT          = Path(__file__).resolve().parent.parent
 TOPICS_FILE   = ROOT / "_data" / "topics.yml"
 PUB_FILES     = [ROOT / "_data" / "publications" / "preprints.yml",
                  ROOT / "_data" / "publications" / "main.yml"]
+OVERRIDES_FILE = ROOT / "_data" / "research_tree_overrides.yml"
 OUT           = ROOT / "_data" / "research_tree.json"
 OPENALEX_ID   = "A5046851981"
 USER_AGENT    = "enzotarta.github.io/1.0 (mailto:enzo.tartaglione@telecom-paris.fr)"
@@ -61,6 +67,19 @@ def load_papers() -> list[dict]:
         with open(f, encoding="utf-8") as fh:
             out.extend(yaml.safe_load(fh) or [])
     return out
+
+
+def load_overrides() -> dict[str, list[str]]:
+    """Paper id -> topics list, hand-maintained in research_tree_overrides.yml.
+
+    Lets you disagree with the auto-classifier for specific papers; an
+    override always wins and is untouched by the classifier on every rerun.
+    """
+    if not OVERRIDES_FILE.exists():
+        return {}
+    with open(OVERRIDES_FILE, encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+    return {str(k): (v or ["other"]) for k, v in data.items()}
 
 
 # ---------- OpenAlex ----------------------------------------------------------
@@ -149,7 +168,8 @@ def assign_topics(paper: dict, topics: list[dict],
 # ---------- Tree --------------------------------------------------------------
 
 def build_tree(topics: list[dict], papers: list[dict],
-               by_title: dict, by_doi: dict) -> dict:
+               by_title: dict, by_doi: dict,
+               overrides: dict[str, list[str]]) -> dict:
     topic_meta = [{"id": t["id"], "label": t["label"], "color": t["color"]}
                   for t in topics] + [OTHER.copy()]
     nodes = [{"id": "root", "type": "root", "label": "Research"}]
@@ -164,8 +184,13 @@ def build_tree(topics: list[dict], papers: list[dict],
     for p in papers:
         if not p.get("title"):
             continue
-        pid = "paper:" + str(p.get("id") or p["title"][:24])
-        matched, source = assign_topics(p, topics, by_title, by_doi)
+        raw_id = str(p.get("id") or p["title"][:24])
+        pid = "paper:" + raw_id
+        if raw_id in overrides:
+            matched = overrides[raw_id]
+            source = "override"
+        else:
+            matched, source = assign_topics(p, topics, by_title, by_doi)
         by_source[source] = by_source.get(source, 0) + 1
         nodes.append({
             "id":     pid,
@@ -205,13 +230,17 @@ def build_tree(topics: list[dict], papers: list[dict],
 def main() -> None:
     topics = load_topics()
     papers = load_papers()
+    overrides = load_overrides()
+    if overrides:
+        print(f"{len(overrides)} manual override(s) loaded from "
+              f"{OVERRIDES_FILE.relative_to(ROOT)}")
 
     print(f"fetching OpenAlex works for {OPENALEX_ID} ... ", end="", flush=True)
     works = fetch_openalex_works(OPENALEX_ID)
     print(f"{len(works)} works")
     by_title, by_doi = index_works(works)
 
-    tree = build_tree(topics, papers, by_title, by_doi)
+    tree = build_tree(topics, papers, by_title, by_doi, overrides)
     OUT.write_text(json.dumps(tree, indent=2, ensure_ascii=False) + "\n",
                    encoding="utf-8")
 
