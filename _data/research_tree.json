@@ -54,18 +54,6 @@
       "color": "#94a3b8"
     },
     {
-      "id": "paper:salman2025compression",
-      "type": "paper",
-      "label": "Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and Future Directions",
-      "year": 2025,
-      "venue": "arXiv e-prints",
-      "url": "https://arxiv.org/pdf/2502.19457",
-      "topics": [
-        "compression",
-        "gaussian"
-      ]
-    },
-    {
       "id": "paper:gailhard2025feature",
       "type": "paper",
       "label": "Feature-aware Hypergraph Generation via Next-Scale Prediction",
@@ -100,47 +88,49 @@
       ]
     },
     {
-      "id": "paper:quelennec2025memory",
+      "id": "paper:de2026bias",
       "type": "paper",
-      "label": "Memory Constrained Dynamic Subnetwork Update for Transfer Learning",
-      "year": 2025,
-      "venue": "arXiv preprint arXiv:2510.20979",
-      "url": "",
+      "label": "Bias In, Bias Out? Finding Unbiased Subnetworks in Vanilla Models",
+      "year": 2026,
+      "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/De_Moura_Matos_Bias_In_Bias_Out_Finding_Unbiased_Subnetworks_in_Vanilla_Models_CVPR_2026_paper.pdf",
       "topics": [
-        "other"
+        "debias"
       ]
     },
     {
-      "id": "paper:mazouz2025security",
+      "id": "paper:spadaro2026calice",
       "type": "paper",
-      "label": "Security and real-time fpga integration for learned image compression",
-      "year": 2025,
-      "venue": "arXiv preprint arXiv:2503.04867",
-      "url": "",
+      "label": "CALICE: Continuous bitrate control with Adapted LIC modEl",
+      "year": 2026,
+      "venue": "ACM Transactions on Multimedia Computing, Communications and Applications",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3820658",
       "topics": [
         "compression"
       ]
     },
     {
-      "id": "paper:diecidue2025silence",
+      "id": "paper:ali2026compression",
       "type": "paper",
-      "label": "The silence of the weights: an investigation of structural pruning strategies for attention-based audio signal architectures",
-      "year": 2025,
-      "venue": "arXiv preprint arXiv:2509.26207",
-      "url": "",
+      "label": "Compression in 3d gaussian splatting: A survey of methods, trends, and future directions",
+      "year": 2026,
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "url": "https://centralesupelec.hal.science/hal-05561474v1/file/TCSVT_3DGS%20Compression_Survey.pdf",
       "topics": [
-        "compression"
+        "compression",
+        "gaussian"
       ]
     },
     {
-      "id": "paper:liao2024nepenthe",
+      "id": "paper:mazouz2026distilling",
       "type": "paper",
-      "label": "NEPENTHE: Entropy-Based Pruning as a Neural Network Depth's Reducer",
-      "year": 2024,
-      "venue": "arXiv preprint arXiv:2404.16890",
-      "url": "https://arxiv.org/pdf/2404.16890",
+      "label": "Distilling Learned Image Compression Models: An Analytical Approach for Low-Latency FPGA Deployment",
+      "year": 2026,
+      "venue": "IEEE Transactions on Multimedia",
+      "url": "https://telecom-paris.hal.science/hal-05652435v1",
       "topics": [
-        "compression"
+        "compression",
+        "efficient"
       ]
     },
     {
@@ -152,6 +142,28 @@
       "url": "https://openreview.net/forum?id=0nvQ5kHXf4",
       "topics": [
         "efficient"
+      ]
+    },
+    {
+      "id": "paper:gailhard2026featureaware",
+      "type": "paper",
+      "label": "Feature-aware (Hyper)graph Generation via Next-Scale Prediction",
+      "year": 2026,
+      "venue": "International Conference on Machine Learning",
+      "url": "https://openreview.net/forum?id=HwOEj3wdk5",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:wang2026hfmca",
+      "type": "paper",
+      "label": "HFMCA: Orthonormal Feature Learning for EEG-Based Brain Decoding",
+      "year": 2026,
+      "venue": "ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "url": "https://ieeexplore.ieee.org/iel8/11460365/11460314/11464747.pdf",
+      "topics": [
+        "other"
       ]
     },
     {
@@ -189,6 +201,17 @@
       ]
     },
     {
+      "id": "paper:liao2026layer",
+      "type": "paper",
+      "label": "Layer Collapse Can be Induced by Unstructured Pruning",
+      "year": 2026,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "https://openreview.net/forum?id=rfDYZNZIZT",
+      "topics": [
+        "compression"
+      ]
+    },
+    {
       "id": "paper:tran2025rave",
       "type": "paper",
       "label": "RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting",
@@ -197,6 +220,17 @@
       "url": "https://arxiv.org/pdf/2512.07052",
       "topics": [
         "gaussian"
+      ]
+    },
+    {
+      "id": "paper:eddine2026security",
+      "type": "paper",
+      "label": "Security and Real-Time FPGA Integration for Learned Image Compression",
+      "year": 2026,
+      "venue": "IEEE Transactions on Multimedia",
+      "url": "https://ieeexplore.ieee.org/iel8/6046/4456689/11454487.pdf",
+      "topics": [
+        "compression"
       ]
     },
     {
@@ -209,6 +243,17 @@
       "topics": [
         "continual",
         "debias"
+      ]
+    },
+    {
+      "id": "paper:diecidue2025silence",
+      "type": "paper",
+      "label": "The silence of the weights: an investigation of structural pruning strategies for attention-based audio signal architectures",
+      "year": 2026,
+      "venue": "INTERSPEECH",
+      "url": "https://arxiv.org/abs/2509.26207",
+      "topics": [
+        "compression"
       ]
     },
     {
@@ -1220,14 +1265,6 @@
       "target": "topic:other"
     },
     {
-      "source": "topic:compression",
-      "target": "paper:salman2025compression"
-    },
-    {
-      "source": "topic:gaussian",
-      "target": "paper:salman2025compression"
-    },
-    {
       "source": "topic:other",
       "target": "paper:gailhard2025feature"
     },
@@ -1244,24 +1281,40 @@
       "target": "paper:mazouz2025lightweight"
     },
     {
-      "source": "topic:other",
-      "target": "paper:quelennec2025memory"
+      "source": "topic:debias",
+      "target": "paper:de2026bias"
     },
     {
       "source": "topic:compression",
-      "target": "paper:mazouz2025security"
+      "target": "paper:spadaro2026calice"
     },
     {
       "source": "topic:compression",
-      "target": "paper:diecidue2025silence"
+      "target": "paper:ali2026compression"
+    },
+    {
+      "source": "topic:gaussian",
+      "target": "paper:ali2026compression"
     },
     {
       "source": "topic:compression",
-      "target": "paper:liao2024nepenthe"
+      "target": "paper:mazouz2026distilling"
+    },
+    {
+      "source": "topic:efficient",
+      "target": "paper:mazouz2026distilling"
     },
     {
       "source": "topic:efficient",
       "target": "paper:nguyen2026efficient"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:gailhard2026featureaware"
+    },
+    {
+      "source": "topic:other",
+      "target": "paper:wang2026hfmca"
     },
     {
       "source": "topic:debias",
@@ -1280,8 +1333,16 @@
       "target": "paper:anonymous2026instant"
     },
     {
+      "source": "topic:compression",
+      "target": "paper:liao2026layer"
+    },
+    {
       "source": "topic:gaussian",
       "target": "paper:tran2025rave"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:eddine2026security"
     },
     {
       "source": "topic:continual",
@@ -1290,6 +1351,10 @@
     {
       "source": "topic:debias",
       "target": "paper:anonymous2026study"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:diecidue2025silence"
     },
     {
       "source": "topic:continual",
@@ -1831,23 +1896,23 @@
     }
   ],
   "stats": {
-    "papers": 99,
+    "papers": 103,
     "topics": 8,
     "by_topic": {
-      "compression": 31,
+      "compression": 33,
       "gaussian": 11,
-      "debias": 24,
+      "debias": 25,
       "regularization": 16,
       "privacy": 5,
-      "efficient": 19,
+      "efficient": 20,
       "continual": 16,
       "nas": 0,
-      "other": 20
+      "other": 21
     },
     "by_source": {
-      "openalex": 54,
-      "none": 20,
-      "regex": 16,
+      "none": 21,
+      "openalex": 56,
+      "regex": 17,
       "openalex,regex": 9
     }
   }

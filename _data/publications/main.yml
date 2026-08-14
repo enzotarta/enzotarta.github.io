@@ -1,3 +1,59 @@
+- id: de2026bias
+  type: inproceedings
+  title: "Bias In, Bias Out? Finding Unbiased Subnetworks in Vanilla Models"
+  year: 2026
+  venue: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  url: "https://openaccess.thecvf.com/content/CVPR2026/papers/De_Moura_Matos_Bias_In_Bias_Out_Finding_Unbiased_Subnetworks_in_Vanilla_Models_CVPR_2026_paper.pdf"
+  doi: ""
+  authors:
+    - Ivan Luiz De Moura Matos
+    - Abdel Djalil Sad Saoud
+    - Ekaterina Iakovleva
+    - Vito Paolo Pastore
+    - Enzo Tartaglione
+- id: spadaro2026calice
+  type: article
+  title: "CALICE: Continuous bitrate control with Adapted LIC modEl"
+  year: 2026
+  venue: ACM Transactions on Multimedia Computing, Communications and Applications
+  url: "https://dl.acm.org/doi/pdf/10.1145/3820658"
+  doi: ""
+  authors:
+    - Gabriele Spadaro
+    - Alberto Presta
+    - Jhony H Giraldo
+    - Attilio Fiandrotti
+    - Marco Grangetto
+    - Enzo Tartaglione
+- id: ali2026compression
+  type: article
+  title: "Compression in 3d gaussian splatting: A survey of methods, trends, and future directions"
+  year: 2026
+  venue: IEEE Transactions on Circuits and Systems for Video Technology
+  url: "https://centralesupelec.hal.science/hal-05561474v1/file/TCSVT_3DGS%20Compression_Survey.pdf"
+  doi: ""
+  authors:
+    - Muhammad Salman Ali
+    - Chaoning Zhang
+    - Marco Cagnazzo
+    - Giuseppe Valenzise
+    - Enzo Tartaglione
+    - Sung-Ho Bae
+- id: mazouz2026distilling
+  type: article
+  title: "Distilling Learned Image Compression Models: An Analytical Approach for Low-Latency FPGA Deployment"
+  year: 2026
+  venue: IEEE Transactions on Multimedia
+  url: "https://telecom-paris.hal.science/hal-05652435v1"
+  doi: ""
+  authors:
+    - Alaa Eddine Mazouz
+    - Sumanta Chaudhuri
+    - Marco Cagnazzo
+    - Mihai Mitrea
+    - Enzo Tartaglione
+    - Bruno Zatt
+    - Attilio Fiandrotti
 - id: nguyen2026efficient
   type: inproceedings
   title: Efficient Resource-Constrained Training of Vision Transformers via Subspace Optimization
@@ -7,6 +63,31 @@
   doi: ""
   authors:
     - Le-Trung Nguyen
+    - Enzo Tartaglione
+    - Van-Tam Nguyen
+- id: gailhard2026featureaware
+  type: misc
+  title: Feature-aware (Hyper)graph Generation via Next-Scale Prediction
+  year: 2026
+  venue: International Conference on Machine Learning
+  url: "https://openreview.net/forum?id=HwOEj3wdk5"
+  doi: ""
+  authors:
+    - Dorian Gailhard
+    - Enzo Tartaglione
+    - Lirida Naviner
+    - Jhony H. Giraldo
+- id: wang2026hfmca
+  type: inproceedings
+  title: "HFMCA: Orthonormal Feature Learning for EEG-Based Brain Decoding"
+  year: 2026
+  venue: ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+  url: "https://ieeexplore.ieee.org/iel8/11460365/11460314/11464747.pdf"
+  doi: ""
+  authors:
+    - Yinghao Wang
+    - Lintao Xu
+    - Shujian Yu
     - Enzo Tartaglione
     - Van-Tam Nguyen
 - id: roos2026met
@@ -51,6 +132,18 @@
     - Enzo Tartaglione
     - Nikola Simidjievski
     - Van-Tam Nguyen
+- id: liao2026layer
+  type: article
+  title: Layer Collapse Can be Induced by Unstructured Pruning
+  year: 2026
+  venue: Transactions on Machine Learning Research
+  url: "https://openreview.net/forum?id=rfDYZNZIZT"
+  doi: ""
+  authors:
+    - Zhu LIAO
+    - Victor Quetu
+    - Van-Tam Nguyen
+    - Enzo Tartaglione
 - id: tran2025rave
   type: article
   title: "RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting"
@@ -64,6 +157,21 @@
     - Gabriele Spadaro
     - Giuseppe Valenzise
     - Enzo Tartaglione
+- id: eddine2026security
+  type: article
+  title: Security and Real-Time FPGA Integration for Learned Image Compression
+  year: 2026
+  venue: IEEE Transactions on Multimedia
+  url: "https://ieeexplore.ieee.org/iel8/6046/4456689/11454487.pdf"
+  doi: ""
+  authors:
+    - Mazouz Alaa Eddine
+    - Carl De Sousa Trias
+    - Sumanta Chaudhuri
+    - Marco Cagnazzo
+    - Mihai Mitrea
+    - Enzo Tartaglione
+    - Attilio Fiandrotti
 - id: anonymous2026study
   type: inproceedings
   title: Study of Training Dynamics for Memory-Constrained Fine-Tuning
@@ -76,6 +184,19 @@
     - Nour Hezbri
     - Pavlo Mozharovskyi
     - Van-Tam Nguyen
+    - Enzo Tartaglione
+- id: diecidue2025silence
+  type: article
+  title: "The silence of the weights: an investigation of structural pruning strategies for attention-based audio signal architectures"
+  year: 2026
+  venue: INTERSPEECH
+  url: "https://arxiv.org/abs/2509.26207"
+  doi: ""
+  authors:
+    - Andrea Diecidue
+    - Carlo Alberto Barbano
+    - Piero Fraternali
+    - Mathieu Fontaine
     - Enzo Tartaglione
 - id: marouf2025no
   type: article
