@@ -54,17 +54,6 @@
       "color": "#94a3b8"
     },
     {
-      "id": "paper:gailhard2025feature",
-      "type": "paper",
-      "label": "Feature-aware Hypergraph Generation via Next-Scale Prediction",
-      "year": 2025,
-      "venue": "arXiv preprint arXiv:2506.01467",
-      "url": "",
-      "topics": [
-        "other"
-      ]
-    },
-    {
       "id": "paper:di2025gode",
       "type": "paper",
       "label": "GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression",
@@ -1265,10 +1254,6 @@
       "target": "topic:other"
     },
     {
-      "source": "topic:other",
-      "target": "paper:gailhard2025feature"
-    },
-    {
       "source": "topic:compression",
       "target": "paper:di2025gode"
     },
@@ -1896,7 +1881,7 @@
     }
   ],
   "stats": {
-    "papers": 103,
+    "papers": 102,
     "topics": 8,
     "by_topic": {
       "compression": 33,
@@ -1907,12 +1892,12 @@
       "efficient": 20,
       "continual": 16,
       "nas": 0,
-      "other": 21
+      "other": 20
     },
     "by_source": {
-      "none": 21,
       "openalex": 56,
       "regex": 17,
+      "none": 20,
       "openalex,regex": 9
     }
   }

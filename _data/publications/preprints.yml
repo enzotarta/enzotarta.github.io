@@ -1,15 +1,3 @@
-- id: gailhard2025feature
-  type: article
-  title: Feature-aware Hypergraph Generation via Next-Scale Prediction
-  year: 2025
-  venue: "arXiv preprint arXiv:2506.01467"
-  url: ""
-  doi: ""
-  authors:
-    - Dorian Gailhard
-    - Enzo Tartaglione
-    - Lirida Naviner
-    - Jhony H Giraldo
 - id: di2025gode
   type: article
   title: "GoDe: Gaussians on Demand for Progressive Level of Detail and Scalable Compression"
