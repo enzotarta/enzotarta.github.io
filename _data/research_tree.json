@@ -813,7 +813,7 @@
       "venue": "Frontiers in Neuroinformatics",
       "url": "https://www.frontiersin.org/articles/10.3389/fninf.2023.852105",
       "topics": [
-        "other"
+        "efficient"
       ]
     },
     {
@@ -1622,7 +1622,7 @@
       "target": "paper:Nahon_2023_ICCV"
     },
     {
-      "source": "topic:other",
+      "source": "topic:efficient",
       "target": "paper:10.3389/fninf.2023.852105"
     },
     {
@@ -1889,15 +1889,15 @@
       "debias": 25,
       "regularization": 16,
       "privacy": 5,
-      "efficient": 20,
+      "efficient": 21,
       "continual": 16,
       "nas": 0,
-      "other": 20
+      "other": 19
     },
     "by_source": {
-      "openalex": 56,
+      "openalex": 57,
       "regex": 17,
-      "none": 20,
+      "none": 19,
       "openalex,regex": 9
     }
   }
