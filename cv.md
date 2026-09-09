@@ -12,7 +12,7 @@ description: >-
 
 ## Biography {#bio}
 
-Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique de Paris), where he is also responsible for the group Multimedia, Hi!Paris associate member, member of the ELLIS society, Senior member of IEEE, Associate Editor of *IEEE Transactions on Neural Networks and Learning Systems* since 2024, of *Transactions on Machine Learning Research* since 2025, and of the *EURASIP Journal on Image and Video Processing* since 2025. He received the MS in Electronic Engineering at Politecnico di Torino and Politecnico di Milano in 2015, *cum laude*. The same year, he also received a *magna cum laude* MS in electrical and computer engineering at the University of Illinois at Chicago. In 2019 he obtained a Ph.D. in Physics at Politecnico di Torino, *cum laude*, with the thesis "From Statistical Physics to Algorithms in Deep Neural Systems" and in 2024 his HDR. He is an Area Chair in top AI venues and has been nominated outstanding reviewer three times in these. Besides, he was keynote speaker at PCS 2025 and a finalist for the 2025 Multimedia Rising Star Award. His principal interests include compression, sparsification, pruning of deep neural networks, computer vision, debiasing, 3D Gaussian Splatting, and regularization for deep learning.
+Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique de Paris), where he is also responsible for the group Multimedia, Hi!Paris associate member, member of the ELLIS society, and Senior member of IEEE. He received the MS in Electronic Engineering at Politecnico di Torino and Politecnico di Milano in 2015, *cum laude*. The same year, he also received a *magna cum laude* MS in electrical and computer engineering at the University of Illinois at Chicago. In 2019 he obtained a Ph.D. in Physics at Politecnico di Torino, *cum laude*, with the thesis "From Statistical Physics to Algorithms in Deep Neural Systems" and in 2024 his HDR. He is an Area Chair in top AI venues and has been nominated outstanding reviewer three times in these. He is also associate editor of two top Q1 journals in AI. Besides, he was keynote speaker at PCS 2025 and a finalist for the 2025 Multimedia Rising Star Award. His principal interests include compression, sparsification, pruning of deep neural networks, computer vision, debiasing, 3D Gaussian Splatting, and regularization for deep learning.
 
 ## Academic Appointments {#appointments}
 
@@ -63,7 +63,8 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Grants and Funding Sources {#grants}
 
-- Hi!Paris internal chair, Project **GIFFAI** "Grounding Information Flow for Frugal AI". *Role: Principal Investigator.* (2025 – 2028)
+- FIS2 Starting Project. *Role: Principal Investigator.* (2026 – 2029)
+- Hi!Paris internal chair, Project "Grounding Information Flow for Frugal AI". *Role: Principal Investigator.* (2025 – 2028)
 - ANR-JCJC Project. *Role: Principal Investigator.* (2024 – 2028)
 - Agence Nationale de la Recherche (ANR-TSIA) Project **SODA** "System On Chip Design leveraging Artificial Intelligence". *Role: Team Member.* (2023 – 2027)
 - European Project **ELIAS** "European Lighthouse of AI for Sustainability". *Role: Task leader for "Reducing Energy Requirements of Computation".* EU grant n. 101120237. (2023 – 2027)
