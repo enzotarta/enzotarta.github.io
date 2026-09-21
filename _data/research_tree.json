@@ -174,7 +174,7 @@
       "venue": "Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026). AAAI Press",
       "url": "https://arxiv.org/pdf/2504.17364",
       "topics": [
-        "debias"
+        "other"
       ]
     },
     {
@@ -1306,7 +1306,7 @@
       "target": "paper:roos2026met"
     },
     {
-      "source": "topic:debias",
+      "source": "topic:other",
       "target": "paper:haider2025inr"
     },
     {
@@ -1886,18 +1886,18 @@
     "by_topic": {
       "compression": 33,
       "gaussian": 11,
-      "debias": 25,
+      "debias": 24,
       "regularization": 16,
       "privacy": 5,
       "efficient": 21,
       "continual": 16,
       "nas": 0,
-      "other": 19
+      "other": 20
     },
     "by_source": {
-      "openalex": 57,
+      "openalex": 56,
       "regex": 17,
-      "none": 19,
+      "none": 20,
       "openalex,regex": 9
     }
   }
