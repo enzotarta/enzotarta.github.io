@@ -84,7 +84,9 @@
       "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
       "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/De_Moura_Matos_Bias_In_Bias_Out_Finding_Unbiased_Subnetworks_in_Vanilla_Models_CVPR_2026_paper.pdf",
       "topics": [
-        "debias"
+        "compression",
+        "debias",
+        "efficient"
       ]
     },
     {
@@ -152,7 +154,7 @@
       "venue": "ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
       "url": "https://ieeexplore.ieee.org/iel8/11460365/11460314/11464747.pdf",
       "topics": [
-        "other"
+        "regularization"
       ]
     },
     {
@@ -208,6 +210,7 @@
       "venue": "2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)",
       "url": "https://arxiv.org/pdf/2512.07052",
       "topics": [
+        "compression",
         "gaussian"
       ]
     },
@@ -1266,7 +1269,15 @@
       "target": "paper:mazouz2025lightweight"
     },
     {
+      "source": "topic:compression",
+      "target": "paper:de2026bias"
+    },
+    {
       "source": "topic:debias",
+      "target": "paper:de2026bias"
+    },
+    {
+      "source": "topic:efficient",
       "target": "paper:de2026bias"
     },
     {
@@ -1298,7 +1309,7 @@
       "target": "paper:gailhard2026featureaware"
     },
     {
-      "source": "topic:other",
+      "source": "topic:regularization",
       "target": "paper:wang2026hfmca"
     },
     {
@@ -1320,6 +1331,10 @@
     {
       "source": "topic:compression",
       "target": "paper:liao2026layer"
+    },
+    {
+      "source": "topic:compression",
+      "target": "paper:tran2025rave"
     },
     {
       "source": "topic:gaussian",
@@ -1884,21 +1899,21 @@
     "papers": 102,
     "topics": 8,
     "by_topic": {
-      "compression": 33,
+      "compression": 35,
       "gaussian": 11,
       "debias": 24,
-      "regularization": 16,
+      "regularization": 17,
       "privacy": 5,
-      "efficient": 21,
+      "efficient": 22,
       "continual": 16,
       "nas": 0,
-      "other": 20
+      "other": 19
     },
     "by_source": {
-      "openalex": 56,
-      "regex": 17,
-      "none": 20,
-      "openalex,regex": 9
+      "openalex": 59,
+      "regex": 14,
+      "none": 19,
+      "openalex,regex": 10
     }
   }
 }
