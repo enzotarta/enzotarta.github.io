@@ -121,7 +121,8 @@
       "url": "https://telecom-paris.hal.science/hal-05652435v1",
       "topics": [
         "compression",
-        "efficient"
+        "efficient",
+        "gaussian"
       ]
     },
     {
@@ -222,7 +223,8 @@
       "venue": "IEEE Transactions on Multimedia",
       "url": "https://ieeexplore.ieee.org/iel8/6046/4456689/11454487.pdf",
       "topics": [
-        "compression"
+        "compression",
+        "gaussian"
       ]
     },
     {
@@ -1301,6 +1303,10 @@
       "target": "paper:mazouz2026distilling"
     },
     {
+      "source": "topic:gaussian",
+      "target": "paper:mazouz2026distilling"
+    },
+    {
       "source": "topic:efficient",
       "target": "paper:nguyen2026efficient"
     },
@@ -1342,6 +1348,10 @@
     },
     {
       "source": "topic:compression",
+      "target": "paper:eddine2026security"
+    },
+    {
+      "source": "topic:gaussian",
       "target": "paper:eddine2026security"
     },
     {
@@ -1900,7 +1910,7 @@
     "topics": 8,
     "by_topic": {
       "compression": 35,
-      "gaussian": 11,
+      "gaussian": 13,
       "debias": 24,
       "regularization": 17,
       "privacy": 5,
@@ -1910,10 +1920,10 @@
       "other": 19
     },
     "by_source": {
-      "openalex": 59,
-      "regex": 14,
-      "none": 19,
-      "openalex,regex": 10
+      "openalex": 60,
+      "openalex,regex": 11,
+      "regex": 12,
+      "none": 19
     }
   }
 }
