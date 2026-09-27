@@ -166,7 +166,8 @@
       "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
       "url": "https://arxiv.org/pdf/2512.20233",
       "topics": [
-        "debias"
+        "debias",
+        "efficient"
       ]
     },
     {
@@ -1323,6 +1324,10 @@
       "target": "paper:roos2026met"
     },
     {
+      "source": "topic:efficient",
+      "target": "paper:roos2026met"
+    },
+    {
       "source": "topic:other",
       "target": "paper:haider2025inr"
     },
@@ -1914,14 +1919,14 @@
       "debias": 24,
       "regularization": 17,
       "privacy": 5,
-      "efficient": 22,
+      "efficient": 23,
       "continual": 16,
       "nas": 0,
       "other": 19
     },
     "by_source": {
-      "openalex": 60,
-      "openalex,regex": 11,
+      "openalex": 59,
+      "openalex,regex": 12,
       "regex": 12,
       "none": 19
     }
