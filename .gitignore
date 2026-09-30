@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 tools/build/
+.DS_Store
