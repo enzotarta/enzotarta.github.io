@@ -68,6 +68,9 @@ jQuery(document).ready(function($) {
 			$("html, body").animate({ scrollTop: 0 }, 1000);
 				return false;
 		});
+    /* flexslider is not loaded on this site — bail out instead of throwing */
+    if (!$.fn.flexslider) { return; }
+
     $('#post-slider').flexslider({
         // Primary Controls
         controlNav          : false,              //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage

@@ -19,13 +19,13 @@ description: >-
 </section>
 <section id="content">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
 
       {% assign items = site.news | sort: "date" | reverse %}
       {% assign grouped = items | group_by_exp: "item", "item.date | date: '%Y'" %}
 
       {% for year in grouped %}
-        <div class="col-md-10 col-lg-8">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <h3 class="news-year-old">{{ year.name }}</h3>
 
           {% for item in year.items %}

@@ -44,7 +44,9 @@ body {
   background: var(--bg-dark) !important;
   color: var(--text-primary) !important;
   font-family: 'Inter', 'Open Sans', Arial, sans-serif !important;
-  padding-top: 65px !important;
+  /* Must match the fixed navbar's rendered height, or inner pages start
+     underneath it */
+  padding-top: 76px !important;
 }
 
 body.home { padding-top: 0 !important; }
@@ -866,13 +868,15 @@ img.thumbnail {
    FORMERLY ADVISING LIST
    ============================================================ */
 
-.container ul {
+/* NB: `:not(.nav)` keeps this card styling off the navbar menu, which also
+   lives inside a .container — without it every nav item renders as a box. */
+.container ul:not(.nav) {
   list-style: none !important;
   padding-left: 0 !important;
   margin: 0 !important;
 }
 
-.container ul li {
+.container ul:not(.nav) li {
   background: var(--bg-card) !important;
   border: 1px solid var(--border) !important;
   border-left: 3px solid transparent !important;
@@ -885,13 +889,13 @@ img.thumbnail {
   line-height: 1.65 !important;
 }
 
-.container ul li:hover {
+.container ul:not(.nav) li:hover {
   border-left-color: var(--purple) !important;
   background: var(--bg-card-hover) !important;
   transform: translateX(4px) !important;
 }
 
-.container ul li h4 {
+.container ul:not(.nav) li h4 {
   font-size: 15px !important;
   font-weight: 700 !important;
   margin: 0 0 2px !important;
@@ -899,10 +903,26 @@ img.thumbnail {
   display: inline !important;
 }
 
-.container ul li a {
+.container ul:not(.nav) li a {
   color: var(--blue-light) !important;
 }
-.container ul li a:hover { color: var(--cyan) !important; }
+.container ul:not(.nav) li a:hover { color: var(--cyan) !important; }
+
+/* Lists written inside a news item stay plain text, not nested cards.
+   `.container` is needed to outweigh the `.container ul:not(.nav) li` rule. */
+.container .news-slide ul li,
+.container .news-item-old ul li {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 2px 0 !important;
+  margin-bottom: 0 !important;
+}
+.container .news-slide ul li:hover,
+.container .news-item-old ul li:hover {
+  background: none !important;
+  transform: none !important;
+}
 
 /* ============================================================
    FOOTER

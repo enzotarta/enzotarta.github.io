@@ -28,11 +28,11 @@ layout: default
 
         {% if site.cv_pdf %}
         <p style="text-align:center; margin-top:30px;">
-            <a class="cv-card" style="display:inline-block; max-width:300px;" href="{{ site.cv_pdf | relative_url }}">Download PDF version</a>
+            <a class="cv-card" style="max-width:300px; margin:0 auto;" href="{{ site.cv_pdf | relative_url }}">Download PDF version</a>
         </p>
         {% else %}
         <p style="text-align:center; margin-top:30px;">
-            <a class="cv-card" style="display:inline-block; max-width:300px;" href="/assets/pdf/cv.pdf">Download PDF version</a>
+            <a class="cv-card" style="max-width:300px; margin:0 auto;" href="/assets/pdf/cv.pdf">Download PDF version</a>
         </p>
         {% endif %}
     </div>
