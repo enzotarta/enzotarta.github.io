@@ -736,7 +736,7 @@
       "venue": "2023 IEEE International Conference on Image Processing (ICIP)",
       "url": "https://arxiv.org/pdf/2302.13259",
       "topics": [
-        "regularization"
+        "other"
       ]
     },
     {
@@ -1600,7 +1600,7 @@
       "target": "paper:liao2023can"
     },
     {
-      "source": "topic:regularization",
+      "source": "topic:other",
       "target": "paper:quetu2023dodginge"
     },
     {
@@ -1917,18 +1917,18 @@
       "compression": 35,
       "gaussian": 13,
       "debias": 24,
-      "regularization": 17,
+      "regularization": 16,
       "privacy": 5,
       "efficient": 23,
       "continual": 16,
       "nas": 0,
-      "other": 19
+      "other": 20
     },
     "by_source": {
-      "openalex": 59,
+      "openalex": 58,
       "openalex,regex": 12,
       "regex": 12,
-      "none": 19
+      "none": 20
     }
   }
 }
