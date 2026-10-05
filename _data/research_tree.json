@@ -166,8 +166,7 @@
       "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
       "url": "https://arxiv.org/pdf/2512.20233",
       "topics": [
-        "debias",
-        "efficient"
+        "debias"
       ]
     },
     {
@@ -282,7 +281,7 @@
       "venue": "Pattern Recognition",
       "url": "https://www.sciencedirect.com/science/article/pii/S0031320325007794/pdfft?md5=f944bdf7fd039f6b42f5e3e50db40265&pid=1-s2.0-S0031320325007794-main.pdf",
       "topics": [
-        "other"
+        "continual"
       ]
     },
     {
@@ -397,7 +396,7 @@
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
       "url": "https://arxiv.org/pdf/2406.08933",
       "topics": [
-        "other"
+        "continual"
       ]
     },
     {
@@ -430,7 +429,8 @@
       "venue": "Transactions on Machine Learning Research",
       "url": "https://openreview.net/forum?id=EuUxiiDZ7d",
       "topics": [
-        "debias"
+        "debias",
+        "privacy"
       ]
     },
     {
@@ -714,6 +714,7 @@
       "venue": "European Workshop on Visual Information Processing",
       "url": "",
       "topics": [
+        "debias",
         "efficient"
       ]
     },
@@ -853,8 +854,8 @@
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
       "url": "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Li_SCoTTi_Save_Computation_at_Training_Time_with_an_Adaptive_Framework_ICCVW_2023_paper.pdf",
       "topics": [
-        "efficient",
-        "privacy"
+        "continual",
+        "efficient"
       ]
     },
     {
@@ -1090,8 +1091,7 @@
       "venue": "Neurocomputing",
       "url": "https://www.sciencedirect.com/science/article/pii/S0925231221010663",
       "topics": [
-        "compression",
-        "debias"
+        "compression"
       ]
     },
     {
@@ -1138,8 +1138,6 @@
       "venue": "2020 IEEE 19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
       "url": "https://arxiv.org/pdf/2008.01430",
       "topics": [
-        "continual",
-        "debias",
         "privacy",
         "regularization"
       ]
@@ -1324,10 +1322,6 @@
       "target": "paper:roos2026met"
     },
     {
-      "source": "topic:efficient",
-      "target": "paper:roos2026met"
-    },
-    {
       "source": "topic:other",
       "target": "paper:haider2025inr"
     },
@@ -1384,7 +1378,7 @@
       "target": "paper:nguyen2025beyond"
     },
     {
-      "source": "topic:other",
+      "source": "topic:continual",
       "target": "paper:renzulli2025capsule"
     },
     {
@@ -1444,7 +1438,7 @@
       "target": "paper:craparotta2025improving"
     },
     {
-      "source": "topic:other",
+      "source": "topic:continual",
       "target": "paper:quetu2024lacoot"
     },
     {
@@ -1457,6 +1451,10 @@
     },
     {
       "source": "topic:debias",
+      "target": "paper:ciranni2025say"
+    },
+    {
+      "source": "topic:privacy",
       "target": "paper:ciranni2025say"
     },
     {
@@ -1592,6 +1590,10 @@
       "target": "paper:wang2023optimized"
     },
     {
+      "source": "topic:debias",
+      "target": "paper:nahon2023mining"
+    },
+    {
       "source": "topic:efficient",
       "target": "paper:nahon2023mining"
     },
@@ -1668,11 +1670,11 @@
       "target": "paper:laurent2023packed"
     },
     {
-      "source": "topic:efficient",
+      "source": "topic:continual",
       "target": "paper:li2023scotti"
     },
     {
-      "source": "topic:privacy",
+      "source": "topic:efficient",
       "target": "paper:li2023scotti"
     },
     {
@@ -1780,10 +1782,6 @@
       "target": "paper:tartaglione2021hemp"
     },
     {
-      "source": "topic:debias",
-      "target": "paper:tartaglione2021hemp"
-    },
-    {
       "source": "topic:compression",
       "target": "paper:bragagnolo2021role"
     },
@@ -1806,14 +1804,6 @@
     {
       "source": "topic:other",
       "target": "paper:barbano2021unitopatho"
-    },
-    {
-      "source": "topic:continual",
-      "target": "paper:tartaglione2020non"
-    },
-    {
-      "source": "topic:debias",
-      "target": "paper:tartaglione2020non"
     },
     {
       "source": "topic:privacy",
@@ -1916,19 +1906,19 @@
     "by_topic": {
       "compression": 35,
       "gaussian": 13,
-      "debias": 24,
+      "debias": 23,
       "regularization": 16,
       "privacy": 5,
-      "efficient": 23,
-      "continual": 16,
+      "efficient": 22,
+      "continual": 18,
       "nas": 0,
-      "other": 20
+      "other": 18
     },
     "by_source": {
-      "openalex": 58,
-      "openalex,regex": 12,
-      "regex": 12,
-      "none": 20
+      "openalex": 62,
+      "openalex,regex": 11,
+      "regex": 11,
+      "none": 18
     }
   }
 }
