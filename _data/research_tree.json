@@ -1103,7 +1103,6 @@
       "url": "https://iris.unito.it/retrieve/e27ce432-d3d0-2581-e053-d805fe0acbaa/ICIP2021_pruning.pdf",
       "topics": [
         "compression",
-        "debias",
         "efficient"
       ]
     },
@@ -1786,10 +1785,6 @@
       "target": "paper:bragagnolo2021role"
     },
     {
-      "source": "topic:debias",
-      "target": "paper:bragagnolo2021role"
-    },
-    {
       "source": "topic:efficient",
       "target": "paper:bragagnolo2021role"
     },
@@ -1906,7 +1901,7 @@
     "by_topic": {
       "compression": 35,
       "gaussian": 13,
-      "debias": 23,
+      "debias": 22,
       "regularization": 16,
       "privacy": 5,
       "efficient": 22,
