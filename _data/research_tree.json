@@ -61,7 +61,8 @@
       "venue": "arXiv preprint arXiv:2501.13558",
       "url": "https://arxiv.org/pdf/2501.13558",
       "topics": [
-        "compression"
+        "compression",
+        "gaussian"
       ]
     },
     {
@@ -85,8 +86,7 @@
       "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/De_Moura_Matos_Bias_In_Bias_Out_Finding_Unbiased_Subnetworks_in_Vanilla_Models_CVPR_2026_paper.pdf",
       "topics": [
         "compression",
-        "debias",
-        "efficient"
+        "debias"
       ]
     },
     {
@@ -177,7 +177,7 @@
       "venue": "Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026). AAAI Press",
       "url": "https://arxiv.org/pdf/2504.17364",
       "topics": [
-        "other"
+        "debias"
       ]
     },
     {
@@ -235,8 +235,7 @@
       "venue": "The Fourteenth International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=BhfIg0tuti",
       "topics": [
-        "continual",
-        "debias"
+        "continual"
       ]
     },
     {
@@ -270,6 +269,7 @@
       "url": "https://openreview.net/forum?id=YWUYqN2laV",
       "topics": [
         "compression",
+        "continual",
         "efficient"
       ]
     },
@@ -304,6 +304,7 @@
       "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=66Z5tS8E45",
       "topics": [
+        "continual",
         "debias"
       ]
     },
@@ -407,6 +408,7 @@
       "venue": "SoftwareX",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352711024004011",
       "topics": [
+        "continual",
         "gaussian"
       ]
     },
@@ -452,7 +454,8 @@
       "venue": "Neurocomputing",
       "url": "",
       "topics": [
-        "compression"
+        "compression",
+        "continual"
       ]
     },
     {
@@ -464,6 +467,7 @@
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34058",
       "topics": [
         "compression",
+        "continual",
         "regularization"
       ]
     },
@@ -530,7 +534,6 @@
       "venue": "European Conference on Computer Vision (ECCV)",
       "url": "https://www.springerprofessional.de/en/boost-your-nerf-a-model-agnostic-mixture-of-experts-framework-fo/50194746",
       "topics": [
-        "debias",
         "efficient",
         "gaussian"
       ]
@@ -567,7 +570,6 @@
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29393/30631",
       "topics": [
         "compression",
-        "debias",
         "regularization"
       ]
     },
@@ -602,7 +604,7 @@
       "venue": "European Conference on Computer Vision",
       "url": "https://arxiv.org/pdf/2409.05900",
       "topics": [
-        "other"
+        "continual"
       ]
     },
     {
@@ -624,6 +626,7 @@
       "venue": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
       "url": "https://link.springer.com/chapter/10.1007/978-3-031-70365-2_6",
       "topics": [
+        "continual",
         "efficient"
       ]
     },
@@ -635,6 +638,7 @@
       "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision",
       "url": "https://openaccess.thecvf.com/content/WACV2024W/SCIoT/papers/Quelennec_Towards_On-Device_Learning_on_the_Edge_Ways_To_Select_Neurons_WACVW_2024_paper.pdf",
       "topics": [
+        "continual",
         "efficient"
       ]
     },
@@ -726,7 +730,8 @@
       "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
       "url": "https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Liao_Can_Unstructured_Pruning_Reduce_the_Depth_in_Deep_Neural_Networks_ICCVW_2023_paper.pdf",
       "topics": [
-        "compression"
+        "compression",
+        "continual"
       ]
     },
     {
@@ -761,6 +766,7 @@
       "venue": "Neurocomputing",
       "url": "https://www.sciencedirect.com/science/article/pii/S092523122300735X",
       "topics": [
+        "debias",
         "privacy",
         "regularization"
       ]
@@ -879,6 +885,7 @@
       "venue": "International Conference on Image Analysis and Processing",
       "url": "https://arxiv.org/pdf/2307.14253",
       "topics": [
+        "continual",
         "regularization"
       ]
     },
@@ -901,7 +908,7 @@
       "venue": "The Eleventh International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=Ph5cJSfD2XN",
       "topics": [
-        "other"
+        "continual"
       ]
     },
     {
@@ -1013,7 +1020,7 @@
       "venue": "Advances in Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/8b2fc235787852ead92da2268cd9e90c-Paper-Conference.pdf",
       "topics": [
-        "debias"
+        "other"
       ]
     },
     {
@@ -1080,6 +1087,7 @@
       "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
       "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Tartaglione_EnD_Entangling_and_Disentangling_Deep_Representations_for_Bias_Correction_CVPR_2021_paper.pdf",
       "topics": [
+        "continual",
         "debias"
       ]
     },
@@ -1114,7 +1122,6 @@
       "venue": "IEEE Transactions on Neural Networks and Learning Systems",
       "url": "https://arxiv.org/pdf/2102.03773",
       "topics": [
-        "debias",
         "regularization"
       ]
     },
@@ -1186,7 +1193,7 @@
       "venue": "International conference on image analysis and processing",
       "url": "https://iris.unito.it/retrieve/e27ce42e-7422-2581-e053-d805fe0acbaa/ICIAP19_takearamble.pdf",
       "topics": [
-        "debias"
+        "other"
       ]
     },
     {
@@ -1261,6 +1268,10 @@
       "target": "paper:di2025gode"
     },
     {
+      "source": "topic:gaussian",
+      "target": "paper:di2025gode"
+    },
+    {
       "source": "topic:compression",
       "target": "paper:mazouz2025lightweight"
     },
@@ -1274,10 +1285,6 @@
     },
     {
       "source": "topic:debias",
-      "target": "paper:de2026bias"
-    },
-    {
-      "source": "topic:efficient",
       "target": "paper:de2026bias"
     },
     {
@@ -1321,7 +1328,7 @@
       "target": "paper:roos2026met"
     },
     {
-      "source": "topic:other",
+      "source": "topic:debias",
       "target": "paper:haider2025inr"
     },
     {
@@ -1357,10 +1364,6 @@
       "target": "paper:anonymous2026study"
     },
     {
-      "source": "topic:debias",
-      "target": "paper:anonymous2026study"
-    },
-    {
       "source": "topic:compression",
       "target": "paper:diecidue2025silence"
     },
@@ -1370,6 +1373,10 @@
     },
     {
       "source": "topic:compression",
+      "target": "paper:nguyen2025beyond"
+    },
+    {
+      "source": "topic:continual",
       "target": "paper:nguyen2025beyond"
     },
     {
@@ -1387,6 +1394,10 @@
     {
       "source": "topic:gaussian",
       "target": "paper:spadaro2025denoising"
+    },
+    {
+      "source": "topic:continual",
+      "target": "paper:ciranni2025diffusing"
     },
     {
       "source": "topic:debias",
@@ -1441,6 +1452,10 @@
       "target": "paper:quetu2024lacoot"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:PILO2025102030"
+    },
+    {
       "source": "topic:gaussian",
       "target": "paper:PILO2025102030"
     },
@@ -1465,7 +1480,15 @@
       "target": "paper:spadaro2025tep"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:spadaro2025tep"
+    },
+    {
       "source": "topic:compression",
+      "target": "paper:liao2025till"
+    },
+    {
+      "source": "topic:continual",
       "target": "paper:liao2025till"
     },
     {
@@ -1493,10 +1516,6 @@
       "target": "paper:10849832"
     },
     {
-      "source": "topic:debias",
-      "target": "paper:di2024boost"
-    },
-    {
       "source": "topic:efficient",
       "target": "paper:di2024boost"
     },
@@ -1521,10 +1540,6 @@
       "target": "paper:quetu2024dsd2"
     },
     {
-      "source": "topic:debias",
-      "target": "paper:quetu2024dsd2"
-    },
-    {
       "source": "topic:regularization",
       "target": "paper:quetu2024dsd2"
     },
@@ -1541,7 +1556,7 @@
       "target": "paper:10647413"
     },
     {
-      "source": "topic:other",
+      "source": "topic:continual",
       "target": "paper:girard2024memory"
     },
     {
@@ -1549,8 +1564,16 @@
       "target": "paper:marouf2024mini"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:quetu2024simpler"
+    },
+    {
       "source": "topic:efficient",
       "target": "paper:quetu2024simpler"
+    },
+    {
+      "source": "topic:continual",
+      "target": "paper:quelennec2024towards"
     },
     {
       "source": "topic:efficient",
@@ -1601,6 +1624,10 @@
       "target": "paper:liao2023can"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:liao2023can"
+    },
+    {
       "source": "topic:other",
       "target": "paper:quetu2023dodginge"
     },
@@ -1615,6 +1642,10 @@
     {
       "source": "topic:gaussian",
       "target": "paper:Deng_2023_WACV"
+    },
+    {
+      "source": "topic:debias",
+      "target": "paper:TARTAGLIONE2023126612"
     },
     {
       "source": "topic:privacy",
@@ -1689,6 +1720,10 @@
       "target": "paper:spadaro2023shannon"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:quetu2023sparse"
+    },
+    {
       "source": "topic:regularization",
       "target": "paper:quetu2023sparse"
     },
@@ -1697,7 +1732,7 @@
       "target": "paper:di2023two"
     },
     {
-      "source": "topic:other",
+      "source": "topic:continual",
       "target": "paper:barbano2023unbiased"
     },
     {
@@ -1745,7 +1780,7 @@
       "target": "paper:9897223"
     },
     {
-      "source": "topic:debias",
+      "source": "topic:other",
       "target": "paper:bragagnolo2022update"
     },
     {
@@ -1773,6 +1808,10 @@
       "target": "paper:perlo2021dysplasia"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:tartaglione2021end"
+    },
+    {
       "source": "topic:debias",
       "target": "paper:tartaglione2021end"
     },
@@ -1787,10 +1826,6 @@
     {
       "source": "topic:efficient",
       "target": "paper:bragagnolo2021role"
-    },
-    {
-      "source": "topic:debias",
-      "target": "paper:tartaglione2021serene"
     },
     {
       "source": "topic:regularization",
@@ -1837,7 +1872,7 @@
       "target": "paper:tartaglione2019post"
     },
     {
-      "source": "topic:debias",
+      "source": "topic:other",
       "target": "paper:tartaglione2019take"
     },
     {
@@ -1900,20 +1935,20 @@
     "topics": 8,
     "by_topic": {
       "compression": 35,
-      "gaussian": 13,
-      "debias": 22,
+      "gaussian": 14,
+      "debias": 18,
       "regularization": 16,
       "privacy": 5,
-      "efficient": 22,
-      "continual": 18,
+      "efficient": 21,
+      "continual": 30,
       "nas": 0,
-      "other": 18
+      "other": 17
     },
     "by_source": {
-      "openalex": 62,
-      "openalex,regex": 11,
-      "regex": 11,
-      "none": 18
+      "openalex": 64,
+      "openalex,regex": 15,
+      "regex": 6,
+      "none": 17
     }
   }
 }
