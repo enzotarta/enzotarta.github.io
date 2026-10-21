@@ -61,8 +61,7 @@
       "venue": "arXiv preprint arXiv:2501.13558",
       "url": "https://arxiv.org/pdf/2501.13558",
       "topics": [
-        "compression",
-        "gaussian"
+        "compression"
       ]
     },
     {
@@ -1267,10 +1266,6 @@
       "target": "paper:di2025gode"
     },
     {
-      "source": "topic:gaussian",
-      "target": "paper:di2025gode"
-    },
-    {
       "source": "topic:compression",
       "target": "paper:mazouz2025lightweight"
     },
@@ -1930,7 +1925,7 @@
     "topics": 8,
     "by_topic": {
       "compression": 35,
-      "gaussian": 14,
+      "gaussian": 13,
       "debias": 18,
       "regularization": 16,
       "privacy": 5,
@@ -1940,8 +1935,8 @@
       "other": 17
     },
     "by_source": {
-      "openalex": 61,
-      "regex": 7,
+      "regex": 8,
+      "openalex": 60,
       "openalex,regex": 17,
       "none": 17
     }
