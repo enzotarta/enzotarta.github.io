@@ -132,6 +132,7 @@
       "venue": "The Fourteenth International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=0nvQ5kHXf4",
       "topics": [
+        "continual",
         "efficient"
       ]
     },
@@ -1306,6 +1307,10 @@
       "target": "paper:mazouz2026distilling"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:nguyen2026efficient"
+    },
+    {
       "source": "topic:efficient",
       "target": "paper:nguyen2026efficient"
     },
@@ -1930,14 +1935,14 @@
       "regularization": 16,
       "privacy": 5,
       "efficient": 21,
-      "continual": 29,
+      "continual": 30,
       "nas": 0,
       "other": 17
     },
     "by_source": {
-      "regex": 8,
+      "regex": 7,
       "openalex": 60,
-      "openalex,regex": 17,
+      "openalex,regex": 18,
       "none": 17
     }
   }
