@@ -56,7 +56,7 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 - **IEEE Senior Member** (2024 – now); IEEE Member (2019 – 2024)
 - **ELLIS Society Member** (2023 – now)
 - **International Association for Pattern Recognition (IAPR) Member** (2021 – now)
-- **Area Chair**: ICASSP (2026), ICML (2026), ICLR (2027, 2026), NeurIPS (2026, 2025), ICME (2026), IJCNN (2026, 2025), ICASSP (2026)
+- **Area Chair**: ICASSP (2027,2026), ICML (2027,2026), ICLR (2027, 2026), NeurIPS (2026, 2025), ICME (2026), IJCNN (2026, 2025)
 - **Senior Program Committee**: AAAI (2027), IJCAI-ECAI (2026)
 - **Session Chair**: ICPR (2026), ECML-PKDD (2024), ICIP (2022)
 - **Conference Reviewer**: CVPR (2026, 2025, 2024, 2023, 2022, 2021), ICCV (2025, 2023, 2021), ECCV (2026, 2024, 2022), WACV (2027, 2026, 2025, 2024, 2023), AAAI (2026, 2025, 2024, 2023), ICLR (2025, 2024), ICML (2025, 2024), NeurIPS (2025, 2024, 2023), ACM MM (2026, 2025), AISTATS (2025), BMVC (2024, 2023), ECML-PKDD (2024), ICASSP (2025, 2023), ICME (2025, 2023)
@@ -103,6 +103,9 @@ Enzo Tartaglione is a Full Professor at Télécom Paris (Institut Polytechnique 
 
 ## Ph.D. Examination Committee {#exam}
 
+- **Cem ETEKE** — *Ultra-Low-Bitrate Video Representation and Generative Reconstruction*. Role: Thesis reviewer. Technische Universität München, Germany — Dec 2026
+- **Trung Anh DANG** — *Towards Reliable and Efficient Continual Learning*. Role: Thesis reviewer. Université d'Orléans, France — Dec 2026
+- **Ali ZOLJODI** — *Efficient Model Design and Self-Supervised Learning for Real-Time Autonomous Vehicle Perception*. Role: Thesis opponent. Mälardalen University, Sweden — Nov 2026
 - **Saja TAWALBEH** — *Interpretable Capsule Networks for Visual Data*. Role: Thesis reviewer. University of Antwerp, Belgium — May/June 2026
 - **Luca SAVANT AIRA** — *Deep Learning for 3D World Representations*. Role: Thesis reviewer. Politecnico di Torino, Italy — May 2026
 - **Ali HASSAN** — *Parameter-Efficient Convolutional Neural Networks for Computer Vision Applications*. Role: Committee member. Mittuniversitetet, Sweden / Tampere University, Finland — Feb 2026
