@@ -1087,7 +1087,8 @@
       "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Tartaglione_EnD_Entangling_and_Disentangling_Deep_Representations_for_Bias_Correction_CVPR_2021_paper.pdf",
       "topics": [
         "continual",
-        "debias"
+        "debias",
+        "regularization"
       ]
     },
     {
@@ -1811,6 +1812,10 @@
       "target": "paper:tartaglione2021end"
     },
     {
+      "source": "topic:regularization",
+      "target": "paper:tartaglione2021end"
+    },
+    {
       "source": "topic:compression",
       "target": "paper:tartaglione2021hemp"
     },
@@ -1932,7 +1937,7 @@
       "compression": 35,
       "gaussian": 13,
       "debias": 18,
-      "regularization": 16,
+      "regularization": 17,
       "privacy": 5,
       "efficient": 21,
       "continual": 30,
