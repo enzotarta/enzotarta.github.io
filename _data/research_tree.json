@@ -568,8 +568,7 @@
       "venue": "Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024). AAAI Press",
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29393/30631",
       "topics": [
-        "compression",
-        "regularization"
+        "compression"
       ]
     },
     {
@@ -1536,10 +1535,6 @@
       "target": "paper:quetu2024dsd2"
     },
     {
-      "source": "topic:regularization",
-      "target": "paper:quetu2024dsd2"
-    },
-    {
       "source": "topic:compression",
       "target": "paper:desousa2024find"
     },
@@ -1937,7 +1932,7 @@
       "compression": 35,
       "gaussian": 13,
       "debias": 18,
-      "regularization": 17,
+      "regularization": 16,
       "privacy": 5,
       "efficient": 21,
       "continual": 30,
@@ -1945,9 +1940,9 @@
       "other": 17
     },
     "by_source": {
-      "regex": 7,
+      "regex": 8,
       "openalex": 60,
-      "openalex,regex": 18,
+      "openalex,regex": 17,
       "none": 17
     }
   }
