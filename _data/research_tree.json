@@ -177,7 +177,8 @@
       "venue": "Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026). AAAI Press",
       "url": "https://arxiv.org/pdf/2504.17364",
       "topics": [
-        "debias"
+        "debias",
+        "gaussian"
       ]
     },
     {
@@ -1331,6 +1332,10 @@
       "target": "paper:haider2025inr"
     },
     {
+      "source": "topic:gaussian",
+      "target": "paper:haider2025inr"
+    },
+    {
       "source": "topic:compression",
       "target": "paper:anonymous2026instant"
     },
@@ -1930,7 +1935,7 @@
     "topics": 8,
     "by_topic": {
       "compression": 35,
-      "gaussian": 13,
+      "gaussian": 14,
       "debias": 18,
       "regularization": 16,
       "privacy": 5,
