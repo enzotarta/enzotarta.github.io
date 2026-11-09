@@ -305,6 +305,7 @@
       "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=66Z5tS8E45",
       "topics": [
+        "continual",
         "debias"
       ]
     },
@@ -1400,6 +1401,10 @@
       "target": "paper:spadaro2025denoising"
     },
     {
+      "source": "topic:continual",
+      "target": "paper:ciranni2025diffusing"
+    },
+    {
       "source": "topic:debias",
       "target": "paper:ciranni2025diffusing"
     },
@@ -1940,7 +1945,7 @@
       "regularization": 16,
       "privacy": 5,
       "efficient": 21,
-      "continual": 30,
+      "continual": 31,
       "nas": 0,
       "other": 17
     },
