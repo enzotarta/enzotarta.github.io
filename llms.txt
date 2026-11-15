@@ -1,4 +1,4 @@
-# Enzo Tartaglione — enzotarta.github.io
+# Enzo Tartaglione, enzotarta.github.io
 
 > Personal academic website of Enzo Tartaglione, Full Professor at Télécom
 > Paris (Institut Polytechnique de Paris). Research on deep neural network
@@ -9,12 +9,24 @@
 
 - Name: Enzo Tartaglione
 - Affiliation: Télécom Paris, Institut Polytechnique de Paris
-- Role: Full Professor in Deep Learning and Efficient AI (since Jan 2026)
+- Role: Full Professor in Deep Learning and Efficient AI (since Jan 2026); Head of the Multimedia team
 - Email: enzo.tartaglione@telecom-paris.fr
 - Google Scholar: https://scholar.google.com/citations?user=uKuvN64AAAAJ
 - ORCID: https://orcid.org/0000-0003-4274-8298
 - GitHub: https://github.com/enzotarta
 - LinkedIn: https://www.linkedin.com/in/enzo-tartaglione-490950a2
+
+## Distinctions and leadership
+
+- Oral papers at ICLR 2026, ICIP 2026, AAAI 2025, WACV 2025 and ICME 2025; spotlight paper at ICLR 2023
+- Principal Investigator: FIS2 Starting Grant (Italian Ministry of University and Research), ANR JCJC, two Hi!Paris chairs; task leader in the Horizon Europe project ELIAS
+- Finalist, Multimedia Rising Star Award, IEEE MMSP 2025
+- Eduardo Caianiello Award, ICIAP 2023
+- Keynote speaker, Picture Coding Symposium (PCS) 2025
+- Area Chair: NeurIPS, CVPR, ICML, ICLR, ICASSP; Associate Editor of IEEE TNNLS and EURASIP JIVP; Action Editor of TMLR
+- Elected member of the IEEE Signal Processing Society Multimedia Signal Processing Technical Committee (MMSP TC), 2026
+- Peer review recognitions: Top Area Chair, NeurIPS 2026; Outstanding Reviewer, CVPR 2025, ICLR 2025, CVPR 2021
+- Supervision: 6 Ph.D. graduates, 10 Ph.D. students in progress
 
 ## Key resources
 

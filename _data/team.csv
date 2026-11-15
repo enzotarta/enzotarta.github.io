@@ -1,0 +1,45 @@
+name,status,role,period,topic,co_supervisor,previously,photo,summary
+Dorian Gailhard,current,PhD student,,Generative models and Graph Neural Networks for SoCs,Jhony H. Giraldo,,https://media.licdn.com/dms/image/v2/D4E03AQGOjtKHf62Mow/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684773812177?e=2147483647&v=beta&t=TniN4eck-mOoDR1TYwmgA82LvoCy8LSeHYF_zK1Hxp8,
+Ivan Luiz De Moura Matos,current,PhD student,,Debiasing through NAS,,Stage M2 Oct 23 to Feb 24,/assets/img/ivanluiz.jpg,
+Kian Bakhtari,current,PhD student,,Efficient foundation models exploitation for autonomous driving,Stephan Alaniz,,/assets/img/kian.jpeg,
+Leonardo Magliolo,current,PhD student,,Information flow in Deep Neural Networks,,,/assets/img/leonardo-magliolo.jpg,
+Lê Trung Nguyen,current,PhD student,,Methods for on-device training,Van-Tam Nguyen,,/assets/img/le-trung-nguyen.jpg,
+Rayyan Ahmed,current,PhD student,,Explaining and Removing Social Biases in Text-to-Image Generative AI,Stephan Alaniz,,/assets/img/rayyan-ahmed.jpg,
+Salaheldin Mohamed,current,PhD student,,,Kaouther Messaoud,,/assets/img/salaheldin-mohamed.jpg,
+Yinghao Wang,current,PhD student,,Foundation models for EEG treatment,Van-Tam Nguyen,,/assets/img/yinghao.png,
+Zhu Liao,current,PhD student,,Deep Neural Network pruning,Van-Tam Nguyen,,/assets/img/Zhu_Liao.jpg,
+Ekaterina Iakovleva,former,PostDoc,2024/26,,,,,Deep Learning Unlearning
+Marta Milovanovic,former,PostDoc,2022/23,,,,,"Main achievement: written a paper, [published at ICMEW 2023](Learn how to Prune Pixels for Multi-view Neural Image-based Synthesis)"
+Frédéric Lauron,former,Research Engineer,2025/26,,,,,Energy Consumption of Deep Learning
+Giommaria Pilo,former,Research Engineer,2023/24,,,,,"Main achievement: development to the [layer fold library](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4985344), contributed to one paper [ published at VCIP 2024 ](https://ieeexplore.ieee.org/abstract/document/10849832),"
+Aël Quélennec,former,PhD student,2022/25,,,,,"""Energy and Memory-Efficient AI for On-Device Learning"" Main achievements: two A* publications as second author, one workshop paper."
+Carl De Sousa Trias,former,PhD student,2021/25,,,,,"""Watermarking deep models"" Main achievements: one patent, one survey, one paper at [AAAI 2024 (rank A*)](https://ojs.aaai.org/index.php/AAAI/article/view/30091/31922) and one paper at [ICPR 2024 (rank A)](https://link.springer.com/chapter/10.1007/978-3-031-78169-8_20)"
+Gabriele Spadaro,former,PhD student,2022/25,,,,,"""Compression with Graph Neural Networks"" Cotutelle with University of Turin, Ph.D. awarded with honors Main achievements: one A* publication, one Q1 journal as first author, three rank A conferences (two as first author, one of which oral- ie. top 3%), filed seven patents."
+Imad Eddine Marouf,former,PhD student,2022/26,Efficient transformers for computer vision,Stéphane Lathuilière,,https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Z6xFbwQAAAAJ&citpid=1,"""Beyond Fine-Tuning: Continual Adaptation of Pretrained Vision Models"" Co-directed with Stéphane Lathuilière."
+Melan Vijayaratnam,former,PhD student,2020/24,,,,,"""Zero-latency video prediction"" Main achievement: one patent, written two papers"
+Rémi Nahon,former,PhD student,2022/25,,,,,"""Debiasing in Deep Neural Networks"" Main achievements: two A* publications as first author, two workshop papers."
+Victor Quétu,former,PhD student,2022/26,,,,,"From Weights to Layers: Deep Neural Network Compression for Efficient Inference Main achievements: four A* publications (one oral), two Q1 journals, the Eduardo Caianiello Award at ICIAP 2023."
+Andrea Diecidue,former,Invited PhD student,Jun to Sep 2025 and Apr to Sep 2026,,,,/assets/img/andrea-diecidue.jpg,
+Cem Eteke,former,Invited PhD student,Jan to Feb 2026,,,,,Main achievement: one ICIP 2026 paper
+Muhammad Ali Salman,former,Invited PhD student,2023/24,,,,,"Main achievement: written three papers, [ published at BMVC 2024 (rank A) ](https://arxiv.org/abs/2406.18214), [ published at WACV 2025 (rank A) ](https://arxiv.org/abs/2410.23213), and a survey published at IEEE CSVT."
+Charles Herr,former,Research path student,Oct 2025 to May 2026,Learning alternatives to backpropagation,,,https://synapses.telecom-paris.fr/images/photos/d699ea31-ea53-4740-9757-ba5fe3f87f86.jpg,
+Maxime Girard,former,Research path student,2023/24,,,,,"Main achievement: written a paper, [published at an ECCV 2024 workshop](https://arxiv.org/abs/2409.05900)"
+Nathan Roos,former,Research path student,2024/25,,,,,"""Unsupervised debiasing modelization"" Main achievement: written a paper, [ accepted at WACV 2026 (rank A)](https://arxiv.org/abs/2512.20233)"
+Roan Rubiales,former,Research path student,2023/24,,,,,"""Efficient on-device learning"""
+André Pereira e Ferreira,former,PRIM project,Nov 2023 to Feb 2024,,,,,Main achievement: contributed to the [layer fold library](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4985344) development.
+Haicheng Wang and Zhemeng Yu,former,PRIM project,Oct 2024 to Feb 2025,,,,,"""Deep neural network pruning"" Main achievement: written a paper, [ accepted at ICCV 2025 (rank A*)](https://arxiv.org/abs/2501.02430)"
+Lorenza Martins,former,PRIM project,Oct 2025 to Feb 2026,,,,,Learn how to sample debiasing masks for foundation models
+Paul Mortamet,former,PRIM project,Nov 2022 to Feb 2023,,,,,"""IBRNet with reduced pixel density"""
+Petro Shulzhenko,former,PRIM project,Oct 2024 to Jul 2025,,,,,"""Distilling depth-compression"""
+Huanshan Huang,former,Stage M2,,Input frame compression for deep video processing,,Stage M1 Apr to Aug 2025,https://synapses.telecom-paris.fr/images/photos/88d6347a-96c9-41df-9e8b-511060d5ee02.jpg,"""Input frame compression for deep video processing"". Previously Stage M1 (Apr to Aug 2025)."
+Nasim Bagheri Shouraki,former,Stage M2,Jun to Aug 2023,,,,,"""EEG mental state classification information leakage"" Main achievement: written a paper, published at the ECML-PKDD 2023 workshop track"
+Radjaa Larbi,former,Stage M2,Jul to Oct 2026,3D Gaussian Splatting compression,,,https://synapses.telecom-paris.fr/images/photos/3821c66a-20a2-4808-8bdc-f8b4b1b9b12a.jpg,"""3D Gaussian Splatting compression"""
+"Chenxi ""Lola"" Deng",former,Stage M1,May to Aug 2022,,,,,"Main achievement: written a paper, [ published at WACV 2023 (rank A) ](https://openaccess.thecvf.com/content/WACV2023/html/Deng_Compressing_Explicit_Voxel_Grid_Representations_Fast_NeRFs_Become_Also_Small_WACV_2023_paper.html)"
+Daniele Famà,former,Stage M1,Jul to Sep 2026,Deep Learning energy consumption measure on embedded systems,,,https://synapses.telecom-paris.fr/images/photos/8375a1bf-56af-4c1c-bd4e-83b2bd84bd9d.jpg,"""Deep Learning energy consumption measure on embedded systems"""
+Nour Hezbri,former,Stage M1,Mar to Aug 2024,,,,,"""Compression with artificial neural networks"" Main achievement: contributed to three papers, one [ journal paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4985344), one [published at AAAI 2025 (rank A*)](https://arxiv.org/abs/2412.15077), and another [published at ICCV 2025 (rank A*)](https://arxiv.org/abs/2406.08933)"
+Sana Hagaza,former,Stage M1,Jui to Sep 2025,,,,,"""Model soups for language models"""
+Thierry Xu,former,Stage M1,Jul to Sep 2023,,,,,"""Image compression with neural networks- sota analysis and preliminary results"""
+Wenqing Zhang,former,Stage M1,Apr to Aug 2025,,,,,"""Dataset pruning"""
+Yiming Yang,former,Stage M1,,3D Gaussian Splatting generation,,,,"""3D Gaussian Splatting generation"""
+Ziyu Li,former,Stage M1,Mar to Aug 2023,,,,,"Main achievement: written a paper, [published at an ICCV 2023 workshop](https://openaccess.thecvf.com/content/ICCV2023W/RCV/papers/Li_SCoTTi_Save_Computation_at_Training_Time_with_an_Adaptive_Framework_ICCVW_2023_paper.pdf)"
+Ivan Khodakov,former,Free stage,Sep 2024 to Feb 2025,,,,,"""Methods for debiasing and beyond"""

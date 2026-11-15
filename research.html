@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enzo Tartaglione – Research themes
+title: "Enzo Tartaglione: Research Themes"
 nav: research
 description: >-
   Interactive map of Enzo Tartaglione's published research, grouped by topic:
@@ -21,7 +21,7 @@ description: >-
 <section class="research-intro">
     <div class="container">
         <p>
-            An animated map of my research — every paper is a node, attached
+            An animated map of my research. Every paper is a node, attached
             to one or more topics. Drag to rearrange, hover for details, click
             a paper to open it, click a topic to isolate its cluster.
         </p>
@@ -44,7 +44,7 @@ description: >-
         </p>
 
         {% comment %}
-        Static fallback list — readable by search engines and AI crawlers
+        Static fallback list, readable by search engines and AI crawlers
         regardless of whether they execute the D3 graph. Visually collapsed
         by default; click to expand.
         {% endcomment %}
@@ -60,7 +60,7 @@ description: >-
                         {% for p in topic_papers %}
                             <li>
                                 {% if p.url and p.url != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.label }}</a>{% else %}{{ p.label }}{% endif %}
-                                <span class="research-list-meta">{{ p.year }}{% if p.venue and p.venue != "" %} · {{ p.venue }}{% endif %}</span>
+                                <span class="research-list-meta">{{ p.year }}{% if p.venue and p.venue != "" %}, {{ p.venue }}{% endif %}</span>
                             </li>
                         {% endfor %}
                     </ul>
@@ -85,7 +85,7 @@ description: >-
     svg.attr('viewBox', '0 0 ' + width + ' ' + height)
        .attr('preserveAspectRatio', 'xMidYMid meet');
 
-    /* ---------- Build node/link copies (D3 mutates them) ---------- */
+    /* Build node/link copies (D3 mutates them) */
     var nodes = DATA.nodes.map(function (d) { return Object.assign({}, d); });
     var links = DATA.links.map(function (d) { return Object.assign({}, d); });
     var topicById = {};
@@ -99,7 +99,7 @@ description: >-
         }
     });
 
-    /* ---------- Defs: glow + gradient for root ---------- */
+    /* Defs: glow + gradient for root */
     var defs = svg.append('defs');
     defs.append('filter').attr('id', 'glow')
         .html('<feGaussianBlur stdDeviation="2.4" result="blur"/>'
@@ -112,7 +112,7 @@ description: >-
 
     var g = svg.append('g');
 
-    /* ---------- Force simulation ---------- */
+    /* Force simulation */
     var paperCharge = -28;
     var topicCharge = -180;
     var sim = d3.forceSimulation(nodes)
@@ -204,7 +204,7 @@ description: >-
         .attr('stroke', 'rgba(255,255,255,0.15)')
         .attr('stroke-width', 0.6);
 
-    /* ---------- Interaction ---------- */
+    /* Interaction */
     paperG.on('mouseenter', function (event, d) {
         d3.select(this).select('circle').transition().duration(120).attr('r', 7);
         showTip(event, d);
@@ -220,7 +220,7 @@ description: >-
     function showTip(event, d) {
         var rect = wrap.getBoundingClientRect();
         var html = '<strong>' + escape(d.label) + '</strong>'
-                 + '<div class="t-meta">' + (d.year || '') + (d.venue ? ' · ' + escape(d.venue) : '') + '</div>';
+                 + '<div class="t-meta">' + (d.year || '') + (d.venue ? ', ' + escape(d.venue) : '') + '</div>';
         tooltip.html(html)
                .style('left', (event.clientX - rect.left + 14) + 'px')
                .style('top',  (event.clientY - rect.top  + 14) + 'px')
@@ -232,7 +232,7 @@ description: >-
         });
     }
 
-    /* Topic isolation: click a topic → keep its papers, dim everything else */
+    /* Topic isolation: clicking a topic keeps its papers and dims everything else */
     var isolated = null;
     topicG.on('click', function (event, d) {
         isolated = (isolated === d.id) ? null : d.id;
@@ -253,7 +253,7 @@ description: >-
         });
     }
 
-    /* ---------- Legend ---------- */
+    /* Legend */
     var legend = d3.select('#research-legend')
         .selectAll('.legend-chip').data(DATA.topics).enter()
         .append('span').attr('class', 'legend-chip')
@@ -265,7 +265,7 @@ description: >-
     legend.append('span').attr('class', 'legend-dot').style('background', function (d) { return d.color; });
     legend.append('span').text(function (d) { return d.label; });
 
-    /* ---------- Tick ---------- */
+    /* Tick */
     sim.on('tick', function () {
         link.attr('x1', function (d) { return d.source.x; })
             .attr('y1', function (d) { return d.source.y; })
@@ -274,7 +274,7 @@ description: >-
         node.attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; });
     });
 
-    /* ---------- Resize ---------- */
+    /* Resize */
     window.addEventListener('resize', function () {
         var w = wrap.clientWidth;
         var h = Math.max(560, Math.round(w * 0.62));

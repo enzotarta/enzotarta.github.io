@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enzo Tartaglione – Invited Talks & Slides
+title: "Enzo Tartaglione: Invited Talks and Slides"
 nav: talks
 description: >-
   Invited talks, keynotes, tutorials, and presentation slide decks by
@@ -22,7 +22,7 @@ description: >-
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p>Browse my invited talks, tutorials and presentations. A single talk may have been given at several venues — each occurrence has its own slides version. Click <strong>Slides</strong> to open the PDF, or use <strong>Copy link</strong> to grab the URL.</p>
+                <p>Browse my invited talks, tutorials and presentations. A single talk may have been given at several venues, and each occurrence has its own slides. Click <strong>Slides</strong> to open the PDF, or use <strong>Copy link</strong> to grab the URL.</p>
 
                 <input type="text" id="searchBar" class="form-control" placeholder="Search by title, venue, location, topic or year...">
 
@@ -54,7 +54,7 @@ description: >-
                                     <li>
                                         <div class="occ-meta">
                                             <strong>{{ o.venue }}</strong>
-                                            <span class="muted">{% if o.location and o.location != "" %}{{ o.location }} — {% endif %}{{ o.date | date: "%B %-d, %Y" }}</span>
+                                            <span class="muted">{% if o.location and o.location != "" %}{{ o.location }}, {% endif %}{{ o.date | date: "%B %-d, %Y" }}</span>
                                         </div>
                                         <div class="occ-actions">
                                             {% if o.slides_url and o.slides_url != "" %}

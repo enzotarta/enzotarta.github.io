@@ -1,7 +1,7 @@
 /* TEAM */
 
   Site owner: Enzo Tartaglione
-  Role:       Full Professor — Deep Learning & Efficient AI
+  Role:       Full Professor of Deep Learning and Efficient AI
   Affil.:     Télécom Paris, Institut Polytechnique de Paris
   Email:      enzo.tartaglione@telecom-paris.fr
   Site:       https://enzotarta.github.io
@@ -20,8 +20,8 @@
 
   Generator:    Jekyll on GitHub Pages (gh-pages branch)
   Theme:        Custom dark theme (css/modern-theme.css)
-  Publications: BibBase → tools/build_publications.py → _data/publications/
-  Citations:    Google Scholar via SerpAPI → tools/build_citations.py
+  Publications: BibBase, converted by tools/build_publications.py into _data/publications/
+  Citations:    Google Scholar via SerpAPI, fetched by tools/build_citations.py
   Research map: OpenAlex concepts + tools/build_research_tree.py with D3.js
   CV:           Single Markdown source feeding both the page and a
                 LaTeX/PDF build (tools/build_cv.py)

@@ -2,7 +2,7 @@
 #
 # The auto-classifier in tools/build_research_tree.py tags each paper from
 # OpenAlex concepts + regex matching against _data/topics.yml. If you
-# disagree with a paper's assigned topic(s), add it here — an override
+# disagree with a paper's assigned topic(s), add it here. An override
 # always wins and is never touched by the classifier, so it survives every
 # rerun (manual or the nightly GitHub Action).
 #

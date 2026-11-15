@@ -45,9 +45,17 @@
     "name": "Enzo Tartaglione",
     "url": "{{ '/' | absolute_url }}",
     "image": "{{ '/assets/img/foto_recentequadrata.png' | absolute_url }}",
-    "jobTitle": "Full Professor",
+    "jobTitle": "Full Professor of Deep Learning and Efficient AI",
     "email": "mailto:{{ site.email }}",
     "description": "{{ site.description | strip_newlines | strip }}",
+    "award": [
+      "Top Area Chair, NeurIPS 2026",
+      "Finalist, Multimedia Rising Star Award, IEEE MMSP 2025",
+      "Outstanding Reviewer, CVPR 2025",
+      "Outstanding Reviewer, ICLR 2025",
+      "Eduardo Caianiello Award, ICIAP 2023",
+      "Outstanding Reviewer, CVPR 2021"
+    ],
     "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "Télécom Paris, Institut Polytechnique de Paris",
@@ -76,7 +84,11 @@
       "{{ site.social.linkedin }}",
       "{{ site.social.github }}",
       "{{ site.social.twitter }}",
-      "https://www.telecom-paris.fr/enzo-tartaglione"
+      "https://www.telecom-paris.fr/enzo-tartaglione",
+      "https://www.wikidata.org/wiki/Q90031478",
+      "https://openalex.org/A5046851981",
+      "https://www.semanticscholar.org/author/47376816",
+      "https://www.scopus.com/authid/detail.uri?authorId=57202779684"
     ]
   }
   </script>
@@ -104,7 +116,7 @@
   <link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="/css/flexslider.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet" />
-  <!-- Modern theme override — must come last -->
+  <!-- Modern theme override, must come last -->
   <link href="/css/modern-theme.css" rel="stylesheet" />
 
   {% if page.extra_css %}

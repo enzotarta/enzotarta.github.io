@@ -9,6 +9,7 @@ Usage:  python3 tools/build_cv.py
 """
 
 from __future__ import annotations
+import json
 import re
 import shutil
 import subprocess
@@ -16,6 +17,7 @@ import sys
 from pathlib import Path
 
 import mistune
+import yaml
 from mistune.core import BaseRenderer
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,10 +38,10 @@ _LATEX_REPL = {
 def latex_escape(s: str) -> str:
     out = "".join(_LATEX_REPL.get(c, c) for c in s)
     return (out
-            .replace("—", "---").replace("–", "--")
+            .replace("\u2014", "---").replace("\u2013", "--")
             .replace("“", "``").replace("”", "''")
             .replace("‘", "`").replace("’", "'")
-            .replace("…", r"\ldots{}"))
+            .replace("\u2026", r"\ldots{}"))
 
 
 class LatexRenderer(BaseRenderer):
@@ -169,8 +171,40 @@ def strip_kramdown_ids(text: str) -> str:
     return re.sub(r"^(#+\s.+?)\s*\{#[\w-]+\}\s*$", r"\1", text, flags=re.M)
 
 
+_SITE_DATA_TAG = re.compile(r"\{\{\s*site\.data\.([\w.]+)\s*(\|\s*size\s*)?\}\}")
+
+
+def _load_data(path: Path):
+    if path.suffix == ".json":
+        return json.loads(path.read_text(encoding="utf-8"))
+    return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+
+def resolve_site_data(text: str) -> str:
+    """Substitute the {{ site.data.x.y }} (optionally `| size`) tags that Jekyll
+    renders on the web page, reading the same files under _data/."""
+    def lookup(m: re.Match) -> str:
+        node, value = ROOT / "_data", None
+        for part in m.group(1).split("."):
+            if value is not None:
+                value = value[part]
+            elif (node / part).is_dir():
+                node = node / part
+            else:
+                matches = [node / f"{part}{ext}" for ext in (".json", ".yml", ".yaml")]
+                found = next((p for p in matches if p.exists()), None)
+                if found is None:
+                    raise SystemExit(f"cv.md: no data file for {m.group(0)}")
+                value = _load_data(found)
+        if m.group(2):
+            value = len(value)
+        return str(value)
+    return _SITE_DATA_TAG.sub(lookup, text)
+
+
 def render_latex_body(md_path: Path) -> str:
     raw = strip_kramdown_ids(strip_frontmatter(md_path.read_text(encoding="utf-8")))
+    raw = resolve_site_data(raw)
     md = mistune.create_markdown(renderer=LatexRenderer(), plugins=["table"])
     return md(raw)
 

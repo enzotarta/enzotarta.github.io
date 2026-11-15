@@ -61,6 +61,7 @@
   venue: The Fourteenth International Conference on Learning Representations
   url: "https://openreview.net/forum?id=0nvQ5kHXf4"
   doi: ""
+  badge: Oral
   authors:
     - Le-Trung Nguyen
     - Enzo Tartaglione
@@ -141,7 +142,7 @@
   doi: ""
   authors:
     - Zhu LIAO
-    - Victor Quetu
+    - Victor Quétu
     - Van-Tam Nguyen
     - Enzo Tartaglione
 - id: tran2025rave
@@ -180,7 +181,7 @@
   url: "https://openreview.net/forum?id=BhfIg0tuti"
   doi: ""
   authors:
-    - Ael Quelennec
+    - Aël Quélennec
     - Nour Hezbri
     - Pavlo Mozharovskyi
     - Van-Tam Nguyen
@@ -208,7 +209,7 @@
   authors:
     - Imad Eddine Marouf
     - Enzo Tartaglione
-    - Stephane Lathuiliere
+    - Stéphane Lathuilière
     - Joost van de Weijer
 - id: nguyen2025beyond
   type: inproceedings
@@ -219,7 +220,7 @@
   doi: ""
   authors:
     - Le-Trung Nguyen
-    - Ael Quelennec
+    - Aël Quélennec
     - Van-Tam Nguyen
     - Enzo Tartaglione
 - id: renzulli2025capsule
@@ -240,6 +241,7 @@
   venue: IEEE International Conference on Multimedia and Expo (ICME)
   url: "https://arxiv.org/pdf/2505.13316"
   doi: ""
+  badge: Oral
   authors:
     - Gabriele Spadaro
     - Alberto Presta
@@ -308,7 +310,7 @@
   authors:
     - Imad Eddine Marouf
     - Subhankar Roy
-    - Stephane Lathuiliere
+    - Stéphane Lathuilière
     - Enzo Tartaglione
 - id: wang2025folder
   type: article
@@ -322,7 +324,7 @@
     - Zhemeng Yu
     - Gabriele Spadaro
     - Chen Ju
-    - Victor Quetu
+    - Victor Quétu
     - Shuai Xiao
     - Enzo Tartaglione
 - id: gailhard2024hygene
@@ -362,7 +364,7 @@
   url: "https://arxiv.org/pdf/2406.08933"
   doi: ""
   authors:
-    - Victor Quetu
+    - Victor Quétu
     - Nour Hezbri
     - Enzo Tartaglione
 - id: PILO2025102030
@@ -440,10 +442,11 @@
   venue: Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025). AAAI Press
   url: "https://ojs.aaai.org/index.php/AAAI/article/view/34058"
   doi: ""
+  badge: Oral
   authors:
     - Zhu Liao
     - Nour Hezbri
-    - Victor Quetu
+    - Victor Quétu
     - Van-Tam Nguyen
     - Enzo Tartaglione
 - id: WANG2025129422
@@ -482,6 +485,7 @@
   venue: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision
   url: "https://arxiv.org/pdf/2410.00807"
   doi: ""
+  badge: Oral
   authors:
     - Gabriele Spadaro
     - Marco Grangetto
@@ -497,7 +501,7 @@
   doi: ""
   authors:
     - Le-Trung Nguyen
-    - Ael Quelennec
+    - Aël Quélennec
     - Enzo Tartaglione
     - Samuel Tardieu
     - Van-Tam Nguyen
@@ -538,7 +542,7 @@
   url: "https://link.springer.com/chapter/10.1007/978-3-031-73013-9_25"
   doi: ""
   authors:
-    - Remi Nahon
+    - Rémi Nahon
     - Ivan Luiz De Moura Matos
     - Van-Tam Nguyen
     - Enzo Tartaglione
@@ -563,7 +567,7 @@
   url: "https://ojs.aaai.org/index.php/AAAI/article/view/29393/30631"
   doi: ""
   authors:
-    - Victor Quetu
+    - Victor Quétu
     - Enzo Tartaglione
 - id: desousa2024find
   type: inproceedings
@@ -602,7 +606,7 @@
   doi: ""
   authors:
     - Maxime Girard
-    - Victor Quetu
+    - Victor Quétu
     - Samuel Tardieu
     - Van-Tam Nguyen
     - Enzo Tartaglione
@@ -616,7 +620,7 @@
   authors:
     - Imad Eddine Marouf
     - Enzo Tartaglione
-    - Stephane Lathuiliere
+    - Stéphane Lathuilière
 - id: quetu2024simpler
   type: inproceedings
   title: "The Simpler The Better: An Entropy-Based Importance Metric To Reduce Neural Networks' Depth"
@@ -625,7 +629,7 @@
   url: "https://link.springer.com/chapter/10.1007/978-3-031-70365-2_6"
   doi: ""
   authors:
-    - Victor Quetu
+    - Victor Quétu
     - Zhu Liao
     - Enzo Tartaglione
 - id: quelennec2024towards
@@ -636,7 +640,7 @@
   url: "https://openaccess.thecvf.com/content/WACV2024W/SCIoT/papers/Quelennec_Towards_On-Device_Learning_on_the_Edge_Ways_To_Select_Neurons_WACVW_2024_paper.pdf"
   doi: ""
   authors:
-    - Ael Quelennec
+    - Aël Quélennec
     - Enzo Tartaglione
     - Pavlo Mozharovskyi
     - Van-Tam Nguyen
@@ -674,7 +678,7 @@
     - Imad Eddine Marouf
     - Subhankar Roy
     - Enzo Tartaglione
-    - Stephane Lathuiliere
+    - Stéphane Lathuilière
 - id: presta2023differentiable
   type: inproceedings
   title: A Differentiable Entropy Model for Learned Image Compression
@@ -733,7 +737,7 @@
   doi: ""
   authors:
     - Zhu Liao
-    - Victor Quetu
+    - Victor Quétu
     - Van-Tam Nguyen
     - Enzo Tartaglione
 - id: quetu2023dodginge
@@ -744,7 +748,7 @@
   url: "https://arxiv.org/pdf/2302.13259"
   doi: ""
   authors:
-    - Victor Quetu
+    - Victor Quétu
     - Enzo Tartaglione
 - id: Deng_2023_WACV
   type: inproceedings
@@ -776,10 +780,10 @@
   url: "https://arxiv.org/pdf/2305.03572"
   doi: ""
   authors:
-    - Marta Milovanovic
+    - Marta Milovanović
     - Enzo Tartaglione
     - Marco Cagnazzo
-    - Felix Henry
+    - Félix Henry
 - id: nahon2023mental
   type: inproceedings
   title: "Mental State Classification Using EEG Signals: Ethics, Law and Challenges"
@@ -788,7 +792,7 @@
   url: "https://link.springer.com/chapter/10.1007/978-3-031-74630-7_28"
   doi: ""
   authors:
-    - Remi Nahon
+    - Rémi Nahon
     - Nasim Bagheri
     - Giovanna Varni
     - Enzo Tartaglione
@@ -801,7 +805,7 @@
   url: ""
   doi: ""
   authors:
-    - Remi Nahon
+    - Rémi Nahon
     - Nasim Bagheri
     - Giovanna Varni
     - Enzo Tartaglione
@@ -814,7 +818,7 @@
   url: "https://openaccess.thecvf.com/content/ICCV2023/papers/Nahon_Mining_bias-target_Alignment_from_Voronoi_Cells_ICCV_2023_paper.pdf"
   doi: ""
   authors:
-    - R\'emi Nahon
+    - Rémi Nahon
     - Van-Tam Nguyen
     - Enzo Tartaglione
 - id: 10.3389/fninf.2023.852105
@@ -845,7 +849,7 @@
   doi: ""
   authors:
     - Yinghao Wang
-    - Remi Nahon
+    - Rémi Nahon
     - Enzo Tartaglione
     - Pavlo Mozharovskyi
     - Van-Tam Nguyen
@@ -856,6 +860,7 @@
   venue: The Eleventh International Conference on Learning Representations (spotlight paper)
   url: "https://openreview.net/forum?id=XXTyv1zD9zD"
   doi: ""
+  badge: Spotlight
   authors:
     - Olivier Laurent
     - Adrien Lafage
@@ -897,9 +902,10 @@
   venue: International Conference on Image Analysis and Processing
   url: "https://arxiv.org/pdf/2307.14253"
   doi: ""
+  badge: Eduardo Caianiello Award
   authors:
-    - Victor Quetu
-    - Marta Milovanovic
+    - Victor Quétu
+    - Marta Milovanović
     - Enzo Tartaglione
 - id: di2023two
   type: inproceedings
@@ -992,16 +998,6 @@
     - Andrea Bragagnolo
     - Attilio Fiandrotti
     - Marco Grangetto
-- id: tartaglione2022marco
-  type: article
-  title: Marco Aldinucci, David Atienza, Federico Bolelli, Monica Caballero, Iacopo Colonnelli, Jose Flich, Jon A. Gomez, David Gonzalez, Costantino Grana, Marco Grangetto, Simone Leo, Pedro Lopez, Dana Oniga, Roberto Paredes, Luca Pireddu, Eduardo Quinones, Tatiana Silva
-  year: 2022
-  venue: Technologies and Applications for Big Data Value
-  url: ""
-  doi: ""
-  authors:
-    - Enzo Tartaglione
-    - Marina Zapater
 - id: quinones2022deephealth
   type: incollection
   title: "The DeepHealth HPC Infrastructure: Leveraging Heterogenous HPC and Cloud-Computing Infrastructures for IA-Based Medical Solutions"
@@ -1010,17 +1006,44 @@
   url: ""
   doi: ""
   authors:
-    - Eduardo Quinones
+    - Eduardo Quiñones
     - Jesus Perales
     - Jorge Ejarque
     - Asaf Badouh
     - Santiago Marco
     - Fabrice Auzanneau
-    - Francois Galea
-    - David Gonzalez
-    - Jose Ramon Hervas
+    - François Galea
+    - David González
+    - José Ramón Hervás
     - Tatiana Silva
     - others
+- id: tartaglione2022marco
+  type: incollection
+  title: "The DeepHealth Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous HPC and Cloud Architectures"
+  year: 2022
+  venue: Technologies and Applications for Big Data Value
+  url: "https://doi.org/10.1007/978-3-030-78307-5_9"
+  doi: 10.1007/978-3-030-78307-5_9
+  authors:
+    - Marco Aldinucci
+    - David Atienza
+    - Federico Bolelli
+    - Mónica Caballero
+    - Iacopo Colonnelli
+    - José Flich
+    - Jon A. Gómez
+    - David González
+    - Costantino Grana
+    - Marco Grangetto
+    - Simone Leo
+    - Pedro López
+    - Dana Oniga
+    - Roberto Paredes
+    - Luca Pireddu
+    - Eduardo Quiñones
+    - Tatiana Silva
+    - Enzo Tartaglione
+    - Marina Zapater
 - id: aldinucci2022deephealth
   type: incollection
   title: "The DeepHealth Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous HPC and Cloud Architectures"
@@ -1032,11 +1055,11 @@
     - Marco Aldinucci
     - David Atienza
     - Federico Bolelli
-    - Monica Caballero
+    - Mónica Caballero
     - Iacopo Colonnelli
-    - Jose Flich
-    - Jon A Gomez
-    - David Gonzalez
+    - José Flich
+    - Jon A Gómez
+    - David González
     - Costantino Grana
     - Marco Grangetto
     - others
@@ -1140,7 +1163,7 @@
   doi: ""
   authors:
     - Enzo Tartaglione
-    - Stephane Lathuiliere
+    - Stéphane Lathuilière
     - Attilio Fiandrotti
     - Marco Cagnazzo
     - Marco Grangetto

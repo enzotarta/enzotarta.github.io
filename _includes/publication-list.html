@@ -1,8 +1,9 @@
 {% comment %}
   Render a list of publications grouped by year (descending).
   Inputs:
-    include.entries  — array of publication entries from _data/publications/*
-    include.me       — optional substring to bold-highlight in the author list
+    include.entries: array of publication entries from _data/publications/*
+    include.me: optional substring to bold-highlight in the author list
+  Badges (oral, spotlight, awards) come from the badge field in publications/*.bib.
 {% endcomment %}
 
 {% assign me = include.me | default: 'Tartaglione' %}
@@ -24,8 +25,11 @@
           <div class="pub-authors">
             {% for a in p.authors %}{% if a contains me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
           </div>
+          {% assign badge = p.badge %}
           {% if p.venue and p.venue != "" %}
-            <div class="pub-venue"><em>{{ p.venue }}</em></div>
+            <div class="pub-venue"><em>{{ p.venue }}</em>{% if badge %} <span class="pub-badge">{{ badge }}</span>{% endif %}</div>
+          {% elsif badge %}
+            <div class="pub-venue"><span class="pub-badge">{{ badge }}</span></div>
           {% endif %}
         </li>
       {% endif %}{% endfor %}

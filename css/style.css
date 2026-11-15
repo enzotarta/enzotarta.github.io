@@ -3,7 +3,7 @@ Author URI: http://webthemez.com/
 Note: Licence under Creative Commons Attribution 3.0  
 -------------------------------------------------------*/
 
-/* Google Fonts are loaded over https in _layouts/default.html — an http://
+/* Google Fonts are loaded over https in _layouts/default.html; an http://
    @import here is blocked as mixed content and never arrives. */
 @import url('font-awesome.css');
 @import url('animate.css');
@@ -189,7 +189,7 @@ header .nav li .dropdown-menu li a {
     line-height: 28px;
     padding: 3px 12px;
 }
-/* --- menu --- */
+/* menu */
 
 header .navigation {
     float: right;
@@ -285,7 +285,7 @@ select.selectmenu {
 }
 /*  Sliders
 ==================================== */
-/* --- flexslider --- */
+/* flexslider */
 
 #main-slider:before {
     content: '';
@@ -587,7 +587,7 @@ section.hero-text h1 {
     padding: 5px 0;
     display: block;
 }
-/* --- breadcrumbs --- */
+/* breadcrumbs */
 
 #inner-headline ul.breadcrumb {
     margin: 40px 0;
@@ -612,7 +612,7 @@ ul.breadcrumb li a:hover {
 }
  
 
-/*-------Contact---------*/
+/* Contact */
 .contact input{
   background: #fff;
   border: solid 1px #ddd;
@@ -664,7 +664,7 @@ ul.breadcrumb li a:hover {
   transition: border linear 0.2s,box-shadow linear 0.2s;
 }
 
-/* --- search form --- */
+/* search form */
 
 .search {
     float: right;
@@ -853,7 +853,7 @@ ul.portfolio-categ li a:active {
 .progress .progress-bar.progress-bar-lblue {
     background: #32c8de;
 }
-/* --- portfolio detail --- */
+/* portfolio detail */
 
 .top-wrapper {
     margin-bottom: 20px;
@@ -906,7 +906,7 @@ blockquote cite a:visited,
 blockquote cite a:visited {
     color: #555;
 }
-/* --- pullquotes --- */
+/* pullquotes */
 
 .pullquote-left {
     display: block;
@@ -924,7 +924,7 @@ blockquote cite a:visited {
     line-height: 1.6em;
     padding-right: 20px;
 }
-/* --- button --- */
+/* button */
 
 .btn {
     text-align: center;
@@ -941,7 +941,7 @@ blockquote cite a:visited {
 .btn-theme:hover {
     color: #eee;
 }
-/* --- list style --- */
+/* list style */
 
 ul.general {
     list-style: none;
@@ -966,7 +966,7 @@ footer ul.link-list li a {
 footer ul.link-list li a:hover {
     color: #eee;
 }
-/* --- Heading style --- */
+/* Heading style */
 
 h4.heading {
     font-weight: 700;
@@ -1018,7 +1018,7 @@ footer .widget .widgetheading span {
     padding: 0 0;
     padding-top: 16px;
 }
-/* --- Map --- */
+/* Map */
 
 .map {
     position: relative;
@@ -1203,8 +1203,8 @@ ul.team-detail li ul.social-network li i {
     text-align: center;
     padding: 30px 0 30px 0;
 }
-/* ===== Widgets ===== */
-/* --- flickr --- */
+/* Widgets */
+/* flickr */
 
 .widget .flickr_badge {
     width: 100%;
@@ -1224,7 +1224,7 @@ footer .widget .flickr_badge img {
     float: left;
     margin: 0 9px 20px 0;
 }
-/* --- Recent post widget --- */
+/* Recent post widget */
 
 .recent-post {
     margin: 20px 0 0 0;
@@ -1672,7 +1672,7 @@ article .align-right {
     transition: color 0.3s ease;
 }
 
-/* ===== FOOTER LOGOS (HARD FIX) ===== */
+/* FOOTER LOGOS (HARD FIX) */
 
 .footer-logos {
   margin-top: 40px;
@@ -1707,7 +1707,7 @@ article .align-right {
   }
 }
 
-/* ===== CV SUMMARY MENU ===== */
+/* CV SUMMARY MENU */
 
 #cv-summary {
   margin: 40px 0 60px;

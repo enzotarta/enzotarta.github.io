@@ -20,7 +20,7 @@ Writes:
   - _data/research_tree.json
 
 Manual overrides: if you disagree with a paper's auto-assigned topic(s), add
-an entry to _data/research_tree_overrides.yml — it always wins over the
+an entry to _data/research_tree_overrides.yml; it always wins over the
 classifier and survives every rerun (auto or scheduled).
 """
 
@@ -46,7 +46,7 @@ USER_AGENT    = "enzotarta.github.io/1.0 (mailto:enzo.tartaglione@telecom-paris.
 OTHER = {"id": "other", "label": "Other", "color": "#94a3b8"}
 
 
-# ---------- Loading -----------------------------------------------------------
+# Loading
 
 def load_topics() -> list[dict]:
     with open(TOPICS_FILE, encoding="utf-8") as f:
@@ -82,7 +82,7 @@ def load_overrides() -> dict[str, list[str]]:
     return {str(k): (v or ["other"]) for k, v in data.items()}
 
 
-# ---------- OpenAlex ----------------------------------------------------------
+# OpenAlex
 
 def fetch(url: str) -> dict:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -132,7 +132,7 @@ def index_works(works: list[dict]) -> tuple[dict, dict]:
     return by_title, by_doi
 
 
-# ---------- Classification ----------------------------------------------------
+# Classification
 
 def assign_topics(paper: dict, topics: list[dict],
                   by_title: dict, by_doi: dict) -> tuple[list[str], str]:
@@ -165,7 +165,7 @@ def assign_topics(paper: dict, topics: list[dict],
     return (sorted(matched) or ["other"]), src
 
 
-# ---------- Tree --------------------------------------------------------------
+# Tree
 
 def build_tree(topics: list[dict], papers: list[dict],
                by_title: dict, by_doi: dict,

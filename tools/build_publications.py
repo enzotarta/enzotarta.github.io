@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Fetch publication .bib files from BibBase, parse, and write structured
-YAML to _data/publications/ for Jekyll to render.
+"""Parse the .bib files in publications/ and write structured YAML to
+_data/publications/ for Jekyll to render.
 
 Each output file is a list of entries (newest first) with normalized fields:
-  - id, type, title, authors, venue, year, month, url, doi, bibtex
+  - id, type, title, authors, venue, year, url, doi, badge
+
+An optional `badge` field in a .bib entry (e.g. badge={Oral}) is shown next
+to the venue and puts the paper in "Selected publications".
 
 Usage:  python3 tools/build_publications.py
 """
@@ -11,7 +14,7 @@ Usage:  python3 tools/build_publications.py
 from __future__ import annotations
 import re
 import sys
-import urllib.request
+import unicodedata
 from pathlib import Path
 
 import bibtexparser
@@ -19,20 +22,21 @@ from bibtexparser.bparser import BibTexParser
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "_data" / "publications"
+BIB_DIR = ROOT / "publications"
 
-SOURCES = {
-    "preprints": "https://bibbase.org/f/eigNBhSMoESt5Ygkm/preprints.bib",
-    "main":      "https://bibbase.org/f/eigNBhSMoESt5Ygkm/main.bib",
-    "patents":   "https://bibbase.org/f/eigNBhSMoESt5Ygkm/patents.bib",
-    "datasets":  "https://bibbase.org/f/eigNBhSMoESt5Ygkm/datasets.bib",
-}
+SOURCES = ("preprints", "main", "patents", "datasets")
+
+# LaTeX accent commands and the Unicode combining marks they stand for
+ACCENTS = {"'": "́", "`": "̀", '"': "̈", "^": "̂", "~": "̃",
+           "=": "̄", ".": "̇", "c": "̧", "v": "̌", "u": "̆",
+           "b": "̱"}
 
 VENUE_FIELDS = ("booktitle", "journal", "school", "institution", "publisher", "howpublished")
 LATEX_REPL = [
     (r"\&", "&"), (r"\%", "%"), (r"\$", "$"), (r"\#", "#"), (r"\_", "_"),
     (r"\textquotesingle", "'"), (r"\textquotedblleft", "“"),
     (r"\textquotedblright", "”"),
-    ("--", "–"), ("---", "—"),
+    ("--", "\u2013"), ("---", "\u2014"),
     ("~", " "),
 ]
 
@@ -41,8 +45,11 @@ def clean_latex(s: str) -> str:
     if not s:
         return ""
     s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"\{\\['`\"^~=.cvub]\s*([a-zA-Z])\}", r"\1", s)
-    s = re.sub(r"\\['`\"^~=.cvub]\{([a-zA-Z])\}", r"\1", s)
+    s = s.replace(r"\i", "i")
+    accent = lambda m: unicodedata.normalize("NFC", m.group(2) + ACCENTS[m.group(1)])
+    s = re.sub(r"\{\\(['`\"^~=.cvub])\s*\{?([a-zA-Z])\}?\}", accent, s)
+    s = re.sub(r"\\(['`\"^~=.cvub])\s*\{([a-zA-Z])\}", accent, s)
+    s = re.sub(r"\\(['`\"^~=.])([a-zA-Z])", accent, s)
     for pat, rep in LATEX_REPL:
         s = s.replace(pat, rep)
     s = s.replace("{", "").replace("}", "")
@@ -90,6 +97,7 @@ def normalize_entry(e: dict) -> dict:
         "year": year_int,
         "url": url,
         "doi": doi,
+        "badge": clean_latex(e.get("badge", "")),
     }
 
 
@@ -98,11 +106,6 @@ _MONTH_FULL = {
     "june": "jun", "july": "jul", "august": "aug", "september": "sep",
     "october": "oct", "november": "nov", "december": "dec",
 }
-
-
-def fetch(url: str) -> str:
-    with urllib.request.urlopen(url, timeout=30) as r:
-        return r.read().decode("utf-8", errors="replace")
 
 
 def normalize_months(text: str) -> str:
@@ -122,7 +125,7 @@ def parse_bib(text: str) -> list[dict]:
 
 
 def to_yaml(entries: list[dict]) -> str:
-    """Hand-rolled YAML emitter — pyyaml isn't always installed."""
+    """Hand-rolled YAML emitter, since pyyaml isn't always installed."""
     out = []
     for e in entries:
         out.append("- id: " + yaml_str(e["id"]))
@@ -132,6 +135,8 @@ def to_yaml(entries: list[dict]) -> str:
         out.append("  venue: " + yaml_str(e["venue"]))
         out.append("  url: " + yaml_str(e["url"]))
         out.append("  doi: " + yaml_str(e["doi"]))
+        if e["badge"]:
+            out.append("  badge: " + yaml_str(e["badge"]))
         if e["authors"]:
             out.append("  authors:")
             for a in e["authors"]:
@@ -153,10 +158,10 @@ def yaml_str(s: str) -> str:
 
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for name, url in SOURCES.items():
+    for name in SOURCES:
         try:
-            print(f"fetching {name} ... ", end="", flush=True)
-            text = fetch(url)
+            print(f"reading {name} ... ", end="", flush=True)
+            text = (BIB_DIR / f"{name}.bib").read_text(encoding="utf-8")
             entries = parse_bib(text)
             entries.sort(key=lambda e: (-e["year"], e["title"].lower()))
             (OUT_DIR / f"{name}.yml").write_text(to_yaml(entries), encoding="utf-8")

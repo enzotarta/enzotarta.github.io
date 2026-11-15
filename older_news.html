@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enzo Tartaglione – News Archive
+title: "Enzo Tartaglione: News Archive"
 nav: news
 description: >-
   Past announcements and milestones from Enzo Tartaglione's group:
@@ -21,7 +21,7 @@ description: >-
   <div class="container">
     <div class="row">
 
-      {% assign items = site.news | sort: "date" | reverse %}
+      {% assign items = site.data.news | sort: "date" | reverse %}
       {% assign grouped = items | group_by_exp: "item", "item.date | date: '%Y'" %}
 
       {% for year in grouped %}
@@ -30,7 +30,7 @@ description: >-
 
           {% for item in year.items %}
             <div class="news-item-old">
-              {{ item.content | markdownify }}
+              {% capture line %}[{{ item.date | date: "%b %y" }}] {{ item.text }}{% endcapture %}{{ line | markdownify }}
             </div>
           {% endfor %}
         </div>

@@ -1,0 +1,24 @@
+date,text
+2026-11-15,Recognized as a Top Area Chair at NeurIPS 2026.
+2026-11-01,Elected member of the [IEEE Signal Processing Society Multimedia Signal Processing Technical Committee](https://signalprocessingsociety.org/community-involvement/multimedia-signal-processing) (MMSP TC).
+2026-09-30,"Three papers accepted at NeurIPS 2026:
+- Decoupled Mode Connectivity for Base-to-Novel Generalization in Vision-Language Models;
+- Uncertainty is an Underconstrained Axis in Lossy Compression;
+- SOLA: A Structured Operator Library for Attention in Pretrained Vision Transformers."
+2026-08-13,"Article accepted for publication at the IEEE Transactions on Multimedia: [Distilling Learned Image Compression Models: An Analytical Approach for Low-Latency FPGA Deployment](https://telecom-paris.hal.science/hal-05652435/) Alaa Eddine Mazouz, Sumanta Chaudhuri, Marco Cagnazzo, Mihai Mitrea, Enzo Tartaglione, Bruno Zatt, Attilio Fiandrotti"
+2026-06-18,"Article accepted for publication at the 19th European Conference on Computer Vision (ECCV): [AracNet: Revealing Debiasing Signals across Layers with Shallow Monitors](https://openreview.net/forum?id=ZilmEwXWSH) Vito Paolo Pastore, Massimiliano Ciranni, Enzo Tartaglione, Vittorio Murino"
+2026-06-13,"Article accepted for publication at the ACM Transactions on Multimedia Computing, Communications, and Applications: [CALICE: Continuous Bitrate Control with Adapted LIC Model](https://dl.acm.org/doi/10.1145/3820658) Gabriele Spadaro, Alberto Presta, Jhony H. Giraldo, Attilio Fiandrotti, Marco Grangetto, Enzo Tartaglione"
+2026-06-10,"Article accepted for publication at IEEE Transactions on Multimedia: [Security and Real-time FPGA integration for Learned Image Compression](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11454487)  Mazouz Alaa Eddine, Sumanta Chaudhuri, Marco Cagnazzo, Mihai Mitrea, Enzo Tartaglione, Attilio Fiandrotti"
+2026-06-06,"Article accepted for publication at IEEE Transactions on Circuits and Systems for Video Technology: [Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and Future Directions.](https://arxiv.org/abs/2502.19457) Muhammad Salman Ali, Chaoning Zhang, Marco Cagnazzo, Giuseppe Valenzise, Enzo Tartaglione, Sung-Ho Bae."
+2026-02-12,"Paper accepted at CVPR 2026: [Bias In, Bias Out? Finding Unbiased Subnetworks in Vanilla Models](https://arxiv.org/abs/2603.05582)."
+2026-01-26,"Three papers accepted at ICLR 2026:
+- [INSTANT: Compressing Gradients and Activations for Resource-Efficient Training](https://openreview.net/forum?id=P2q6Y7UweV);
+- [Efficient Resource-Constrained Training of Vision Transformers via Subspace Optimization](https://openreview.net/forum?id=0nvQ5kHXf4) (**oral**);
+- [Study of Training Dynamics for Memory-Constrained Fine-Tuning](https://openreview.net/forum?id=BhfIg0tuti)."
+2025-12-25,I have given a [keynote on 3D Gaussian Splatting](https://partage.imt.fr/index.php/s/xsPMyJbAE7ywmWb) at the [Picture Coding Symposium 2025](https://2025.picturecodingsymposium.org/)
+2025-12-25,I have been promoted to the rank of **Full Professor**
+2025-11-30,Article accepted for publication at Neurocomputing: [TEP-ones: A Simple yet Effective Approach for Transferability Estimation of Pruned Backbones](https://www.sciencedirect.com/science/article/pii/S0925231225028814/pdfft?md5=382d7badf3e1f474e13de810b2d5a36c&pid=1-s2.0-S0925231225028814-main.pdf)
+2025-11-29,Article accepted for publication at IEEE Transactions on Multimedia: Security and Real-time FPGA integration for Learned Image Compression
+2025-11-28,Article accepted for publication at WACV 2026: [How I Met Your Bias: Investigating Bias Amplification in Diffusion Models](https://arxiv.org/pdf/2512.20233)
+2025-11-27,I have become **AE for Transactions on Machine Learning Research**
+2025-11-26,Article accepted for publication at AAAI 2026: [I-INR: Iterative Implicit Neural Representations](https://arxiv.org/abs/2504.17364)

@@ -1,17 +1,10 @@
 {% comment %}
-  Render a former member as a single line.
-  Order of precedence for the summary text:
-    1. include.member.summary  (explicit frontmatter field)
-    2. include.member.content  (markdownified body, collapsed to one line)
-  Markdown links are preserved; paragraph breaks are flattened to spaces.
+  Render a former member as a single line, using the summary column of
+  _data/team.csv. Markdown links are preserved.
 {% endcomment %}
 
 {% assign m = include.member %}
-{% if m.summary and m.summary != "" %}
-  {% assign body_html = m.summary | markdownify %}
-{% else %}
-  {% assign body_html = m.content %}
-{% endif %}
+{% assign body_html = m.summary | default: "" | markdownify %}
 {% assign body_one = body_html
     | replace: '<p>', ''
     | replace: '</p>', ' '
@@ -23,5 +16,5 @@
     | strip %}
 
 <li>
-    <strong>{{ m.name }}</strong><span class="alum-meta"> ({{ m.role }}{% if m.period and m.period != "" %}, {{ m.period }}{% endif %})</span>{% if body_one != "" %} — <span class="alum-summary">{{ body_one }}</span>{% endif %}
+    <strong>{{ m.name }}</strong><span class="alum-meta"> ({{ m.role }}{% if m.period and m.period != "" %}, {{ m.period }}{% endif %})</span>{% if body_one != "" %}: <span class="alum-summary">{{ body_one }}</span>{% endif %}
 </li>

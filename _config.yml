@@ -1,6 +1,6 @@
 title: Enzo Tartaglione
 description: >-
-  Enzo Tartaglione — Full Professor at Télécom Paris (Institut Polytechnique
+  Enzo Tartaglione, Full Professor at Télécom Paris (Institut Polytechnique
   de Paris). Research on model compression, debiasing, privacy in AI, and
   information flow in deep neural networks.
 url: https://enzotarta.github.io
@@ -12,19 +12,10 @@ plugins:
   - jekyll-feed
 
 collections:
-  news:
-    output: false
-  team:
-    output: false
   talks:
     output: false
 
 defaults:
-  - scope:
-      path: ""
-      type: team
-    values:
-      layout: null
   - scope:
       path: ""
       type: talks
@@ -56,6 +47,6 @@ social:
   skype: https://join.skype.com/invite/gyX6hyaaiahL
   github: https://github.com/enzotarta
   twitter: https://twitter.com/TartaglioneEnzo
-  scholar: https://scholar.google.it/citations?user=uKuvN64AAAAJ&hl=it&oi=ao
+  scholar: https://scholar.google.com/citations?user=uKuvN64AAAAJ
   orcid: https://orcid.org/0000-0003-4274-8298
 

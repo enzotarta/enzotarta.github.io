@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Enzo Tartaglione – Publications & Citations
+title: "Enzo Tartaglione: Publications and Citations"
 nav: about
 description: >-
   Publications by Enzo Tartaglione (Télécom Paris): preprints, peer-reviewed
-  papers, patents, and datasets — covering neural network compression,
+  papers, patents and datasets on neural network compression,
   pruning, debiasing, privacy, and efficient deep learning. Live citation
   metrics from Google Scholar.
 ---
@@ -42,6 +42,7 @@ description: >-
     <div class="container">
         <div class="cv-summary-grid">
             <a href="#metrics"   class="cv-card">Metrics</a>
+            <a href="#selected"  class="cv-card">Selected</a>
             <a href="#preprints" class="cv-card">Preprints</a>
             <a href="#papers"    class="cv-card">Papers</a>
             <a href="#patents"   class="cv-card">Patents</a>
@@ -79,6 +80,12 @@ description: >-
             Source: <a href="{{ c.scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>,
             updated {{ c.updated }}.
         </p>
+
+        <h2 id="selected">Selected publications</h2>
+        <p style="color: var(--text-secondary);">Papers selected for oral or spotlight presentation, or recognized with a paper award.</p>
+        {% assign selected = "" | split: "" %}
+        {% for p in site.data.publications.main %}{% if p.badge %}{% assign selected = selected | push: p %}{% endif %}{% endfor %}
+        {% include publication-list.html entries=selected %}
 
         <h2 id="preprints">Preprints</h2>
         {% include publication-list.html entries=site.data.publications.preprints %}

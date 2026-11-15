@@ -3,6 +3,9 @@ name: Refresh publications and citations
 on:
   schedule:
     - cron: "17 5 * * *"   # daily at 05:17 UTC
+  push:
+    paths:
+      - "publications/**"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +24,7 @@ jobs:
       - name: Install deps
         run: pip install "bibtexparser>=1.4,<2" pyyaml
 
-      - name: Refresh publications from BibBase
+      - name: Rebuild publications from publications/*.bib
         run: python tools/build_publications.py
 
       - name: Refresh citations from Google Scholar (via SerpAPI)
