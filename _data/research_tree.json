@@ -969,23 +969,23 @@
       ]
     },
     {
-      "id": "paper:tartaglione2022marco",
-      "type": "paper",
-      "label": "Marco Aldinucci, David Atienza, Federico Bolelli, Monica Caballero, Iacopo Colonnelli, Jose Flich, Jon A. Gomez, David Gonzalez, Costantino Grana, Marco Grangetto, Simone Leo, Pedro Lopez, Dana Oniga, Roberto Paredes, Luca Pireddu, Eduardo Quinones, Tatiana Silva",
-      "year": 2022,
-      "venue": "Technologies and Applications for Big Data Value",
-      "url": "",
-      "topics": [
-        "other"
-      ]
-    },
-    {
       "id": "paper:quinones2022deephealth",
       "type": "paper",
       "label": "The DeepHealth HPC Infrastructure: Leveraging Heterogenous HPC and Cloud-Computing Infrastructures for IA-Based Medical Solutions",
       "year": 2022,
       "venue": "HPC, Big Data, and AI Convergence Towards Exascale",
       "url": "",
+      "topics": [
+        "other"
+      ]
+    },
+    {
+      "id": "paper:tartaglione2022marco",
+      "type": "paper",
+      "label": "The DeepHealth Toolkit: A Key European Free and Open-Source Software for Deep Learning and Computer Vision Ready to Exploit Heterogeneous HPC and Cloud Architectures",
+      "year": 2022,
+      "venue": "Technologies and Applications for Big Data Value",
+      "url": "https://doi.org/10.1007/978-3-030-78307-5_9",
       "topics": [
         "other"
       ]
@@ -1766,11 +1766,11 @@
     },
     {
       "source": "topic:other",
-      "target": "paper:tartaglione2022marco"
+      "target": "paper:quinones2022deephealth"
     },
     {
       "source": "topic:other",
-      "target": "paper:quinones2022deephealth"
+      "target": "paper:tartaglione2022marco"
     },
     {
       "source": "topic:other",
