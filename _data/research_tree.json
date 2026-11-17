@@ -908,7 +908,9 @@
       "venue": "The Eleventh International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=Ph5cJSfD2XN",
       "topics": [
-        "continual"
+        "continual",
+        "debias",
+        "regularization"
       ]
     },
     {
@@ -1737,6 +1739,14 @@
       "target": "paper:barbano2023unbiased"
     },
     {
+      "source": "topic:debias",
+      "target": "paper:barbano2023unbiased"
+    },
+    {
+      "source": "topic:regularization",
+      "target": "paper:barbano2023unbiased"
+    },
+    {
       "source": "topic:compression",
       "target": "paper:vijayaratnam2023unified"
     },
@@ -1941,8 +1951,8 @@
     "by_topic": {
       "compression": 35,
       "gaussian": 14,
-      "debias": 18,
-      "regularization": 16,
+      "debias": 19,
+      "regularization": 17,
       "privacy": 5,
       "efficient": 21,
       "continual": 31,
