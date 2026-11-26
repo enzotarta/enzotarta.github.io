@@ -1960,8 +1960,8 @@
       "other": 17
     },
     "by_source": {
-      "regex": 8,
-      "openalex": 60,
+      "regex": 7,
+      "openalex": 61,
       "openalex,regex": 17,
       "none": 17
     }
